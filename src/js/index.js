@@ -20,11 +20,7 @@ function initFE() {
 }
 
 $(document).ready(function () {
-  flatpickr("#js-flatpickr", {
-    minDate: "today",
-  })
-
-  document.querySelectorAll('[data-toggle="password"]').forEach((item) => {
+  /*  document.querySelectorAll('[data-toggle="password"]').forEach((item) => {
     item.addEventListener("click", (event) => {
       let inp = item.previousElementSibling
       if (inp.type === "password") {
@@ -47,7 +43,7 @@ $(document).ready(function () {
     e.preventDefault()
     $(this).toggleClass("active")
     $(".catalogpage__aside").toggleClass("active")
-  })
+  }) */
 
   /*  $('.headermain__contacts').on('click', function(e) {
       e.preventDefault()
@@ -93,7 +89,13 @@ $(document).ready(function () {
     $(this).closest(".haederbanner").hide()
   })
 
-  $(".productcard .cardrating").each(function () {
+  $(".reviewsblock__rating").each(function () {
+    $(this)
+      .find("span.stars-active")
+      .css("width", $(this).find(".reviewsblock__value").text() * 24.5)
+  })
+
+  /*  $(".productcard .cardrating").each(function () {
     $(this)
       .find("span.stars-active")
       .css("width", $(this).find(".cardrating__value").text() * 11.2)
@@ -111,13 +113,13 @@ $(document).ready(function () {
     $(this)
       .find("span.stars-active")
       .css("width", $(this).find(".cardrating__value").text() * 18)
-  })
+  }) */
 
-  $("input[type=tel]").mask("7 (999) 999-99-99")
-
-  lightbox.option({
+  /*   $("input[type=tel]").mask("7 (999) 999-99-99")
+   */
+  /*   lightbox.option({
     resizeDuration: 0,
-  })
+  }) */
 
   function incrementValue(e) {
     e.preventDefault()

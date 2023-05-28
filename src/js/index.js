@@ -1,12 +1,12 @@
 function initFE() {
-  cardImagesSlider()
-  menuInit()
+  /*   cardImagesSlider() */
+  /*   menuInit() */
   mainSliderInit()
-  detailsliderInit()
+  /*   detailsliderInit()
   imgSliderInit()
-  recipeSliderInit()
+  recipeSliderInit() */
   productSliderInit()
-  mobileAccordeon()
+  /*  mobileAccordeon() */
   closeByOutsideSelect()
   closeByClickOutside(".mainmenu", ".mainmenubtn")
   closeByClickOutside(".catalogpage__aside", ".js-mobilefilter")
@@ -14,9 +14,9 @@ function initFE() {
     fixElement(300, false, 'headermain', 'fixed')
     fixElement(300, false, 'headercontainer', 'fixed')
     fixElement(false, 0, 'mobilenav', 'fixed') */
-  blockSliderInit()
+  /*  blockSliderInit()
   productListImgLisder()
-  moreNewsSliderInit()
+  moreNewsSliderInit() */
 }
 
 $(document).ready(function () {
@@ -257,18 +257,18 @@ function productSliderInit() {
       dots: false,
       arrows: true,
       infinite: true,
-      slidesToShow: 5,
+      slidesToShow: 4,
       slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 3000,
+      /*   autoplay: true,
+      autoplaySpeed: 3000, */
       swipe: false,
       nextArrow: $(this).closest(".productslider").find(".sliderarrows__right"),
       prevArrow: $(this).closest(".productslider").find(".sliderarrows__left"),
       responsive: [
         {
-          breakpoint: 1530,
+          breakpoint: 1280,
           settings: {
-            slidesToShow: 4,
+            slidesToShow: 3,
             slidesToScroll: 1,
           },
         },

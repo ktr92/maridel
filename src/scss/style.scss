@@ -2687,30 +2687,67 @@ h2 {
 }
 .reviewsblock__items {
   display: flex;
-  align-items: center;
   margin: 0 -10px;
+  .reviewsblock__item:nth-child(1) {
+    .reviewsblock__answer {
+      background-image: url(../img/figure1.svg);
+    }
+
+    background-position: bottom right;
+  }
+  .reviewsblock__item:nth-child(2) {
+    .reviewsblock__answer {
+      background-image: url(../img/figure2.svg);
+      background-position: top right;
+    }
+  }
+  .reviewsblock__item:nth-child(3) {
+    .reviewsblock__answer {
+      background-image: url(../img/figure3.svg);
+      background-position: left bottom;
+    }
+  }
 }
 .reviewsblock__item {
   padding: 0 10px;
+  border-radius: 15px;
+  width: calc(100% / 3);
+  flex: 1;
 }
 .reviewsblock__review {
+  background: #f9f9f9;
+  padding: 26px 30px;
+  border-radius: 15px 15px 0 0;
+  height: calc(100% - 245px);
 }
 .reviewsblock__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 19px;
 }
 .reviewsblock__info {
 }
 .reviewsblock__name {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #3a3a3a;
+  margin-bottom: 6px;
 }
 .reviewsblock__date {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(83, 90, 103, 0.4);
 }
 .reviewsblock__rating {
 }
 .reviewsblock__value {
 }
-.score {
-}
-.score-wrap {
-}
+
 .rat-stars-active {
 }
 .stars-active {
@@ -2720,6 +2757,45 @@ h2 {
 .reviewsblock__content {
 }
 .reviewsblock__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #3a3a3a;
+  p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #3a3a3a;
+  }
 }
 .reviewsblock__answer {
+  height: 245px;
+  padding: 26px 30px;
+  background: #08105b;
+  border-radius: 15px 0px 15px 15px;
+  background-repeat: no-repeat;
+  .reviewsblock__header {
+    margin-bottom: 17px;
+  }
+  .reviewsblock__name {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 0;
+
+    color: #ffffff;
+  }
+  .reviewsblock__text {
+    color: #ffffff;
+    font-weight: 300;
+    p {
+      color: #ffffff;
+      font-weight: 300;
+    }
+  }
 }

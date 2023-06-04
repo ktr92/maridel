@@ -2,10 +2,13 @@ function initFE() {
   /*   cardImagesSlider() */
   /*   menuInit() */
   mainSliderInit()
+  videoSliderInit()
+  blogSliderInit()
+  productSliderInit()
+  videoPopup()
   /*   detailsliderInit()
   imgSliderInit()
   recipeSliderInit() */
-  productSliderInit()
   /*  mobileAccordeon() */
   closeByOutsideSelect()
   closeByClickOutside(".mainmenu", ".mainmenubtn")
@@ -216,6 +219,63 @@ function mainSliderInit() {
     slidesToScroll: 1,
     /*  autoplay: true,
     autoplaySpeed: 3000, */
+  })
+}
+function videoSliderInit() {
+  $("[data-slider='videoslider']").each(function () {
+    $(this).slick({
+      dots: false,
+      arrows: true,
+      fade: true,
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      nextArrow: $(this)
+        .closest("[data-slidercontainer]")
+        .find(".sliderarrows__right"),
+      prevArrow: $(this)
+        .closest("[data-slidercontainer]")
+        .find(".sliderarrows__left"),
+      /*  autoplay: true,
+    autoplaySpeed: 3000, */
+    })
+  })
+}
+function blogSliderInit() {
+  $("[data-slider='blogslider']").each(function () {
+    $(this).slick({
+      dots: false,
+      arrows: true,
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      nextArrow: $(this)
+        .closest("[data-slidercontainer]")
+        .find(".sliderarrows__right"),
+      prevArrow: $(this)
+        .closest("[data-slidercontainer]")
+        .find(".sliderarrows__left"),
+      /*  autoplay: true,
+    autoplaySpeed: 3000, */
+    })
+  })
+}
+
+function videoPopup() {
+  $(".youtubepopup").click(function () {
+    var $this = $(this)
+    var $iframe = $(
+      '<iframe frameborder="0" allow="autoplay; encrypted-media" class="iframe" id="Overlayvideo" allowfullscreen="true">'
+    )
+      .attr("src", $this.data("link"))
+      .css({ width: 400, height: 300 })
+    var $title = ""
+    $("#video-view").html($title).append($iframe)
+    $("#video-popup").show()
+  })
+  $("#video-close").click(function () {
+    $("#video-view").html("")
+    $("#video-popup").hide()
   })
 }
 

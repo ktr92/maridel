@@ -314,7 +314,7 @@ function detailsliderInit() {
 }
 
 function productSliderInit() {
-  $(".productslider__slider").each(function () {
+  $("[data-slider='productslider']").each(function () {
     $(this).slick({
       dots: false,
       arrows: true,
@@ -324,11 +324,15 @@ function productSliderInit() {
       /*   autoplay: true,
       autoplaySpeed: 3000, */
       swipe: false,
-      nextArrow: $(this).closest(".productslider").find(".sliderarrows__right"),
-      prevArrow: $(this).closest(".productslider").find(".sliderarrows__left"),
+      nextArrow: $(this)
+        .closest("[data-slidercontainer]")
+        .find(".sliderarrows__right"),
+      prevArrow: $(this)
+        .closest("[data-slidercontainer]")
+        .find(".sliderarrows__left"),
       responsive: [
         {
-          breakpoint: 1280,
+          breakpoint: 1400,
           settings: {
             slidesToShow: 3,
             slidesToScroll: 1,

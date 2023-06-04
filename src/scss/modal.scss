@@ -191,10 +191,6 @@ input[type="password"] {
   &.input-error {
     border: 2px solid #ff585f;
   }
-
-  &:focus {
-    border: 2px solid #04a3e9;
-  }
 }
 
 textarea {

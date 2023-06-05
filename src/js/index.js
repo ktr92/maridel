@@ -99,7 +99,7 @@ $(document).ready(function () {
   $(".reviewsblock__rating").each(function () {
     $(this)
       .find("span.stars-active")
-      .css("width", $(this).find(".reviewsblock__value").text() * 24.5)
+      .css("width", $(this).find(".reviewsblock__value").text() * 24.4)
   })
 
   /*  $(".productcard .cardrating").each(function () {
@@ -361,6 +361,12 @@ function productSliderInit() {
           breakpoint: 1023,
           settings: {
             variableWidth: true,
+            nextArrow: $(this)
+              .closest(".container")
+              .find(".blockheader .sliderarrows__right"),
+            prevArrow: $(this)
+              .closest(".container")
+              .find(".blockheader .sliderarrows__left"),
           },
         },
       ],

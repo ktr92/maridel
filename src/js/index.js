@@ -11,7 +11,6 @@ function initFE() {
   recipeSliderInit() */
   /*  mobileAccordeon() */
   closeByOutsideSelect()
-  closeByClickOutside(".mainmenu", ".mainmenubtn")
   closeByClickOutside(".catalogpage__aside", ".js-mobilefilter")
   /*     fixElement(false, 750, 'mobpriceFixed', 'fixed')
     fixElement(300, false, 'headermain', 'fixed')
@@ -54,9 +53,14 @@ $(document).ready(function () {
       $('.contacts__dropdown').slideToggle()
   }) */
 
-  $("button.mainmenubtn").on("click", function (e) {
-    $(this).toggleClass("active")
-    $(".mainmenu").toggleClass("active")
+  $("[data-toggleclick='mainmenu']").on("click", function (e) {
+    e.preventDefault()
+    $("[data-toggle='mainmenu']").toggleClass("active")
+  })
+  $("[data-toggle='menuitems'").on("click", function (e) {
+    e.preventDefault()
+    $(this).siblings("li:not(.active)").toggleClass("active")
+    $(this).remove()
   })
   $(".jscatalog .js-toggler").on("click", function (e) {
     $(this).closest(".jscatalog").toggleClass("active")
@@ -255,6 +259,20 @@ function blogSliderInit() {
       prevArrow: $(this)
         .closest("[data-slidercontainer]")
         .find(".sliderarrows__left"),
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+      ],
       /*  autoplay: true,
     autoplaySpeed: 3000, */
     })

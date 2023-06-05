@@ -2665,9 +2665,12 @@ div#video-view iframe {
 }
 .blogcard__image {
 }
-/* .blogcard__img {
-  @include imagecenter(100, height);
-} */
+.videoslider__col_main .blogcard__img {
+  @include imagecenter(62%, height);
+}
+.blogcard__img {
+  @include imagecenter(63%, height);
+}
 .blogcard__info {
   position: absolute;
   z-index: 9;
@@ -2715,6 +2718,10 @@ div#video-view iframe {
 .videoslider__container {
   position: relative;
   height: 100%;
+}
+
+.blogcard__item {
+  position: relative;
 }
 .videoslider_col_aside {
   width: 410px;
@@ -3157,7 +3164,18 @@ input {
 }
 .iconbutton__icon {
 }
-
+.blogcard,
+.blogcard__item,
+.blogcard__content,
+.youtubepopup,
+.blogcard__image,
+.blogcard__img {
+  height: 100%;
+  display: block;
+}
+.blogcard__img {
+  background-size: cover;
+}
 @include large-screen {
   [data-slidercontainer] {
     padding: 0 60px;
@@ -3189,13 +3207,25 @@ input {
       overflow: hidden;
       padding: 0;
     }
-
+    .videoslider__video {
+      padding: 10px;
+    }
     img {
       height: 100%;
       width: initial;
     }
   }
   .videoslider_col_aside {
+    .videoslider__video,
+    .blogcard,
+    .blogcard__item,
+    .blogcard__content,
+    .youtubepopup,
+    .blogcard__image,
+    .blogcard__img {
+      border-radius: 15px;
+      overflow: hidden;
+    }
     .blogcard__item {
       height: 180px;
     }
@@ -3244,5 +3274,382 @@ input {
   }
   .blogcard__mask {
     border-radius: 15px;
+  }
+}
+
+@include medium-screen {
+  body {
+    min-width: 375px;
+  }
+  * {
+    flex-wrap: wrap;
+  }
+
+  .reviewsblock__item {
+    width: 100%;
+  }
+  .fitchesblock__item {
+    width: 100%;
+  }
+  .cols_mainblock {
+    width: 100%;
+  }
+  .mainbanners__item {
+    width: 100%;
+  }
+  .videoslider__col_main {
+    width: 100%;
+  }
+  .videoslider_col_aside {
+    width: 100%;
+  }
+  .seoblock__item {
+    width: 100%;
+  }
+  .formblock__wrapper {
+    height: initial;
+  }
+  .mainslide__wrapper {
+    height: initial;
+  }
+  .subscribeblock__wrapper {
+    height: unset;
+  }
+  header * {
+    max-width: 100%;
+  }
+  .indexblock .mainmenu {
+    display: none !important;
+  }
+  .mobilemenu 
+  /*  .mainmenu {
+    display: none;
+  } */
+  .cols_asideblock {
+    width: 100%;
+    margin: 0;
+  }
+  .mainmenu {
+  }
+  .header__topline {
+    display: none;
+  }
+  .headermain__left {
+    width: 100%;
+  }
+  .headermain__left {
+    padding-right: 0;
+  }
+  .headermain__contacts .contacts__phone a {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .headermain__callback a.btn_main {
+    background: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    min-width: unset;
+    text-align: right;
+    text-decoration: underline;
+    padding: 0;
+    height: unset;
+
+    color: #3a3a3a;
+  }
+  .headermain__contacts {
+    margin-right: 0;
+    width: 100%;
+  }
+  .headermain__right {
+    justify-content: flex-end;
+    text-align: right;
+    width: calc(100% - 200px);
+  }
+  .headermain__left {
+    max-width: calc(100% - 122px);
+  }
+  .headermain {
+    flex-wrap: nowrap;
+    margin: 11px 0;
+  }
+  .headermain__logo {
+    max-width: 50px;
+    min-width: 50px;
+  }
+  .sitetitle {
+    max-width: 125px;
+  }
+  .headermain__descr {
+    margin-left: 15px;
+  }
+  .headermain__contacts .contacts__phone {
+    margin-right: 0;
+  }
+
+  .headermain__callback {
+    margin-right: 0;
+  }
+  .container {
+    padding: 0 20px;
+  }
+  .headerbottom__wrapper {
+    flex-wrap: nowrap;
+  }
+  .mainmenubtn span {
+    display: none;
+  }
+  .mainmenubtn {
+    width: initial;
+    padding: 0;
+    margin: 0;
+    border: none;
+    height: initial;
+  }
+  .headermain__menu {
+    min-width: 35px;
+    max-width: 35px;
+  }
+  .headerbottom {
+    background: none;
+  }
+  input {
+    border-radius: 8px;
+    height: 35px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  :-ms-input-placeholder {
+    /* IE 10+ */
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  :-moz-placeholder {
+    /* Firefox 18- */
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .searchinput input {
+    border-radius: 8px;
+    height: 35px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .searchinput button {
+    background: none;
+    right: 0;
+  }
+  .searchinput {
+    height: 35px;
+  }
+  .headermain__search {
+    width: calc(100% - 35px - 30px - 94px - 14px);
+  }
+  .iconlinks__item {
+    max-width: 26px;
+    margin-right: 0;
+    margin-left: 8px;
+  }
+  .headermain__icons {
+    margin-left: 6px;
+  }
+  #header {
+    background: #ffffff;
+    box-shadow: 0px 4px 8px rgba(23, 23, 23, 0.1);
+  }
+  .mobilemenu {
+    position: fixed;
+    z-index: 99999;
+    background: #fff;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 10px 20px;
+    min-width: 375px;
+    display: none;
+    .mobilemenu__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 40px;
+    }
+    .mainmenuLevelOne__parent a.mainmenuLevelOne__link {
+      background-image: none;
+    }
+
+    .mobilemenu__logo {
+      width: 50px;
+      margin-right: 30px;
+    }
+    .headermain__search {
+      width: calc(100% - 50px - 30px - 35px - 30px);
+    }
+    .mainmenu {
+      display: block;
+    }
+    .mainmenuLevelOne {
+      li {
+        display: none;
+      }
+
+      li.mainmenuLevelOne__item_showmore {
+        display: block;
+      }
+      li.active {
+        display: block !important;
+      }
+    }
+    .mainmenu__level_1 {
+      width: 100%;
+    }
+    .mainmenuLevelOne__item_showmore {
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:focus {
+          background: #f9f9f9;
+        }
+      }
+      a span {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+        text-align: center;
+        color: #08105b;
+        display: block;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+  .mobilemenu__button {
+    margin-right: 30px;
+  }
+  .mobilemenu.active {
+    display: block;
+  }
+
+  .mobilemenu__links {
+    padding: 28px 20px;
+    ul {
+      @include clear;
+    }
+    li {
+      margin-bottom: 15px;
+      a {
+        display: block;
+        background-image: url(../img/mobilemenu__links.svg);
+        background-repeat: no-repeat;
+        background-position: right center;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        /* identical to box height */
+
+        color: #3a3a3a;
+      }
+    }
+  }
+  .mobilemenu__login {
+    padding: 16px 20px;
+    background: #f9f9f9;
+    border-radius: 15px;
+  }
+  .mobilelogin {
+  }
+  .mobilelogin__title {
+    margin-bottom: 5px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    color: #3a3a3a;
+  }
+  .mobilelogin__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #3a3a3a;
+
+    margin-bottom: 15px;
+  }
+  .mobilelogin__button {
+  }
+  .btn_main {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    height: initial;
+    /* identical to box height */
+    padding: 11px 39px;
+    text-align: center;
+    min-width: unset;
+    color: #ffffff;
+    border-radius: 10px;
+  }
+  .mobilemenu__contancts {
+    padding: 30px 0;
+  }
+  .mobilecontacts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .socials__items {
+    margin: 0;
+    flex-wrap: nowrap;
+    a {
+      min-width: 25px;
+      max-width: 25px;
+      height: 25px;
+      display: block;
+      padding: 0;
+      margin-right: 10px;
+    }
+  }
+  .mobilecontacts__phone a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    text-decoration: underline;
+
+    color: #3a3a3a;
   }
 }

@@ -262,7 +262,7 @@
     <div class="headerbottom">
       <div class="container">
         <div class="headerbottom__wrapper cols">
-          <div class="headermain__menu cols_asideblock">
+          <div class="headermain__menu ">
             <a href='#' class='mainmenubtn' data-toggleclick='mainmenu'>
               <img class="burgericon icon--white" src="img/burger.svg" alt="">
               <img class="burgericon icon--blue" src="img/burger_blue.svg" alt="">
@@ -312,7 +312,7 @@
     </div><!-- /.headerbottom -->
   </div>
 
-  <div class="mobilemenu" data-toggle="mainmenu">
+  <div class="mobilemenu onlyMobile" data-toggle="mainmenu">
     <div class="mobilemenu__header">
       <div class="mobilemenu__logo">
         <a href="#" class='logo'><img src="img/logo.svg" alt=""></a>
@@ -642,8 +642,37 @@
   <div class="footer__main">
     <div class="container">
       <div class="footer__items">
-        <div class="footer__col">
+        <div class="footer__col footer__toppanel">
           <div class="footer_logo"><img src="img/logo_white.svg" alt=""></div><!-- /.footer_logo -->
+
+          <div class="footerpanel onlyMobile">
+            <div class="footerpanel__items">
+              <div class="footerpanel__item footerpanel__search">
+                <div class="footersearch">
+                  <form action="">
+                    <div class="footersearh__input">
+                      <input type="text" placeholder="Найти товары">
+                      <button><img src="img/searchfooter.svg" alt=""></button>
+                    </div><!-- /.footersearh__input -->
+                  </form>
+                </div><!-- /.footersearch -->
+              </div><!-- /.footerpanel__item footerpanel__search -->
+              <div class="footerpanel__item footerpanel__icon">
+                <a href="#" class="iconbutton">
+                  <div class="iconbutton__icon">
+                    <img src="img/footerlike.svg" alt="">
+                  </div><!-- /.iconbutton__icon -->
+                </a><!-- /.iconbutton -->
+              </div>
+              <div class="footerpanel__item footerpanel__icon">
+                <a href="#" class="iconbutton">
+                  <div class="iconbutton__icon">
+                    <img src="img/footercart.svg" alt="">
+                  </div><!-- /.iconbutton__icon -->
+                </a><!-- /.iconbutton -->
+              </div>
+            </div><!-- /.footerpanel__items -->
+          </div>
         </div><!-- /.footer_col -->
         <div class="footer__col footer__catalog">
           <div class="footer__menu">
@@ -677,7 +706,7 @@
 
               </div>
             </div>
-            <div class="footerpanel">
+            <div class="footerpanel onlyDesktop">
               <div class="footerpanel">
                 <div class="footerpanel__items">
                   <div class="footerpanel__item footerpanel__search">

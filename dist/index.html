@@ -264,7 +264,7 @@
     <div class="headerbottom">
       <div class="container">
         <div class="headerbottom__wrapper cols">
-          <div class="headermain__menu cols_asideblock">
+          <div class="headermain__menu ">
             <a href='#' class='mainmenubtn' data-toggleclick='mainmenu'>
               <img class="burgericon icon--white" src="img/burger.svg" alt="">
               <img class="burgericon icon--blue" src="img/burger_blue.svg" alt="">
@@ -314,7 +314,7 @@
     </div><!-- /.headerbottom -->
   </div>
 
-  <div class="mobilemenu" data-toggle="mainmenu">
+  <div class="mobilemenu onlyMobile" data-toggle="mainmenu">
     <div class="mobilemenu__header">
       <div class="mobilemenu__logo">
         <a href="#" class='logo'><img src="img/logo.svg" alt=""></a>
@@ -2694,7 +2694,12 @@
                 </div><!-- /.reviewsblock__item -->
               </div><!-- /.reviewsblock__items -->
               <div class="reviewsblock__nav">
-
+                <a href="" class="reviewsblock__all btn_default"><span>Читать все отзывы </span><svg width="6"
+                    height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 7.5L4 4.5L1 1.5" stroke="#08105B" stroke-width="1.5" stroke-linecap="round" />
+                  </svg>
+                </a><!-- /.reviewsblock__all -->
+                <a href="#" class="reviewsblock__add btn__border">Оставить свой отзыв</a><!-- /.btn__border -->
               </div><!-- /.reviewsblock__nav -->
             </div><!-- /.reviewsblock -->
           </div>
@@ -2716,7 +2721,7 @@
             </div><!-- /#video-popup -->
             <div class="videoslider">
               <div class="videoslider__container" data-slidercontainer='videoslider'>
-                <div class="sliderarrows flex">
+                <div class="sliderarrows flex onlyDesktop">
                   <div class="sliderarrows__left sliderarrow">
                     <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M11.833 1L0.999881 12.5L11.833 24" stroke="#08105B" stroke-width="2"
@@ -2928,8 +2933,8 @@
             </div>
             <div class="blogslider">
               <div class="blogslider__container" data-slidercontainer="blogslider">
-                <div class="sliderarrows flex">
-                  <div class="sliderarrows__left sliderarrow">
+                <div class="sliderarrows flex onlyDesktop">
+                  <div class="sliderarrows__left sliderarrow ">
                     <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M11.833 1L0.999881 12.5L11.833 24" stroke="#08105B" stroke-width="2"
                         stroke-linecap="round" stroke-linejoin="round" />
@@ -3389,8 +3394,37 @@
   <div class="footer__main">
     <div class="container">
       <div class="footer__items">
-        <div class="footer__col">
+        <div class="footer__col footer__toppanel">
           <div class="footer_logo"><img src="img/logo_white.svg" alt=""></div><!-- /.footer_logo -->
+
+          <div class="footerpanel onlyMobile">
+            <div class="footerpanel__items">
+              <div class="footerpanel__item footerpanel__search">
+                <div class="footersearch">
+                  <form action="">
+                    <div class="footersearh__input">
+                      <input type="text" placeholder="Найти товары">
+                      <button><img src="img/searchfooter.svg" alt=""></button>
+                    </div><!-- /.footersearh__input -->
+                  </form>
+                </div><!-- /.footersearch -->
+              </div><!-- /.footerpanel__item footerpanel__search -->
+              <div class="footerpanel__item footerpanel__icon">
+                <a href="#" class="iconbutton">
+                  <div class="iconbutton__icon">
+                    <img src="img/footerlike.svg" alt="">
+                  </div><!-- /.iconbutton__icon -->
+                </a><!-- /.iconbutton -->
+              </div>
+              <div class="footerpanel__item footerpanel__icon">
+                <a href="#" class="iconbutton">
+                  <div class="iconbutton__icon">
+                    <img src="img/footercart.svg" alt="">
+                  </div><!-- /.iconbutton__icon -->
+                </a><!-- /.iconbutton -->
+              </div>
+            </div><!-- /.footerpanel__items -->
+          </div>
         </div><!-- /.footer_col -->
         <div class="footer__col footer__catalog">
           <div class="footer__menu">
@@ -3424,7 +3458,7 @@
 
               </div>
             </div>
-            <div class="footerpanel">
+            <div class="footerpanel onlyDesktop">
               <div class="footerpanel">
                 <div class="footerpanel__items">
                   <div class="footerpanel__item footerpanel__search">

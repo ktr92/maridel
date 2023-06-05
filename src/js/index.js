@@ -240,6 +240,12 @@ function videoSliderInit() {
       prevArrow: $(this)
         .closest("[data-slidercontainer]")
         .find(".sliderarrows__left"),
+      responsive: [
+        {
+          breakpoint: 1023,
+          settings: "unslick",
+        },
+      ],
       /*  autoplay: true,
     autoplaySpeed: 3000, */
     })
@@ -264,12 +270,14 @@ function blogSliderInit() {
           breakpoint: 767,
           settings: {
             slidesToShow: 2,
+            variableWidth: true,
           },
         },
         {
           breakpoint: 600,
           settings: {
             slidesToShow: 1,
+            variableWidth: true,
           },
         },
       ],

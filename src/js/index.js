@@ -6,12 +6,15 @@ function initFE() {
   blogSliderInit()
   productSliderInit()
   videoPopup()
+  dropdownInit()
+  menuInit()
   /*   detailsliderInit()
   imgSliderInit()
   recipeSliderInit() */
   /*  mobileAccordeon() */
   closeByOutsideSelect()
-  closeByClickOutside(".catalogpage__aside", ".js-mobilefilter")
+  // closeByClickOutside(".catalogpage__aside", ".js-mobilefilter")
+  closeByClickOutside("[data-dropdown]", "[data-dropdownclick]")
   /*     fixElement(false, 750, 'mobpriceFixed', 'fixed')
     fixElement(300, false, 'headermain', 'fixed')
     fixElement(300, false, 'headercontainer', 'fixed')
@@ -21,6 +24,65 @@ function initFE() {
   moreNewsSliderInit() */
 }
 
+function dropdownInit() {
+  $("[data-dropdownclick]").on("click", function (e) {
+    $(this).toggleClass("active")
+    e.preventDefault()
+    let dropdown = $(this).data("dropdownclick")
+    $("[data-dropdown].active")
+      .not($(`[data-dropdown=${dropdown}]`))
+      .removeClass("active")
+    $("[data-dropdownclick].active")
+      .not($(`[data-dropdownclick=${dropdown}]`))
+      .removeClass("active")
+    $(`[data-dropdown=${dropdown}]`).toggleClass("active")
+    // $(`[data-toggleactive=${dropdown}]`).toggleClass("active")
+  })
+}
+function menuInit() {
+  $("#dmenu").dmenu({
+    menu: {
+      align: "left",
+    },
+    item: {
+      bg: false,
+      border: false,
+      subindicator: true,
+
+      fit: [
+        {
+          items: null,
+          fitter: "icon-hide",
+          order: "all",
+        },
+        {
+          items: null,
+          fitter: "icon-only",
+          order: "all",
+        },
+        {
+          items: ":not(.dm-item_align-right)",
+          fitter: "submenu",
+          order: "rtl",
+        },
+        {
+          items: ":not(.dm-item_align-right)",
+          fitter: "hide",
+          order: "rtl",
+        },
+      ],
+    },
+    submenu: {
+      arrow: false,
+      border: false,
+      shadow: true,
+    },
+    subitem: {
+      bg: true,
+      border: false,
+    },
+  })
+}
 $(document).ready(function () {
   /*  document.querySelectorAll('[data-toggle="password"]').forEach((item) => {
     item.addEventListener("click", (event) => {
@@ -57,6 +119,7 @@ $(document).ready(function () {
     e.preventDefault()
     $("[data-toggle='mainmenu']").toggleClass("active")
   })
+
   $("[data-toggle='menuitems'").on("click", function (e) {
     e.preventDefault()
     $(this).siblings("li:not(.active)").toggleClass("active")
@@ -212,6 +275,8 @@ $(document).ready(function () {
       })
     })
   })(jQuery)
+  menuInit()
+  $(window).resize()
 })
 
 function mainSliderInit() {
@@ -380,6 +445,45 @@ function productSliderInit() {
       ],
     })
   })
+  /*  $("[data-slider='productslider3']").each(function () {
+    $(this).slick({
+      dots: false,
+      arrows: true,
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+     
+      swipe: false,
+      nextArrow: $(this)
+        .closest("[data-slidercontainer]")
+        .find(".sliderarrows__right"),
+      prevArrow: $(this)
+        .closest("[data-slidercontainer]")
+        .find(".sliderarrows__left"),
+      responsive: [
+        {
+          breakpoint: 1400,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          },
+        },
+
+        {
+          breakpoint: 1023,
+          settings: {
+            variableWidth: true,
+            nextArrow: $(this)
+              .closest(".container")
+              .find(".blockheader .sliderarrows__right"),
+            prevArrow: $(this)
+              .closest(".container")
+              .find(".blockheader .sliderarrows__left"),
+          },
+        },
+      ],
+    })
+  }) */
   $(".productslider__modalslider").each(function () {
     $(this).slick({
       dots: false,
@@ -598,12 +702,6 @@ function cardImagesSlider() {
 }
 
 function menuInit() {
-  $(function () {
-    if (window.innerWidth > 1023) {
-      $(window).resize()
-    }
-  })
-
   if ($(window).width() > 1023) {
     $("#dmenu").dmenu({
       menu: {
@@ -654,6 +752,12 @@ function menuInit() {
       })
     })
   }
+
+  $(function () {
+    if (window.innerWidth > 1023) {
+      $(window).resize()
+    }
+  })
 }
 
 // close select

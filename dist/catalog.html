@@ -1,5 +1,5 @@
 
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="ru">
 
 <head>
@@ -35,6 +35,8 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!--  <link rel="stylesheet" href="css/animate.min.css"> -->
   <!--   <link rel="stylesheet" href="css/swiper-bundle.min.css"> -->
+  <link rel="stylesheet" href="css/jquery.dmenu.css">
+
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/slick.min.css">
   <link rel="stylesheet" href="css/slick-theme.min.css">
@@ -50,6 +52,7 @@
   <!--   <script src="js/swiper-bundle.min.js"></script> -->
   <!--   <script src="js/hover-slider.min.js"></script> -->
   <script src="js/slick.min.js"></script>
+  <script src="js/jquery.dmenu.js"></script>
 
   <!--   <script src="js/selectbox.js"></script> -->
   <!--   <script src="js/jquery-ui.js"></script> -->
@@ -64,7 +67,7 @@
 </head>
 
 <body>
-<div class="jsbackdrop "></div>
+    <div class="jsbackdrop "></div>
 <header id="header" class="header">
   <div class="header__topline">
     <div class="container">
@@ -595,1535 +598,1420 @@
 
 </header>
 <!-- /#header.header -->
-<main>
-  <div class="page">
-    <div class="breadcrumbs">
-      <div class="container">
-        <div class="breadcrumbs__items">
-          <ul>
-            <li><a href="/"><span><img src="img/Home.svg" alt=""></span></a></li>
-            <li><a href=""><span>Каталог</span></a></li>
-            <li><span>Мясо, птица</span></li>
-          </ul>
-        </div>
-        <!-- /.breadcrumbs__items -->
-      </div>
-      <!-- /.container -->
-    </div>
-    <!-- /.breadcrumbs -->
-    <div class="catalogpage">
-      <div class="container">
-        <div class="catalogpage__wrapper">
-          <div class="catalogpage__aside catalogaside">
-            <aside>
-              <div class="catalogaside__back">
-                <a href="#">Мясо и птица</a>
-              </div>
-              <div class="catalogaside__links catalogcats">
-                <div class="catalogcats__item active">
-                  <a href="#">
-                  <span class="catalogcats__title">Все товары категории</span>
-                  <span class="catalogcats__count">2 433</span>
-                  </a>
-                </div>
-                <!-- /.catalogcats__item -->
-                <div class="catalogcats__item">
-                  <a href="#">
-                  <span class="catalogcats__title">Куриные недели с выгодой 10%</span>
-                  <span class="catalogcats__count">58</span>
-                  </a>
-                </div>
-                <!-- /.catalogcats__item -->
-                <div class="catalogcats__item">
-                  <a href="#">
-                  <span class="catalogcats__title">Курица </span>
-                  <span class="catalogcats__count">414</span>
-                  </a>
-                </div>
-                <!-- /.catalogcats__item -->
-                <div class="catalogcats__item">
-                  <a href="#">
-                  <span class="catalogcats__title">Курица </span>
-                  <span class="catalogcats__count">414</span>
-                  </a>
-                </div>
-                <!-- /.catalogcats__item -->
-                <div class="catalogcats__item">
-                  <a href="#">
-                  <span class="catalogcats__title">Курица </span>
-                  <span class="catalogcats__count">414</span>
-                  </a>
-                </div>
-                <!-- /.catalogcats__item -->
-                <div class="catalogcats__item">
-                  <a href="#">
-                  <span class="catalogcats__title">Курица </span>
-                  <span class="catalogcats__count">414</span>
-                  </a>
-                </div>
-                <!-- /.catalogcats__item -->
-                <div class="catalogcats__item">
-                  <a href="#">
-                  <span class="catalogcats__title">Курица </span>
-                  <span class="catalogcats__count">414</span>
-                  </a>
-                </div>
-                <!-- /.catalogcats__item -->
-                <div class="catalogcats__item">
-                  <a href="#">
-                  <span class="catalogcats__title">Курица </span>
-                  <span class="catalogcats__count">414</span>
-                  </a>
-                </div>
-                <!-- /.catalogcats__item -->
-                <div class="catalogcats__item">
-                  <a href="#">
-                  <span class="catalogcats__title">Курица </span>
-                  <span class="catalogcats__count">414</span>
-                  </a>
-                </div>
-                <!-- /.catalogcats__item -->
-                <div class="catalogcats__item">
-                  <a href="#">
-                  <span class="catalogcats__title">Курица </span>
-                  <span class="catalogcats__count">414</span>
-                  </a>
-                </div>
-                <!-- /.catalogcats__item -->
-                <div class="catalogcats__item">
-                  <a href="#">
-                  <span class="catalogcats__title">Курица </span>
-                  <span class="catalogcats__count">414</span>
-                  </a>
-                </div>
-                <!-- /.catalogcats__item -->
-              </div>
-              <!-- /.catalogaside__links catalogcats -->
-              <div class="catalogaside__filter">
-                <div class="filter">
-                  <form action="">
-                    <div class="filter__items">
-                      <div class="filter__item filter__item_open">
-                        <div class="filter__header filter__header-js">
-                          <span>Предложения</span>
-                          <img src="img/filterArrow.svg">
-                        </div>
-                        <div class="filter__form">
-                          <div class="filter__checkbox">
-                            <div class="dcheckbox">
-                              <label for="filter1-1" class="dcheckbox__label"><span>
-                              <input type="checkbox" id="filter1-1">
-                              <span class="dcheckbox__text">В наличии <span class='dcheckbox__count'> 241</span></span>
-                              </span>
-                              </label>                                  
-                            </div>
-                            <div class="dcheckbox">
-                              <label for="filter1-2" class="dcheckbox__label"><span>
-                              <input type="checkbox" checked="checked" id="filter1-2">
-                              <span class="dcheckbox__text">Участвует в акции <span class='dcheckbox__count'>43</span></span>
-                              </span>
-                              </label>                                  
-                            </div>
-                            <div class="dcheckbox">
-                              <label for="filter1-3" class="dcheckbox__label"><span>
-                              <input type="checkbox" id="filter1-3">
-                              <span class="dcheckbox__text">Хиты продаж <span class='dcheckbox__count'>21</span></span>
-                              </span>
-                              </label>                                  
-                            </div>
-                            <div class="dcheckbox">
-                              <label for="filter1-4" class="dcheckbox__label"><span>
-                              <input type="checkbox" checked="checked" id="filter1-4">
-                              <span class="dcheckbox__text">Новинки <span class='dcheckbox__count'>8</span></span>
-                              </span>
-                              </label>                                  
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="filter__item filter__item_open">
-                        <div class="filter__header filter__header-js">
-                          <span>Вид мяса</span>
-                          <img src="img/filterArrow.svg">
-                        </div>
-                        <div class="filter__form">
-                          <div class="filter__checkbox">
-                            <div class="dcheckbox">
-                              <label for="filter2-1" class="dcheckbox__label"><span>
-                              <input type="checkbox" id="filter2-1">
-                              <span class="dcheckbox__text">Говядина <span class='dcheckbox__count'> 8</span></span>
-                              </span>
-                              </label>                                  
-                            </div>
-                            <div class="dcheckbox">
-                              <label for="filter2-2" class="dcheckbox__label"><span>
-                              <input type="checkbox" checked="checked" id="filter2-2">
-                              <span class="dcheckbox__text">Курица <span class='dcheckbox__count'>43</span></span>
-                              </span>
-                              </label>                                  
-                            </div>
-                            <div class="dcheckbox">
-                              <label for="filter2-3" class="dcheckbox__label"><span>
-                              <input type="checkbox" id="filter2-3">
-                              <span class="dcheckbox__text">Свинина <span class='dcheckbox__count'>21</span></span>
-                              </span>
-                              </label>                                  
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="filter__item filter__item_open">
-                        <div class="filter__header filter__header-js">
-                          <span>Нарезка</span>
-                          <img src="img/filterArrow.svg">
-                        </div>
-                        <div class="filter__form">
-                          <div class="filter__checkbox">
-                            <div class="dcheckbox">
-                              <label for="filter3-1" class="dcheckbox__label"><span>
-                              <input type="checkbox" id="filter3-1">
-                              <span class="dcheckbox__text">Кусок / в упаковке</span>
-                              </span>
-                              </label>                                  
-                            </div>
-                            <div class="dcheckbox">
-                              <label for="filter3-2" class="dcheckbox__label"><span>
-                              <input type="checkbox" checked="checked" id="filter3-2">
-                              <span class="dcheckbox__text">Нарезка</span>
-                              </span>
-                              </label>                                  
-                            </div>
-                            <div class="dcheckbox">
-                              <label for="filter3-3" class="dcheckbox__label"><span>
-                              <input type="checkbox" id="filter3-3">
-                              <span class="dcheckbox__text">Батон</span>
-                              </span>
-                              </label>                                  
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="filter__item filter__item_open">
-                        <div class="filter__header filter__header-js">
-                          <span>Цена, ₽</span>
-                          <img src="img/filterArrow.svg">
-                        </div>
-                        <div class="filter__form">
-                          <!-- тут начальная и конечная цена исходя из цен в каталоге -->
-                          <input type="hidden" value="0" id="limitMin1" wfd-invisible="true"/>
-                          <input type="hidden" value="750" id="limitMax1" wfd-invisible="true"/>
-                          <div class="filter__price">
-                            <div class="sliderCont">
-                              <div id="sliderprice1" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
-                                <div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 0%; width: 100%;"></div>
-                                <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;"></span>
-                                <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 100%;"></span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="formCost">
-                            <div class="formCost__inputs">
-                              <div class="formCost__price_left">
-                                <label for="minCost1"></label> 
-                                <input type="text" id="minCost1" value="" placeholder="" class="notchanged">
-                              </div>
-                              <span class='formCost__delimeter'></span>
-                              <div class="formCost__price_right">
-                                <label for="maxCost1"></label> 
-                                <input type="text" id="maxCost1" value="" placeholder="" class="notchanged">
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <!-- /.catalogaside__filter -->
-              <div class="catalogaside__banners">
-                <div class="catalogaside__banner">
-                  <a href="">
-                  <img src="img/banner.jpg" alt="">
-                  </a>
-                </div>
-                <!-- /.catalogaside__banner -->
-              </div>
-              <!-- /.catalogaside__banners -->
-            </aside>
+      <main>
+
+        <div class="breadcrumbs">
+          <div class="container">
+            <div class="breadcrumbs__items">
+              <ul>
+                <li><a href="/"><span>Главная страница</span></a></li>
+                <li><a href=""><span>Каталог</span></a></li>
+                <li><span>Свежемороженая продукция</span></li>
+              </ul>
+            </div>
+            <!-- /.breadcrumbs__items -->
           </div>
-          <!-- /.catalogpage__aside -->
-          <div class="catalogpage__main">
-            <div class="catalogheader">
-              <div class="catalogheader__left">
-                <div class="catalogheader__title">
-                  <h1>Мясо, птица</h1>
-                </div>
-                <!-- /.catalogheader__title -->
-              </div>
-              <!-- /.catalogheader__left -->
-              <div class="catalogheader__right">
-                <div class="catalogheader__panel">
-                  <div class="dropdownpanel">
-                    <div class="dropdownselect">
-                      <div class="dropdown-select dropdown-select--type1">
-                        <div class="dropdown-select__title">
-                          <img src="img/Sorting.svg" alt="">
-                          <span>
-                          По умолчанию
-                          </span>
+          <!-- /.container -->
+        </div>
+        <!-- /.breadcrumbs -->
+        <div class="catalogheader">
+          <div class="container">
+            <div class="pageheader pageheader__type2">
+              <h1>Рыба замороженная</h1>
+            </div>
+            <div class="cataloglinks">
+              <div class="cataloglinks__menu dm-menu_submenu " id='dmenu'>
+                <ul>
+                  <li><a href="">Голец</a></li>
+                  <li><a href="">Горбуша</a></li>
+                  <li><a href="">Дорадо</a></li>
+                  <li><a href="">Камбала</a></li>
+                  <li><a href="">Кета</a></li>
+                  <li><a href="">Кижуч</a></li>
+                  <li><a href="">Корюшка</a></li>
+                  <li><a href="">Минтай</a></li>
+                  <li><a href="">Мойва</a></li>
+                  <li><a href="">Горбуша</a></li>
+                  <li><a href="">Горбуша</a></li>
+                  <li><a href="">Горбуша</a></li>
+                  <li><a href="">Горбуша</a></li>
+                  <li><a href="">Горбуша</a></li>
+                </ul>
+              </div><!-- /.cataloglinks__items -->
+            </div><!-- /.cataloglinks -->
+          </div>
+        </div><!-- /.catalogheader -->
+
+        <div class="catalogpage">
+          <div class="container">
+            <div class="catalogpage__wrapper flex">
+              <div class="catalogpage__aside catalogaside">
+                <aside>
+                  <div class="cols_asideblock">
+                    <div class="mainmenu">
+                      <div class="mainmenu__wrapper">
+                        <div class="mainmenu__items">
+                          <div class="mainmenu__level_1">
+                            <ul class="mainmenuLevelOne">
+                              <li class='mainmenuLevelOne__item '>
+                                <a href="" class='mainmenuLevelOne__link'>
+                                  <span class='mainmenu__icon'><img src="img/sale.svg" alt=""></span>
+                                  <span class='mainmenu__name'>Акции</span>
+                                </a>
+
+                              </li>
+                              <li class='mainmenuLevelOne__item '>
+                                <a href="" class='mainmenuLevelOne__link'>
+                                  <span class='mainmenu__icon'><img src="img/new.svg" alt=""></span>
+                                  <span class='mainmenu__name'>Новинки</span>
+                                </a>
+
+                              </li>
+                              <li class='mainmenuLevelOne__item mainmenuLevelOne__parent'>
+                                <a href="" class='mainmenuLevelOne__link'>
+                                  <span class='mainmenu__icon'><img src="img/holiday.svg" alt=""></span>
+                                  <span class='mainmenu__name'>Для праздника</span>
+                                </a>
+                                <div class="mainmenu__level_2">
+                                  <ul class="mainmenuLevelTwo">
+                                    <li class='mainmenuLevelTwo__item'>
+                                      <a class='mainmenuLevelTwo__link' href="">
+                                        <span>Голец</span>
+                                      </a>
+                                    </li>
+                                    <li class='mainmenuLevelTwo__item'>
+                                      <a class='mainmenuLevelTwo__link' href="">
+                                        <span>Голец</span>
+                                      </a>
+                                    </li>
+                                    <li class='mainmenuLevelTwo__item'>
+                                      <a class='mainmenuLevelTwo__link' href="">
+                                        <span>Голец</span>
+                                      </a>
+                                    </li>
+                                    <li class='mainmenuLevelTwo__item'>
+                                      <a class='mainmenuLevelTwo__link' href="">
+                                        <span>Голец</span>
+                                      </a>
+                                    </li>
+                                    <li class='mainmenuLevelTwo__item'>
+                                      <a class='mainmenuLevelTwo__link' href="">
+                                        <span>Голец</span>
+                                      </a>
+                                    </li>
+                                    <li class='mainmenuLevelTwo__item'>
+                                      <a class='mainmenuLevelTwo__link' href="">
+                                        <span>Голец</span>
+                                      </a>
+                                    </li>
+                                    <li class='mainmenuLevelTwo__item'>
+                                      <a class='mainmenuLevelTwo__link' href="">
+                                        <span>Голец</span>
+                                      </a>
+                                    </li>
+                                    <li class='mainmenuLevelTwo__item'>
+                                      <a class='mainmenuLevelTwo__link' href="">
+                                        <span>Голец</span>
+                                      </a>
+                                    </li>
+                                    <li class='mainmenuLevelTwo__item'>
+                                      <a class='mainmenuLevelTwo__link' href="">
+                                        <span>Голец</span>
+                                      </a>
+                                    </li>
+
+
+                                  </ul>
+                                </div>
+                              </li>
+                              <li class='mainmenuLevelOne__item mainmenuLevelOne__parent'>
+                                <a href="" class='mainmenuLevelOne__link'>
+                                  <span class='mainmenu__icon'><img src="img/ikra.svg" alt=""></span>
+                                  <span class='mainmenu__name'>Икра</span>
+                                </a>
+                                <div class="mainmenu__level_2">
+                                  <ul class="mainmenuLevelTwo">
+                                    <li class='mainmenuLevelTwo__item'>
+                                      <a class='mainmenuLevelTwo__link' href="">
+                                        <span>Голец</span>
+                                      </a>
+                                    </li>
+                                    <li class='mainmenuLevelTwo__item'>
+                                      <a class='mainmenuLevelTwo__link' href="">
+                                        <span>Голец</span>
+                                      </a>
+                                    </li>
+                                    <li class='mainmenuLevelTwo__item'>
+                                      <a class='mainmenuLevelTwo__link' href="">
+                                        <span>Голец</span>
+                                      </a>
+                                    </li>
+                                    <li class='mainmenuLevelTwo__item'>
+                                      <a class='mainmenuLevelTwo__link' href="">
+                                        <span>Голец</span>
+                                      </a>
+                                    </li>
+                                    <li class='mainmenuLevelTwo__item'>
+                                      <a class='mainmenuLevelTwo__link' href="">
+                                        <span>Голец</span>
+                                      </a>
+                                    </li>
+                                    <li class='mainmenuLevelTwo__item'>
+                                      <a class='mainmenuLevelTwo__link' href="">
+                                        <span>Голец</span>
+                                      </a>
+                                    </li>
+                                    <li class='mainmenuLevelTwo__item'>
+                                      <a class='mainmenuLevelTwo__link' href="">
+                                        <span>Голец</span>
+                                      </a>
+                                    </li>
+                                    <li class='mainmenuLevelTwo__item'>
+                                      <a class='mainmenuLevelTwo__link' href="">
+                                        <span>Голец</span>
+                                      </a>
+                                    </li>
+                                    <li class='mainmenuLevelTwo__item'>
+                                      <a class='mainmenuLevelTwo__link' href="">
+                                        <span>Голец</span>
+                                      </a>
+                                    </li>
+
+
+                                  </ul>
+                                </div>
+                              </li>
+                              <li class='mainmenuLevelOne__item'>
+                                <a href="" class='mainmenuLevelOne__link'>
+                                  <span class='mainmenu__icon'><img src="img/fish.svg" alt=""></span>
+                                  <span class='mainmenu__name'>Рыба</span>
+                                </a>
+                              </li>
+                              <li class='mainmenuLevelOne__item'>
+                                <a href="" class='mainmenuLevelOne__link'>
+                                  <span class='mainmenu__icon'><img src="img/polu.svg" alt=""></span>
+                                  <span class='mainmenu__name'>Полуфабрикаты</span>
+                                </a>
+                              </li>
+                              <li class='mainmenuLevelOne__item'>
+                                <a href="" class='mainmenuLevelOne__link'>
+                                  <span class='mainmenu__icon'><img src="img/fillet.svg" alt=""></span>
+                                  <span class='mainmenu__name'>Филе</span>
+                                </a>
+                              </li>
+                              <li class='mainmenuLevelOne__item'>
+                                <a href="" class='mainmenuLevelOne__link'>
+                                  <span class='mainmenu__icon'><img src="img/groundmeat.svg" alt=""></span>
+                                  <span class='mainmenu__name'>Рыбный фарш</span>
+                                </a>
+                              </li>
+                              <li class='mainmenuLevelOne__item'>
+                                <a href="" class='mainmenuLevelOne__link active'>
+                                  <span class='mainmenu__icon'><img src="img/finished.svg" alt=""></span>
+                                  <span class='mainmenu__name'>Готовая рыбная продукция</span>
+                                </a>
+                              </li>
+                              <li class='mainmenuLevelOne__item'>
+                                <a href="" class='mainmenuLevelOne__link'>
+                                  <span class='mainmenu__icon'><img src="img/seafood.svg" alt=""></span>
+                                  <span class='mainmenu__name'>Морепродукты</span>
+                                </a>
+                              </li>
+                              <li class='mainmenuLevelOne__item'>
+                                <a href="" class='mainmenuLevelOne__link'>
+                                  <span class='mainmenu__icon'><img src="img/preserves.svg" alt=""></span>
+                                  <span class='mainmenu__name'>Консервы</span>
+                                </a>
+                              </li>
+                              <li class='mainmenuLevelOne__item'>
+                                <a href="" class='mainmenuLevelOne__link'>
+                                  <span class='mainmenu__icon'><img src="img/seasoning.svg" alt=""></span>
+                                  <span class='mainmenu__name'>Соусы и приправы</span>
+                                </a>
+                              </li>
+                              <li class='mainmenuLevelOne__item'>
+                                <a href="" class='mainmenuLevelOne__link'>
+                                  <span class='mainmenu__icon'><img src="img/supplements.svg" alt=""></span>
+                                  <span class='mainmenu__name'>Биодобавки</span>
+                                </a>
+                              </li>
+                              <li class='mainmenuLevelOne__item'>
+                                <a href="" class='mainmenuLevelOne__link'>
+                                  <span class='mainmenu__icon'><img src="img/drinks.svg" alt=""></span>
+                                  <span class='mainmenu__name'>Напитки</span>
+                                </a>
+                              </li>
+                              <li class='mainmenuLevelOne__item'>
+                                <a href="" class='mainmenuLevelOne__link'>
+                                  <span class='mainmenu__icon'><img src="img/packages.svg" alt=""></span>
+                                  <span class='mainmenu__name'>Термопакеты</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                          <!-- /.mainmenu__level_1 -->
                         </div>
-                        <div class="dropdown-select__list dropdown-menu-wrapper" role="menu">
-                          <div class="dropdown-menu-inner rounded3">
-                            <div class="dropdown-select__list-item">
-                              <a href="#" class="dropdown-select__list-link" rel="nofollow">
-                              <span>По популярности (убывание)</span>
-                              </a>
+                        <!-- /.mainmenu__items -->
+                      </div>
+                      <!-- /.mainmenu__wrapper -->
+                    </div>
+                    <!-- /.mainmenu -->
+                  </div><!-- /.cols_asideblock -->
+                </aside>
+              </div>
+              <!-- /.catalogpage__aside -->
+              <div class="catalogpage__main">
+
+                <div class="catalogpanel">
+                  <div class="dropdownpanel">
+                    <div class="dropdownpanel__item">
+                      <div class="dropdownselect">
+
+                        <div class="filterblock__item">
+                          <div class="fdropdown">
+                            <div class="fdropdown__button" data-dropdownclick="fdropdown__sort1">
+                              <span>По алфавиту</span>
+                              <svg width="8" height="6" viewBox="0 0 8 6" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L4 4L7 1" stroke="#3A3A3A" stroke-width="1.5" stroke-linecap="round" />
+                              </svg>
+
                             </div>
-                            <div class="dropdown-select__list-item">
-                              <span class="dropdown-select__list-link dropdown-select__list-link--current">
-                              <span>По популярности (возрастание)</span>
-                              </span>
-                            </div>
-                            <div class="dropdown-select__list-item">
-                              <a href="#" class="dropdown-select__list-link"  rel="nofollow">
-                              <span>По алфавиту (убывание)</span>
-                              </a>
-                            </div>
-                            <div class="dropdown-select__list-item">
-                              <a href="#" class="dropdown-select__list-link" rel="nofollow">
-                              <span>По алфавиту (возрастание)</span>
-                              </a>
-                            </div>
-                            <div class="dropdown-select__list-item font_xs">
-                              <a href="#" class="dropdown-select__list-link" rel="nofollow">
-                              <span>По цене (убывание)</span>
-                              </a>
-                            </div>
-                            <div class="dropdown-select__list-item font_xs">
-                              <a href="#" class="dropdown-select__list-link" rel="nofollow">
-                              <span>По цене (возрастание)</span>
-                              </a>
+                            <div class="fdropdown__menu dropdownblock" data-dropdown="fdropdown__sort1">
+                              <div class="fdropdown__wrapper dropdownblock__wrapper ">
+                                <div class="fdropdown__items">
+                                  <div class="fdropdown__item">
+                                    <a href="#">По возрастанию</a>
+                                  </div>
+                                  <div class="fdropdown__item">
+                                    <a href="#">По убыванию</a>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <!-- /.dropdownselect -->
+                      <!-- /.dropdownselect -->
+                    </div><!-- /.dropdownpanel__item -->
+                    <div class="dropdownpanel__item">
+                      <div class="dropdownselect">
+
+                        <div class="filterblock__item">
+                          <div class="fdropdown">
+                            <div class="fdropdown__button" data-dropdownclick="fdropdown__sort2">
+                              <span>По цене</span>
+                              <svg width="8" height="6" viewBox="0 0 8 6" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L4 4L7 1" stroke="#3A3A3A" stroke-width="1.5" stroke-linecap="round" />
+                              </svg>
+
+                            </div>
+                            <div class="fdropdown__menu dropdownblock" data-dropdown="fdropdown__sort2">
+                              <div class="fdropdown__wrapper dropdownblock__wrapper ">
+                                <div class="fdropdown__items">
+                                  <div class="fdropdown__item">
+                                    <a href="#">По возрастанию</a>
+                                  </div>
+                                  <div class="fdropdown__item">
+                                    <a href="#">По убыванию</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.dropdownselect -->
+                    </div><!-- /.dropdownpanel__item -->
+                    <div class="dropdownpanel__item">
+                      <a href="#" class='dropdownpanel__link'>Новинки</a>
+                    </div><!-- /.dropdownpanel__item -->
+                    <div class="dropdownpanel__item">
+                      <a href="#" class='dropdownpanel__link'>По популярности</a>
+                    </div><!-- /.dropdownpanel__item -->
+                    <div class="dropdownpanel__item">
+                      <a href="#" class='dropdownpanel__link'>Со скидками</a>
+                    </div><!-- /.dropdownpanel__item -->
                   </div>
                   <!-- /.dropdownpanel -->
-                  <div class="mobilefilter onlyMobile">
-                    <a href="#" class='btn_main btn_icon js-mobilefilter'>
-                    <img src="img/mobilefilter.svg" alt="">
-                    </a>
-                  </div>
-                  <!-- /.mobilefilter -->
+
                 </div>
-                <!-- /.catalogheader__panel -->
+
+                <div class="cataloglist">
+                  <div class="cataloglist__items">
+                    <div class="cataloglist__item">
+                      <div class="productcard ">
+                        <div class="productcard__wrapper">
+                          <div class="productcard__stickers">
+                            <div class="productcard__sticker">
+                              <div class="productsticker productsticker_blue">
+                                <span class="productsticker__text">ХИТ!</span>
+                              </div>
+                            </div>
+                          </div>
+                          <a href="#" tabindex="0" class="catalog-fav" data-entity="add-wish-list">
+                            <!-- <div class="catalog-fav active"> -->
+                            <div>
+                              <span class="fav-default">
+                                <svg width="32" height="29" viewBox="0 0 32 29" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M8.16852 1.08767C7.22268 1.23439 6.53503 1.46152 5.62811 1.92676C2.80467 3.37509 0.993863 6.57265 1.00002 10.0992C1.00283 11.7243 1.36203 13.1842 2.13905 14.7287C2.78041 16.0035 3.4169 16.9078 4.66633 18.319C5.95842 19.7786 7.26323 20.9876 11.9567 25.0746C14.0452 26.8932 15.0699 27.7473 15.2841 27.8481C15.7149 28.0506 16.2851 28.0506 16.7159 27.8481C16.9301 27.7473 17.9548 26.8932 20.0433 25.0746C24.7368 20.9876 26.0416 19.7786 27.3337 18.319C28.5831 16.9078 29.2196 16.0035 29.861 14.7287C30.638 13.1842 30.9972 11.7243 31 10.0992C31.0043 7.61172 30.113 5.25426 28.5376 3.58651C27.4148 2.39787 26.1806 1.65764 24.6725 1.26837C22.3382 0.665779 20.0775 1.08251 18.1395 2.47278C17.621 2.84473 16.5454 3.89797 16.2371 4.33564C16.128 4.4906 16.0213 4.61733 16 4.61733C15.9787 4.61733 15.872 4.4906 15.7629 4.33564C15.4546 3.89797 14.379 2.84473 13.8605 2.47278C12.9637 1.82938 12.0485 1.40963 11.0191 1.16945C10.355 1.01449 8.90803 0.972974 8.16852 1.08767Z"
+                                    fill="white" stroke="#181818" stroke-width="2" />
+                                </svg>
+
+                              </span>
+                            </div>
+                          </a>
+
+                          <a href="#" class="productcard__images " tabindex="0">
+                            <div class="productcard__img">
+                              <img src="img/card1.png" alt="">
+                            </div>
+                          </a>
+                          <div class="productcard__rating">
+                            <div class="cardrating">
+                              <div class="cardrating__item">
+                                <div class="cardrating__form">
+                                  <div class="cardrating__icon">
+                                    <img src="img/star.svg" alt="">
+                                  </div>
+                                  <div class="cardrating__value">
+                                    <span>4.2</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="productcard__content">
+                            <div class="productcard__title">
+                              <a href="#" tabindex="0">Стейки
+                                трески</a>
+                            </div>
+                            <div class="productcard__params">
+                              <div class="productcard__param productcard_light">530 г</div>
+                              <!-- /.productcard__param -->
+                              <div class="productcard__param">Арт: 3900</div><!-- /.productcard__param -->
+                            </div><!-- /.productcard__params -->
+                          </div><!-- /.productcard__content -->
+
+                          <div class="productcard__buy">
+                            <div class="productcard__prices">
+                              <div class="productcard__topprice">
+                                <div class="productcard__oldprice">379&nbsp;₽&nbsp;/&nbsp;уп</div>
+                              </div>
+                              <!-- /.productcard__oldprice -->
+                              <div class="productcard__mainprice">
+                                <div class="productcard__price">
+                                  <div class="productcard__pricevalue">341</div>
+                                  <div class="productcard__priceunit">₽&nbsp;/&nbsp;уп</div>
+                                </div>
+                                <!-- /.productcard__price -->
+                              </div>
+                              <!-- /.productcard__mainprice -->
+                            </div>
+                            <!-- /.productcard__prices -->
+                            <div class="productcard__button">
+                              <button data-entity="add2basket" data-quantity="0.1" class="productcard__addtocart btn  "
+                                tabindex="0"></button>
+                            </div>
+                          </div>
+                          <!-- /.productcard__buy -->
+
+                        </div>
+                        <!-- /.productcard__wrapper -->
+                      </div>
+                    </div>
+                    <!-- /.cataloglist__item -->
+                    <div class="cataloglist__item">
+                      <div class="productcard ">
+                        <div class="productcard__wrapper">
+                          <div class="productcard__stickers">
+                            <div class="productcard__sticker">
+                              <div class="productsticker productsticker_orange">
+                                <span class="productsticker__text">-20%</span>
+                              </div>
+                            </div>
+                          </div>
+                          <a href="#" tabindex="0" class="catalog-fav active" data-entity="add-wish-list">
+                            <!-- <div class="catalog-fav active"> -->
+                            <div>
+                              <span class="fav-default">
+                                <svg width="32" height="29" viewBox="0 0 32 29" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M8.16852 1.08767C7.22268 1.23439 6.53503 1.46152 5.62811 1.92676C2.80467 3.37509 0.993863 6.57265 1.00002 10.0992C1.00283 11.7243 1.36203 13.1842 2.13905 14.7287C2.78041 16.0035 3.4169 16.9078 4.66633 18.319C5.95842 19.7786 7.26323 20.9876 11.9567 25.0746C14.0452 26.8932 15.0699 27.7473 15.2841 27.8481C15.7149 28.0506 16.2851 28.0506 16.7159 27.8481C16.9301 27.7473 17.9548 26.8932 20.0433 25.0746C24.7368 20.9876 26.0416 19.7786 27.3337 18.319C28.5831 16.9078 29.2196 16.0035 29.861 14.7287C30.638 13.1842 30.9972 11.7243 31 10.0992C31.0043 7.61172 30.113 5.25426 28.5376 3.58651C27.4148 2.39787 26.1806 1.65764 24.6725 1.26837C22.3382 0.665779 20.0775 1.08251 18.1395 2.47278C17.621 2.84473 16.5454 3.89797 16.2371 4.33564C16.128 4.4906 16.0213 4.61733 16 4.61733C15.9787 4.61733 15.872 4.4906 15.7629 4.33564C15.4546 3.89797 14.379 2.84473 13.8605 2.47278C12.9637 1.82938 12.0485 1.40963 11.0191 1.16945C10.355 1.01449 8.90803 0.972974 8.16852 1.08767Z"
+                                    fill="white" stroke="#181818" stroke-width="2" />
+                                </svg>
+
+                              </span>
+                            </div>
+                          </a>
+
+                          <a href="#" class="productcard__images " tabindex="0">
+                            <div class="productcard__img">
+                              <img src="img/card2.png" alt="">
+                            </div>
+                          </a>
+                          <div class="productcard__rating">
+                            <div class="cardrating">
+                              <div class="cardrating__item">
+                                <div class="cardrating__form">
+                                  <div class="cardrating__icon">
+                                    <img src="img/star.svg" alt="">
+                                  </div>
+                                  <div class="cardrating__value">
+                                    <span>4.2</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="productcard__content">
+                            <div class="productcard__title">
+                              <a href="#" tabindex="0">Дорадо потрошеная с головой,без чешуи</a>
+                            </div>
+                            <div class="productcard__params">
+                              <div class="productcard__param productcard_light">530 г</div>
+                              <!-- /.productcard__param -->
+                              <div class="productcard__param">Арт: 3900</div><!-- /.productcard__param -->
+                            </div><!-- /.productcard__params -->
+                          </div><!-- /.productcard__content -->
+
+                          <div class="productcard__buy">
+                            <div class="productcard__prices">
+                              <div class="productcard__topprice">
+                                <div class="productcard__oldprice">379&nbsp;₽&nbsp;/&nbsp;уп</div>
+                              </div>
+                              <!-- /.productcard__oldprice -->
+                              <div class="productcard__mainprice">
+                                <div class="productcard__price">
+                                  <div class="productcard__pricevalue">341</div>
+                                  <div class="productcard__priceunit">₽&nbsp;/&nbsp;уп</div>
+                                </div>
+                                <!-- /.productcard__price -->
+                              </div>
+                              <!-- /.productcard__mainprice -->
+                            </div>
+                            <!-- /.productcard__prices -->
+                            <div class="productcard__button">
+                              <button data-entity="add2basket" data-quantity="0.1" class="productcard__addtocart btn  "
+                                tabindex="0"></button>
+                            </div>
+                          </div>
+                          <!-- /.productcard__buy -->
+
+                        </div>
+                        <!-- /.productcard__wrapper -->
+                      </div>
+                    </div>
+                    <!-- /.cataloglist__item -->
+                    <div class="cataloglist__item">
+                      <div class="productcard ">
+                        <div class="productcard__wrapper">
+                          <div class="productcard__stickers">
+                            <div class="productcard__sticker">
+                              <div class="productsticker productsticker_default">
+                                <span class="productsticker_icon"><img src="img/close.svg" alt=""></span>
+                                <span class="productsticker__text">нет в наличии</span>
+                              </div>
+                            </div>
+                          </div>
+                          <a href="#" tabindex="0" class="catalog-fav" data-entity="add-wish-list">
+                            <!-- <div class="catalog-fav active"> -->
+                            <div>
+                              <span class="fav-default">
+                                <svg width="32" height="29" viewBox="0 0 32 29" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M8.16852 1.08767C7.22268 1.23439 6.53503 1.46152 5.62811 1.92676C2.80467 3.37509 0.993863 6.57265 1.00002 10.0992C1.00283 11.7243 1.36203 13.1842 2.13905 14.7287C2.78041 16.0035 3.4169 16.9078 4.66633 18.319C5.95842 19.7786 7.26323 20.9876 11.9567 25.0746C14.0452 26.8932 15.0699 27.7473 15.2841 27.8481C15.7149 28.0506 16.2851 28.0506 16.7159 27.8481C16.9301 27.7473 17.9548 26.8932 20.0433 25.0746C24.7368 20.9876 26.0416 19.7786 27.3337 18.319C28.5831 16.9078 29.2196 16.0035 29.861 14.7287C30.638 13.1842 30.9972 11.7243 31 10.0992C31.0043 7.61172 30.113 5.25426 28.5376 3.58651C27.4148 2.39787 26.1806 1.65764 24.6725 1.26837C22.3382 0.665779 20.0775 1.08251 18.1395 2.47278C17.621 2.84473 16.5454 3.89797 16.2371 4.33564C16.128 4.4906 16.0213 4.61733 16 4.61733C15.9787 4.61733 15.872 4.4906 15.7629 4.33564C15.4546 3.89797 14.379 2.84473 13.8605 2.47278C12.9637 1.82938 12.0485 1.40963 11.0191 1.16945C10.355 1.01449 8.90803 0.972974 8.16852 1.08767Z"
+                                    fill="white" stroke="#181818" stroke-width="2" />
+                                </svg>
+
+                              </span>
+                            </div>
+                          </a>
+
+                          <a href="#" class="productcard__images " tabindex="0">
+                            <div class="productcard__img">
+                              <img src="img/card1.png" alt="">
+                            </div>
+                          </a>
+                          <div class="productcard__rating">
+                            <div class="cardrating">
+                              <div class="cardrating__item">
+                                <div class="cardrating__form">
+                                  <div class="cardrating__icon">
+                                    <img src="img/star.svg" alt="">
+                                  </div>
+                                  <div class="cardrating__value">
+                                    <span>4.2</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="productcard__content">
+                            <div class="productcard__title">
+                              <a href="#" tabindex="0">Консерв солянка
+                                из&nbsp;осетра</a>
+                            </div>
+                            <div class="productcard__params">
+                              <div class="productcard__param productcard_light">530 г</div>
+                              <!-- /.productcard__param -->
+                              <div class="productcard__param">Арт: 3900</div><!-- /.productcard__param -->
+                            </div><!-- /.productcard__params -->
+                          </div><!-- /.productcard__content -->
+
+                          <div class="productcard__buy">
+                            <div class="productcard__prices">
+                              <div class="productcard__topprice">
+                                <div class="productcard__oldprice">379&nbsp;₽&nbsp;/&nbsp;уп</div>
+                              </div>
+                              <!-- /.productcard__oldprice -->
+                              <div class="productcard__mainprice">
+                                <div class="productcard__price">
+                                  <div class="productcard__pricevalue">341</div>
+                                  <div class="productcard__priceunit">₽&nbsp;/&nbsp;уп</div>
+                                </div>
+                                <!-- /.productcard__price -->
+                              </div>
+                              <!-- /.productcard__mainprice -->
+                            </div>
+                            <!-- /.productcard__prices -->
+                            <div class="productcard__button">
+                              <button data-entity="add2basket" data-quantity="0.1" class="productcard__addtocart btn  "
+                                tabindex="0"></button>
+                            </div>
+                          </div>
+                          <!-- /.productcard__buy -->
+
+                        </div>
+                        <!-- /.productcard__wrapper -->
+                      </div>
+                    </div>
+                    <!-- /.cataloglist__item -->
+                    <div class="cataloglist__item">
+                      <div class="productcard ">
+                        <div class="productcard__wrapper">
+                          <div class="productcard__stickers">
+                            <div class="productcard__sticker">
+                              <div class="productsticker productsticker_orange">
+                                <span class="productsticker__text">-11%</span>
+                              </div>
+                            </div>
+                          </div>
+                          <a href="#" tabindex="0" class="catalog-fav" data-entity="add-wish-list">
+                            <!-- <div class="catalog-fav active"> -->
+                            <div>
+                              <span class="fav-default">
+                                <svg width="32" height="29" viewBox="0 0 32 29" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M8.16852 1.08767C7.22268 1.23439 6.53503 1.46152 5.62811 1.92676C2.80467 3.37509 0.993863 6.57265 1.00002 10.0992C1.00283 11.7243 1.36203 13.1842 2.13905 14.7287C2.78041 16.0035 3.4169 16.9078 4.66633 18.319C5.95842 19.7786 7.26323 20.9876 11.9567 25.0746C14.0452 26.8932 15.0699 27.7473 15.2841 27.8481C15.7149 28.0506 16.2851 28.0506 16.7159 27.8481C16.9301 27.7473 17.9548 26.8932 20.0433 25.0746C24.7368 20.9876 26.0416 19.7786 27.3337 18.319C28.5831 16.9078 29.2196 16.0035 29.861 14.7287C30.638 13.1842 30.9972 11.7243 31 10.0992C31.0043 7.61172 30.113 5.25426 28.5376 3.58651C27.4148 2.39787 26.1806 1.65764 24.6725 1.26837C22.3382 0.665779 20.0775 1.08251 18.1395 2.47278C17.621 2.84473 16.5454 3.89797 16.2371 4.33564C16.128 4.4906 16.0213 4.61733 16 4.61733C15.9787 4.61733 15.872 4.4906 15.7629 4.33564C15.4546 3.89797 14.379 2.84473 13.8605 2.47278C12.9637 1.82938 12.0485 1.40963 11.0191 1.16945C10.355 1.01449 8.90803 0.972974 8.16852 1.08767Z"
+                                    fill="white" stroke="#181818" stroke-width="2" />
+                                </svg>
+
+                              </span>
+                            </div>
+                          </a>
+
+                          <a href="#" class="productcard__images " tabindex="0">
+                            <div class="productcard__img">
+                              <img src="img/card1.png" alt="">
+                            </div>
+                          </a>
+                          <div class="productcard__rating">
+                            <div class="cardrating">
+                              <div class="cardrating__item">
+                                <div class="cardrating__form">
+                                  <div class="cardrating__icon">
+                                    <img src="img/star.svg" alt="">
+                                  </div>
+                                  <div class="cardrating__value">
+                                    <span>4.2</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="productcard__content">
+                            <div class="productcard__title">
+                              <a href="#" tabindex="0">Консерв солянка
+                                из&nbsp;осетра</a>
+                            </div>
+                            <div class="productcard__params">
+                              <div class="productcard__param productcard_light">530 г</div>
+                              <!-- /.productcard__param -->
+                              <div class="productcard__param">Арт: 3900</div><!-- /.productcard__param -->
+                            </div><!-- /.productcard__params -->
+                          </div><!-- /.productcard__content -->
+
+                          <div class="productcard__buy">
+                            <div class="productcard__prices">
+                              <div class="productcard__topprice">
+                                <div class="productcard__oldprice">379&nbsp;₽&nbsp;/&nbsp;уп</div>
+                              </div>
+                              <!-- /.productcard__oldprice -->
+                              <div class="productcard__mainprice">
+                                <div class="productcard__price">
+                                  <div class="productcard__pricevalue">341</div>
+                                  <div class="productcard__priceunit">₽&nbsp;/&nbsp;уп</div>
+                                </div>
+                                <!-- /.productcard__price -->
+                              </div>
+                              <!-- /.productcard__mainprice -->
+                            </div>
+                            <!-- /.productcard__prices -->
+                            <div class="productcard__button">
+                              <button data-entity="add2basket" data-quantity="0.1" class="productcard__addtocart btn  "
+                                tabindex="0"></button>
+                            </div>
+                          </div>
+                          <!-- /.productcard__buy -->
+
+                        </div>
+                        <!-- /.productcard__wrapper -->
+                      </div>
+                    </div>
+                    <!-- /.cataloglist__item -->
+                    <div class="cataloglist__item">
+                      <div class="productcard ">
+                        <div class="productcard__wrapper">
+                          <div class="productcard__stickers">
+                            <div class="productcard__sticker">
+                              <div class="productsticker productsticker_orange">
+                                <span class="productsticker__text">-11%</span>
+                              </div>
+                            </div>
+                          </div>
+                          <a href="#" tabindex="0" class="catalog-fav" data-entity="add-wish-list">
+                            <!-- <div class="catalog-fav active"> -->
+                            <div>
+                              <span class="fav-default">
+                                <svg width="32" height="29" viewBox="0 0 32 29" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M8.16852 1.08767C7.22268 1.23439 6.53503 1.46152 5.62811 1.92676C2.80467 3.37509 0.993863 6.57265 1.00002 10.0992C1.00283 11.7243 1.36203 13.1842 2.13905 14.7287C2.78041 16.0035 3.4169 16.9078 4.66633 18.319C5.95842 19.7786 7.26323 20.9876 11.9567 25.0746C14.0452 26.8932 15.0699 27.7473 15.2841 27.8481C15.7149 28.0506 16.2851 28.0506 16.7159 27.8481C16.9301 27.7473 17.9548 26.8932 20.0433 25.0746C24.7368 20.9876 26.0416 19.7786 27.3337 18.319C28.5831 16.9078 29.2196 16.0035 29.861 14.7287C30.638 13.1842 30.9972 11.7243 31 10.0992C31.0043 7.61172 30.113 5.25426 28.5376 3.58651C27.4148 2.39787 26.1806 1.65764 24.6725 1.26837C22.3382 0.665779 20.0775 1.08251 18.1395 2.47278C17.621 2.84473 16.5454 3.89797 16.2371 4.33564C16.128 4.4906 16.0213 4.61733 16 4.61733C15.9787 4.61733 15.872 4.4906 15.7629 4.33564C15.4546 3.89797 14.379 2.84473 13.8605 2.47278C12.9637 1.82938 12.0485 1.40963 11.0191 1.16945C10.355 1.01449 8.90803 0.972974 8.16852 1.08767Z"
+                                    fill="white" stroke="#181818" stroke-width="2" />
+                                </svg>
+
+                              </span>
+                            </div>
+                          </a>
+
+                          <a href="#" class="productcard__images " tabindex="0">
+                            <div class="productcard__img">
+                              <img src="img/card1.png" alt="">
+                            </div>
+                          </a>
+                          <div class="productcard__rating">
+                            <div class="cardrating">
+                              <div class="cardrating__item">
+                                <div class="cardrating__form">
+                                  <div class="cardrating__icon">
+                                    <img src="img/star.svg" alt="">
+                                  </div>
+                                  <div class="cardrating__value">
+                                    <span>4.2</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="productcard__content">
+                            <div class="productcard__title">
+                              <a href="#" tabindex="0">Консерв солянка
+                                из&nbsp;осетра</a>
+                            </div>
+                            <div class="productcard__params">
+                              <div class="productcard__param productcard_light">530 г</div>
+                              <!-- /.productcard__param -->
+                              <div class="productcard__param">Арт: 3900</div><!-- /.productcard__param -->
+                            </div><!-- /.productcard__params -->
+                          </div><!-- /.productcard__content -->
+
+                          <div class="productcard__buy">
+                            <div class="productcard__prices">
+                              <div class="productcard__topprice">
+                                <div class="productcard__oldprice">379&nbsp;₽&nbsp;/&nbsp;уп</div>
+                              </div>
+                              <!-- /.productcard__oldprice -->
+                              <div class="productcard__mainprice">
+                                <div class="productcard__price">
+                                  <div class="productcard__pricevalue">341</div>
+                                  <div class="productcard__priceunit">₽&nbsp;/&nbsp;уп</div>
+                                </div>
+                                <!-- /.productcard__price -->
+                              </div>
+                              <!-- /.productcard__mainprice -->
+                            </div>
+                            <!-- /.productcard__prices -->
+                            <div class="productcard__button">
+                              <button data-entity="add2basket" data-quantity="0.1" class="productcard__addtocart btn  "
+                                tabindex="0"></button>
+                            </div>
+                          </div>
+                          <!-- /.productcard__buy -->
+
+                        </div>
+                        <!-- /.productcard__wrapper -->
+                      </div>
+                    </div>
+                    <!-- /.cataloglist__item -->
+                    <div class="cataloglist__item">
+                      <div class="productcard ">
+                        <div class="productcard__wrapper">
+                          <div class="productcard__stickers">
+                            <div class="productcard__sticker">
+                              <div class="productsticker productsticker_orange">
+                                <span class="productsticker__text">-11%</span>
+                              </div>
+                            </div>
+                          </div>
+                          <a href="#" tabindex="0" class="catalog-fav" data-entity="add-wish-list">
+                            <!-- <div class="catalog-fav active"> -->
+                            <div>
+                              <span class="fav-default">
+                                <svg width="32" height="29" viewBox="0 0 32 29" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M8.16852 1.08767C7.22268 1.23439 6.53503 1.46152 5.62811 1.92676C2.80467 3.37509 0.993863 6.57265 1.00002 10.0992C1.00283 11.7243 1.36203 13.1842 2.13905 14.7287C2.78041 16.0035 3.4169 16.9078 4.66633 18.319C5.95842 19.7786 7.26323 20.9876 11.9567 25.0746C14.0452 26.8932 15.0699 27.7473 15.2841 27.8481C15.7149 28.0506 16.2851 28.0506 16.7159 27.8481C16.9301 27.7473 17.9548 26.8932 20.0433 25.0746C24.7368 20.9876 26.0416 19.7786 27.3337 18.319C28.5831 16.9078 29.2196 16.0035 29.861 14.7287C30.638 13.1842 30.9972 11.7243 31 10.0992C31.0043 7.61172 30.113 5.25426 28.5376 3.58651C27.4148 2.39787 26.1806 1.65764 24.6725 1.26837C22.3382 0.665779 20.0775 1.08251 18.1395 2.47278C17.621 2.84473 16.5454 3.89797 16.2371 4.33564C16.128 4.4906 16.0213 4.61733 16 4.61733C15.9787 4.61733 15.872 4.4906 15.7629 4.33564C15.4546 3.89797 14.379 2.84473 13.8605 2.47278C12.9637 1.82938 12.0485 1.40963 11.0191 1.16945C10.355 1.01449 8.90803 0.972974 8.16852 1.08767Z"
+                                    fill="white" stroke="#181818" stroke-width="2" />
+                                </svg>
+
+                              </span>
+                            </div>
+                          </a>
+
+                          <a href="#" class="productcard__images " tabindex="0">
+                            <div class="productcard__img">
+                              <img src="img/card1.png" alt="">
+                            </div>
+                          </a>
+                          <div class="productcard__rating">
+                            <div class="cardrating">
+                              <div class="cardrating__item">
+                                <div class="cardrating__form">
+                                  <div class="cardrating__icon">
+                                    <img src="img/star.svg" alt="">
+                                  </div>
+                                  <div class="cardrating__value">
+                                    <span>4.2</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="productcard__content">
+                            <div class="productcard__title">
+                              <a href="#" tabindex="0">Консерв солянка
+                                из&nbsp;осетра</a>
+                            </div>
+                            <div class="productcard__params">
+                              <div class="productcard__param productcard_light">530 г</div>
+                              <!-- /.productcard__param -->
+                              <div class="productcard__param">Арт: 3900</div><!-- /.productcard__param -->
+                            </div><!-- /.productcard__params -->
+                          </div><!-- /.productcard__content -->
+
+                          <div class="productcard__buy">
+                            <div class="productcard__prices">
+                              <div class="productcard__topprice">
+                                <div class="productcard__oldprice">379&nbsp;₽&nbsp;/&nbsp;уп</div>
+                              </div>
+                              <!-- /.productcard__oldprice -->
+                              <div class="productcard__mainprice">
+                                <div class="productcard__price">
+                                  <div class="productcard__pricevalue">341</div>
+                                  <div class="productcard__priceunit">₽&nbsp;/&nbsp;уп</div>
+                                </div>
+                                <!-- /.productcard__price -->
+                              </div>
+                              <!-- /.productcard__mainprice -->
+                            </div>
+                            <!-- /.productcard__prices -->
+                            <div class="productcard__button">
+                              <button data-entity="add2basket" data-quantity="0.1" class="productcard__addtocart btn  "
+                                tabindex="0"></button>
+                            </div>
+                          </div>
+                          <!-- /.productcard__buy -->
+
+                        </div>
+                        <!-- /.productcard__wrapper -->
+                      </div>
+                    </div>
+                    <!-- /.cataloglist__item -->
+
+                  </div>
+                  <!-- /.cataloglist__items -->
+                  <div class="catalognav">
+                    <div class="catalognav__showmore">
+                      <a href="#" class='showmorelink btn_border'>
+                        <span>Показать еще</span>
+                      </a>
+                    </div>
+                    <div class="catalognav__pagination">
+                      <div class="paginationblock">
+                        <div class="pagination">
+                          <a href="#" class='pagination__arrLeft disabled'>
+                            <img src="img/pagiRight.svg" alt="">
+                          </a>
+                          <ul>
+                            <li class="active"><a href="">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><span>...</span></li>
+                            <li><a href="">22</a></li>
+                          </ul>
+                          <a href="#" class='pagination__arrRight'>
+                            <img src="img/pagiRight.svg" alt="">
+                          </a>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <!-- /.catalognav -->
+
+                  <div class="catalogrelated">
+                    <div class="pageblocksl productslider">
+                      <div class="container">
+                        <div class="blockheader flex items-center content-between">
+                          <div class="blockheader__left">
+                            <h2>Хит продаж</h2>
+                          </div>
+                          <div class="blockheader__right">
+                            <div class="sliderarrows flex ">
+                              <div class="sliderarrows__left sliderarrow">
+                                <svg width="28" height="25" viewBox="0 0 28 25" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M11.833 1L0.999881 12.5L11.833 24" stroke="#08105B" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                  <path d="M1.0005 12.5H27" stroke="#08105B" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                </svg>
+
+                              </div>
+                              <!-- /.sliderarrows__left -->
+                              <div class="sliderarrows__right sliderarrow">
+                                <svg width="28" height="25" viewBox="0 0 28 25" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M16.166 1L26.9991 12.5L16.166 24" stroke="#08105B" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                  <path d="M26.9995 12.5H1" stroke="#08105B" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                </svg>
+
+                              </div>
+                              <!-- /.sliderarrows__right -->
+                            </div>
+                            <!-- /.sliderarrows -->
+                          </div>
+
+                        </div>
+                        <div class="productslider__wrapper productslider__wrapper__inner">
+                          <div class="productslider__container ">
+
+
+                            <div class="productslider__slider ">
+                              <div class="productslider__slide ">
+                                <div class="productslider__item">
+
+                                  <div class="productcard " data-item="3145">
+                                    <div class="productcard__wrapper">
+                                      <div class="productcard__stickers">
+                                        <div class="productcard__sticker">
+                                          <div class="productsticker productsticker_orange">
+                                            <span class="productsticker__text">-11%</span>
+                                          </div>
+                                        </div>
+                                      </div>
+
+
+                                      <a href="#" tabindex="0" class="catalog-fav" data-item="3145" data-step="0.1"
+                                        data-entity="add-wish-list"> <!-- <div class="catalog-fav active"> -->
+                                        <div>
+                                          <span class="fav-default">
+                                            <svg width="32" height="29" viewBox="0 0 32 29" fill="none"
+                                              xmlns="http://www.w3.org/2000/svg">
+                                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M8.16852 1.08767C7.22268 1.23439 6.53503 1.46152 5.62811 1.92676C2.80467 3.37509 0.993863 6.57265 1.00002 10.0992C1.00283 11.7243 1.36203 13.1842 2.13905 14.7287C2.78041 16.0035 3.4169 16.9078 4.66633 18.319C5.95842 19.7786 7.26323 20.9876 11.9567 25.0746C14.0452 26.8932 15.0699 27.7473 15.2841 27.8481C15.7149 28.0506 16.2851 28.0506 16.7159 27.8481C16.9301 27.7473 17.9548 26.8932 20.0433 25.0746C24.7368 20.9876 26.0416 19.7786 27.3337 18.319C28.5831 16.9078 29.2196 16.0035 29.861 14.7287C30.638 13.1842 30.9972 11.7243 31 10.0992C31.0043 7.61172 30.113 5.25426 28.5376 3.58651C27.4148 2.39787 26.1806 1.65764 24.6725 1.26837C22.3382 0.665779 20.0775 1.08251 18.1395 2.47278C17.621 2.84473 16.5454 3.89797 16.2371 4.33564C16.128 4.4906 16.0213 4.61733 16 4.61733C15.9787 4.61733 15.872 4.4906 15.7629 4.33564C15.4546 3.89797 14.379 2.84473 13.8605 2.47278C12.9637 1.82938 12.0485 1.40963 11.0191 1.16945C10.355 1.01449 8.90803 0.972974 8.16852 1.08767Z"
+                                                fill="white" stroke="#181818" stroke-width="2" />
+                                            </svg>
+
+                                          </span>
+                                        </div>
+                                      </a>
+
+                                      <a href="#" class="productcard__images " tabindex="0">
+                                        <div class="productcard__img">
+                                          <img src="img/card1.png" alt="">
+                                        </div>
+                                      </a>
+                                      <div class="productcard__rating">
+                                        <div class="cardrating">
+                                          <div class="cardrating__item">
+                                            <div class="cardrating__form">
+                                              <div class="cardrating__icon">
+                                                <img src="img/star.svg" alt="">
+                                              </div>
+                                              <div class="cardrating__value">
+                                                <span>4.2</span>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="productcard__content">
+                                        <div class="productcard__title">
+                                          <a href="#" tabindex="0">Консерв солянка
+                                            из&nbsp;осетра</a>
+                                        </div>
+                                        <div class="productcard__params">
+                                          <div class="productcard__param productcard_light">530 г</div>
+                                          <!-- /.productcard__param -->
+                                          <div class="productcard__param">Арт: 3900</div><!-- /.productcard__param -->
+                                        </div><!-- /.productcard__params -->
+                                      </div><!-- /.productcard__content -->
+
+                                      <div class="productcard__buy">
+                                        <div class="productcard__prices">
+                                          <div class="productcard__topprice">
+                                            <div class="productcard__oldprice">379&nbsp;₽&nbsp;/&nbsp;уп</div>
+                                          </div>
+                                          <!-- /.productcard__oldprice -->
+                                          <div class="productcard__mainprice">
+                                            <div class="productcard__price">
+                                              <div class="productcard__pricevalue">341</div>
+                                              <div class="productcard__priceunit">₽&nbsp;/&nbsp;уп</div>
+                                            </div>
+                                            <!-- /.productcard__price -->
+                                          </div>
+                                          <!-- /.productcard__mainprice -->
+                                        </div>
+                                        <!-- /.productcard__prices -->
+                                        <div class="productcard__button">
+                                          <button data-entity="add2basket" data-quantity="0.1" data-item="3145"
+                                            class="productcard__addtocart btn  " tabindex="0"></button>
+                                        </div>
+                                      </div>
+                                      <!-- /.productcard__buy -->
+
+                                    </div>
+                                    <!-- /.productcard__wrapper -->
+                                  </div>
+
+                                </div>
+                              </div>
+                              <!-- /.productslider__slide  -->
+                              <div class="productslider__slide ">
+                                <div class="productslider__item">
+
+                                  <div class="productcard " data-item="3145">
+                                    <div class="productcard__wrapper">
+                                      <div class="productcard__stickers">
+                                        <div class="productcard__sticker">
+                                          <div class="productsticker productsticker_orange">
+                                            <span class="productsticker__text">-11%</span>
+                                          </div>
+                                        </div>
+                                      </div>
+
+
+                                      <a href="#" tabindex="0" class="catalog-fav" data-item="3145" data-step="0.1"
+                                        data-entity="add-wish-list"> <!-- <div class="catalog-fav active"> -->
+                                        <div>
+                                          <span class="fav-default">
+                                            <svg width="32" height="29" viewBox="0 0 32 29" fill="none"
+                                              xmlns="http://www.w3.org/2000/svg">
+                                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M8.16852 1.08767C7.22268 1.23439 6.53503 1.46152 5.62811 1.92676C2.80467 3.37509 0.993863 6.57265 1.00002 10.0992C1.00283 11.7243 1.36203 13.1842 2.13905 14.7287C2.78041 16.0035 3.4169 16.9078 4.66633 18.319C5.95842 19.7786 7.26323 20.9876 11.9567 25.0746C14.0452 26.8932 15.0699 27.7473 15.2841 27.8481C15.7149 28.0506 16.2851 28.0506 16.7159 27.8481C16.9301 27.7473 17.9548 26.8932 20.0433 25.0746C24.7368 20.9876 26.0416 19.7786 27.3337 18.319C28.5831 16.9078 29.2196 16.0035 29.861 14.7287C30.638 13.1842 30.9972 11.7243 31 10.0992C31.0043 7.61172 30.113 5.25426 28.5376 3.58651C27.4148 2.39787 26.1806 1.65764 24.6725 1.26837C22.3382 0.665779 20.0775 1.08251 18.1395 2.47278C17.621 2.84473 16.5454 3.89797 16.2371 4.33564C16.128 4.4906 16.0213 4.61733 16 4.61733C15.9787 4.61733 15.872 4.4906 15.7629 4.33564C15.4546 3.89797 14.379 2.84473 13.8605 2.47278C12.9637 1.82938 12.0485 1.40963 11.0191 1.16945C10.355 1.01449 8.90803 0.972974 8.16852 1.08767Z"
+                                                fill="white" stroke="#181818" stroke-width="2" />
+                                            </svg>
+
+                                          </span>
+                                        </div>
+                                      </a>
+
+                                      <a href="#" class="productcard__images " tabindex="0">
+                                        <div class="productcard__img">
+                                          <img src="img/card1.png" alt="">
+                                        </div>
+                                      </a>
+                                      <div class="productcard__rating">
+                                        <div class="cardrating">
+                                          <div class="cardrating__item">
+                                            <div class="cardrating__form">
+                                              <div class="cardrating__icon">
+                                                <img src="img/star.svg" alt="">
+                                              </div>
+                                              <div class="cardrating__value">
+                                                <span>4.2</span>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="productcard__content">
+                                        <div class="productcard__title">
+                                          <a href="#" tabindex="0">Консерв солянка
+                                            из&nbsp;осетра</a>
+                                        </div>
+                                        <div class="productcard__params">
+                                          <div class="productcard__param productcard_light">530 г</div>
+                                          <!-- /.productcard__param -->
+                                          <div class="productcard__param">Арт: 3900</div><!-- /.productcard__param -->
+                                        </div><!-- /.productcard__params -->
+                                      </div><!-- /.productcard__content -->
+
+                                      <div class="productcard__buy">
+                                        <div class="productcard__prices">
+                                          <div class="productcard__topprice">
+                                            <div class="productcard__oldprice">379&nbsp;₽&nbsp;/&nbsp;уп</div>
+                                          </div>
+                                          <!-- /.productcard__oldprice -->
+                                          <div class="productcard__mainprice">
+                                            <div class="productcard__price">
+                                              <div class="productcard__pricevalue">341</div>
+                                              <div class="productcard__priceunit">₽&nbsp;/&nbsp;уп</div>
+                                            </div>
+                                            <!-- /.productcard__price -->
+                                          </div>
+                                          <!-- /.productcard__mainprice -->
+                                        </div>
+                                        <!-- /.productcard__prices -->
+                                        <div class="productcard__button">
+                                          <button data-entity="add2basket" data-quantity="0.1" data-item="3145"
+                                            class="productcard__addtocart btn  " tabindex="0"></button>
+                                        </div>
+                                      </div>
+                                      <!-- /.productcard__buy -->
+
+                                    </div>
+                                    <!-- /.productcard__wrapper -->
+                                  </div>
+
+                                </div>
+                              </div>
+                              <!-- /.productslider__slide  -->
+                              <div class="productslider__slide ">
+                                <div class="productslider__item">
+
+                                  <div class="productcard " data-item="3145">
+                                    <div class="productcard__wrapper">
+                                      <div class="productcard__stickers">
+                                        <div class="productcard__sticker">
+                                          <div class="productsticker productsticker_orange">
+                                            <span class="productsticker__text">-11%</span>
+                                          </div>
+                                        </div>
+                                      </div>
+
+
+                                      <a href="#" tabindex="0" class="catalog-fav" data-item="3145" data-step="0.1"
+                                        data-entity="add-wish-list"> <!-- <div class="catalog-fav active"> -->
+                                        <div>
+                                          <span class="fav-default">
+                                            <svg width="32" height="29" viewBox="0 0 32 29" fill="none"
+                                              xmlns="http://www.w3.org/2000/svg">
+                                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M8.16852 1.08767C7.22268 1.23439 6.53503 1.46152 5.62811 1.92676C2.80467 3.37509 0.993863 6.57265 1.00002 10.0992C1.00283 11.7243 1.36203 13.1842 2.13905 14.7287C2.78041 16.0035 3.4169 16.9078 4.66633 18.319C5.95842 19.7786 7.26323 20.9876 11.9567 25.0746C14.0452 26.8932 15.0699 27.7473 15.2841 27.8481C15.7149 28.0506 16.2851 28.0506 16.7159 27.8481C16.9301 27.7473 17.9548 26.8932 20.0433 25.0746C24.7368 20.9876 26.0416 19.7786 27.3337 18.319C28.5831 16.9078 29.2196 16.0035 29.861 14.7287C30.638 13.1842 30.9972 11.7243 31 10.0992C31.0043 7.61172 30.113 5.25426 28.5376 3.58651C27.4148 2.39787 26.1806 1.65764 24.6725 1.26837C22.3382 0.665779 20.0775 1.08251 18.1395 2.47278C17.621 2.84473 16.5454 3.89797 16.2371 4.33564C16.128 4.4906 16.0213 4.61733 16 4.61733C15.9787 4.61733 15.872 4.4906 15.7629 4.33564C15.4546 3.89797 14.379 2.84473 13.8605 2.47278C12.9637 1.82938 12.0485 1.40963 11.0191 1.16945C10.355 1.01449 8.90803 0.972974 8.16852 1.08767Z"
+                                                fill="white" stroke="#181818" stroke-width="2" />
+                                            </svg>
+
+                                          </span>
+                                        </div>
+                                      </a>
+
+                                      <a href="#" class="productcard__images " tabindex="0">
+                                        <div class="productcard__img">
+                                          <img src="img/card1.png" alt="">
+                                        </div>
+                                      </a>
+                                      <div class="productcard__rating">
+                                        <div class="cardrating">
+                                          <div class="cardrating__item">
+                                            <div class="cardrating__form">
+                                              <div class="cardrating__icon">
+                                                <img src="img/star.svg" alt="">
+                                              </div>
+                                              <div class="cardrating__value">
+                                                <span>4.2</span>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="productcard__content">
+                                        <div class="productcard__title">
+                                          <a href="#" tabindex="0">Консерв солянка
+                                            из&nbsp;осетра</a>
+                                        </div>
+                                        <div class="productcard__params">
+                                          <div class="productcard__param productcard_light">530 г</div>
+                                          <!-- /.productcard__param -->
+                                          <div class="productcard__param">Арт: 3900</div><!-- /.productcard__param -->
+                                        </div><!-- /.productcard__params -->
+                                      </div><!-- /.productcard__content -->
+
+                                      <div class="productcard__buy">
+                                        <div class="productcard__prices">
+                                          <div class="productcard__topprice">
+                                            <div class="productcard__oldprice">379&nbsp;₽&nbsp;/&nbsp;уп</div>
+                                          </div>
+                                          <!-- /.productcard__oldprice -->
+                                          <div class="productcard__mainprice">
+                                            <div class="productcard__price">
+                                              <div class="productcard__pricevalue">341</div>
+                                              <div class="productcard__priceunit">₽&nbsp;/&nbsp;уп</div>
+                                            </div>
+                                            <!-- /.productcard__price -->
+                                          </div>
+                                          <!-- /.productcard__mainprice -->
+                                        </div>
+                                        <!-- /.productcard__prices -->
+                                        <div class="productcard__button">
+                                          <button data-entity="add2basket" data-quantity="0.1" data-item="3145"
+                                            class="productcard__addtocart btn  " tabindex="0"></button>
+                                        </div>
+                                      </div>
+                                      <!-- /.productcard__buy -->
+
+                                    </div>
+                                    <!-- /.productcard__wrapper -->
+                                  </div>
+
+                                </div>
+                              </div>
+                              <!-- /.productslider__slide  -->
+
+
+                            </div>
+                            <!-- /.productslider__slide r -->
+                          </div>
+                          <!-- /.productslider__container -->
+                        </div>
+                        <!-- /.productslider__wrapper -->
+                      </div>
+                      <!-- /.container -->
+                    </div>
+                    <!-- /.pageblock -->
+                  </div><!-- /.catalogrelated -->
+                </div>
+                <!-- /.cataloglist -->
               </div>
-              <!-- /.catalogheader__right -->
+              <!-- /.catalogpage__main -->
             </div>
-            <!-- /.catalogheader -->
-            <div class="catalogbanner">
-              <div class="catalogbanner__wrapper">
-                <a href="#"><img src="img/catalogbanner.jpg" alt=""></a>
-              </div>
-              <!-- /.catalogbanner__wrapper -->
-            </div>
-            <!-- /.catalogbanner -->
-            <div class="filternav">
-              <div class="filternav__items">
-                <div class="filternav__item">
-                  <div class="filternav__title">Выбрано 29 товаров:</div>
-                </div>
-                <!-- /.filternav__item -->
-                <div class="filternav__item filternav__item--value">
-                  <div class="filternav__selected">
-                    <div class="filternav__button">
-                      <span class='filternav__name'>от 0 до 750 ₽</span>
-                      <span class='filternav__remove'>
-                      <a href="#"><img src="img/filterclose.svg" alt=""></a>
-                      </span>
-                    </div>
-                    <!-- /.filternav__button -->
-                  </div>
-                  <!-- /.filternav__selected -->
-                </div>
-                <!-- /.filternav__item -->
-                <div class="filternav__item filternav__item--value">
-                  <div class="filternav__selected">
-                    <div class="filternav__button">
-                      <span class='filternav__name'>Только со скидкой</span>
-                      <span class='filternav__remove'>
-                      <a href="#"><img src="img/filterclose.svg" alt=""></a>
-                      </span>
-                    </div>
-                    <!-- /.filternav__button -->
-                  </div>
-                  <!-- /.filternav__selected -->
-                </div>
-                <!-- /.filternav__item -->
-                <div class="filternav__item filternav__item--value">
-                  <div class="filternav__selected">
-                    <div class="filternav__button">
-                      <span class='filternav__name'>Останкино, самсон, мясннийкицй ряд</span>
-                      <span class='filternav__remove'>
-                      <a href="#"><img src="img/filterclose.svg" alt=""></a>
-                      </span>
-                    </div>
-                    <!-- /.filternav__button -->
-                  </div>
-                  <!-- /.filternav__selected -->
-                </div>
-                <!-- /.filternav__item -->
-                <div class="filternav__item">
-                  <div class="filternav__selected">
-                    <div class="filternav__button filternav__button_clear">
-                      <a href="#">
-                      <span class='filternav__name'>Очистить все</span>
-                      <span class='filternav__remove'>
-                      <img src="img/filterclose.svg" alt=""></a>
-                      </span>
-                      </a>
-                    </div>
-                    <!-- /.filternav__button -->
-                  </div>
-                  <!-- /.filternav__selected -->
-                </div>
-                <!-- /.filternav__item -->
-              </div>
-              <!-- /.filternav__items -->
-            </div>
-            <!-- /.filternav -->
-            <div class="cataloglist">
-              <div class="cataloglist__items">
-                <div class="cataloglist__item">
-                  <div class="productcard">
-                    <div class="productcard__wrapper">
-                      <div class="productcard__stickers">
-                        <div class="productcard__sticker">
-                          <div class="productsticker productsticker_yellow">
-                            <span class='productsticker__text'>ХИТ</span>
-                          </div>
-                        </div>
-                        <!-- /.productcard__sticker -->
-                      </div>
-                      <!-- /.productcard__stickers -->
-                      <a href="#" class="productcard__images onlyDesktop">
-                        <div class="productcard__img">
-                          <img src="img/product.jpg" data-hover-slides="img/indexcat-2.png, img/indexcat-3.png, img/indexcat-4.png" alt="">
-                        </div>
-                      </a> 
-                      <a href="#" class="productcard__images productcard__images_mobile onlyMobile">
-                        <div class="productcard__img">
-                          <div class="productcard_mslideimg"><img src="img/product.jpg"></div>
-                          <div class="productcard_mslideimg"><img src="img/indexcat-2.png"></div>
-                          <div class="productcard_mslideimg"><img src="img/indexcat-3.png"></div>
-                          <div class="productcard_mslideimg"><img src="img/indexcat-4.png"></div>
-                        </div>
-                      </a>
-                      <!-- /.productcard__images -->
-                      <div class="productcard__rating">
-                        <div class="cardrating">
-                          <div class="cardrating__item">
-                            <div class="cardrating__form">
-                              <div class="cardrating__value">
-                                <span>3.5</span>
-                              </div>
-                              <span class="score">
-                                <div class="score-wrap">
-                                  <span class="rat-stars-active stars-active">
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  </span>
-                                  <span class="stars-inactive">
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  </span>
-                                </div>
-                              </span>
-                            </div>
-                            <div class="productcard__count">453</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="productcard__title">
-                        <a href="">Шейка копчено-вареная Московская</a>
-                      </div>
-                      <div class="productcard__buy">
-                        <div class="productcard__prices">
-                          <div class="productcard__topprice">
-                            <div class="productcard__oldprice">762.92</div>
-                            <div class="productcard__badge">12%</div>
-                          </div>
-                          <!-- /.productcard__oldprice -->
-                          <div class="productcard__mainprice">
-                            <div class="productcard__price">
-                              <div class="productcard__pricevalue">674.94</div>
-                              <div class="productcard__priceunit">₽/кг</div>
-                            </div>
-                            <!-- /.productcard__price -->
-                          </div>
-                          <!-- /.productcard__mainprice -->
-                        </div>
-                        <!-- /.productcard__prices -->
-                        <div class="productcard__button">
-                          <button class="productcard__addtocart btn "></button>
-                        </div>
-                      </div>
-                      <!-- /.productcard__buy -->
-                      <div class="productcard__info">
-                        <div class="productcard__infoicon">
-                          <img src="img/productcard__info.svg" alt="">
-                        </div>
-                        <div class="productcard__infotext">Доставим сегодня</div>
-                      </div>
-                      <!-- /.productcard__info -->
-                    </div>
-                    <!-- /.productcard__wrapper -->
-                  </div>
-                </div>
-                <!-- /.cataloglist__item -->
-                <div class="cataloglist__item">
-                  <div class="productcard">
-                    <div class="productcard__wrapper">
-                      <div class="productcard__stickers">
-                        <div class="productcard__sticker">
-                          <div class="productsticker productsticker_blue">
-                            <span class='productsticker__text'>Новинка</span>
-                          </div>
-                        </div>
-                        <!-- /.productcard__sticker -->
-                      </div>
-                      <!-- /.productcard__stickers -->
-                      <div class="productcard__images onlyDesktop">
-                        <div class="productcard__img">
-                          <img src="img/product.jpg" data-hover-slides="img/indexcat-2.png, img/indexcat-3.png, img/indexcat-4.png" alt="">
-                        </div>
-                      </div>
-                      <a href="#" class="productcard__images productcard__images_mobile onlyMobile">
-                        <div class="productcard__img">
-                          <div class="productcard_mslideimg"><img src="img/product.jpg"></div>
-                          <div class="productcard_mslideimg"><img src="img/indexcat-2.png"></div>
-                          <div class="productcard_mslideimg"><img src="img/indexcat-3.png"></div>
-                          <div class="productcard_mslideimg"><img src="img/indexcat-4.png"></div>
-                        </div>
-                      </a>
-                      <!-- /.productcard__images -->
-                      <div class="productcard__rating">
-                        <div class="cardrating">
-                          <div class="cardrating__item">
-                            <div class="cardrating__form">
-                              <div class="cardrating__value">
-                                <span>3.5</span>
-                              </div>
-                              <span class="score">
-                                <div class="score-wrap">
-                                  <span class="rat-stars-active stars-active">
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  </span>
-                                  <span class="stars-inactive">
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  </span>
-                                </div>
-                              </span>
-                            </div>
-                            <div class="productcard__count">453</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="productcard__title">
-                        <a href="">Шейка копчено-вареная Московская</a>
-                      </div>
-                      <div class="productcard__buy">
-                        <div class="productcard__prices">
-                          <div class="productcard__topprice">
-                            <div class="productcard__oldprice">762.92</div>
-                            <div class="productcard__badge">12%</div>
-                          </div>
-                          <!-- /.productcard__oldprice -->
-                          <div class="productcard__mainprice">
-                            <div class="productcard__price">
-                              <div class="productcard__pricevalue">674.94</div>
-                              <div class="productcard__priceunit">₽/кг</div>
-                            </div>
-                            <!-- /.productcard__price -->
-                          </div>
-                          <!-- /.productcard__mainprice -->
-                        </div>
-                        <!-- /.productcard__prices -->
-                        <div class="productcard__button">
-                          <button class="productcard__addtocart btn active"></button>
-                        </div>
-                      </div>
-                      <!-- /.productcard__buy -->
-                      <div class="productcard__info">
-                        <div class="productcard__infoicon">
-                          <img src="img/productcard__info.svg" alt="">
-                        </div>
-                        <div class="productcard__infotext">Доставим сегодня</div>
-                      </div>
-                      <!-- /.productcard__info -->
-                    </div>
-                    <!-- /.productcard__wrapper -->
-                  </div>
-                </div>
-                <!-- /.cataloglist__item -->
-                <div class="cataloglist__item">
-                  <div class="productcard">
-                    <div class="productcard__wrapper">
-                      <div class="productcard__stickers">
-                        <div class="productcard__sticker productcard__sticker--icon">
-                          <div class="productsticker productsticker_green">
-                            <span class='productsticker__text'>Кешбек</span>
-                            <span class='productsticker__icon'>-5%</span>
-                          </div>
-                        </div>
-                        <!-- /.productcard__sticker -->
-                      </div>
-                      <!-- /.productcard__stickers -->
-                      <div class="productcard__images onlyDesktop">
-                        <div class="productcard__img">
-                          <img src="img/product.jpg" data-hover-slides="img/indexcat-2.png, img/indexcat-3.png, img/indexcat-4.png" alt="">
-                        </div>
-                      </div>
-                      <a href="#" class="productcard__images productcard__images_mobile onlyMobile">
-                        <div class="productcard__img">
-                          <div class="productcard_mslideimg"><img src="img/product.jpg"></div>
-                          <div class="productcard_mslideimg"><img src="img/indexcat-2.png"></div>
-                          <div class="productcard_mslideimg"><img src="img/indexcat-3.png"></div>
-                          <div class="productcard_mslideimg"><img src="img/indexcat-4.png"></div>
-                        </div>
-                      </a>
-                      <!-- /.productcard__images -->
-                      <div class="productcard__rating">
-                        <div class="cardrating">
-                          <div class="cardrating__item">
-                            <div class="cardrating__form">
-                              <div class="cardrating__value">
-                                <span>3.5</span>
-                              </div>
-                              <span class="score">
-                                <div class="score-wrap">
-                                  <span class="rat-stars-active stars-active">
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  </span>
-                                  <span class="stars-inactive">
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  </span>
-                                </div>
-                              </span>
-                            </div>
-                            <div class="productcard__count">453</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="productcard__title">
-                        <a href="">Шейка копчено-вареная Московская</a>
-                      </div>
-                      <div class="productcard__buy">
-                        <div class="productcard__prices">
-                          <div class="productcard__topprice">
-                            <div class="productcard__oldprice">762.92</div>
-                            <div class="productcard__badge">12%</div>
-                          </div>
-                          <!-- /.productcard__oldprice -->
-                          <div class="productcard__mainprice">
-                            <div class="productcard__price">
-                              <div class="productcard__pricevalue">674.94</div>
-                              <div class="productcard__priceunit">₽/кг</div>
-                            </div>
-                            <!-- /.productcard__price -->
-                          </div>
-                          <!-- /.productcard__mainprice -->
-                        </div>
-                        <!-- /.productcard__prices -->
-                        <div class="productcard__button">
-                          <button class="productcard__addtocart btn "></button>
-                        </div>
-                      </div>
-                      <!-- /.productcard__buy -->
-                      <div class="productcard__info">
-                        <div class="productcard__infoicon">
-                          <img src="img/productcard__info.svg" alt="">
-                        </div>
-                        <div class="productcard__infotext">Доставим сегодня</div>
-                      </div>
-                      <!-- /.productcard__info -->
-                    </div>
-                    <!-- /.productcard__wrapper -->
-                  </div>
-                </div>
-                <!-- /.cataloglist__item -->
-                <div class="cataloglist__item">
-                  <div class="productcard productcard_disabled">
-                    <div class="productcard__wrapper">
-                      <a href='#' class="productcard__images">
-                        <div class="productcard__img">
-                          <div class="productcard_mslideimg"><img src="img/product.jpg"></div>
-                        </div>
-                      </a><!-- /.productcard__images -->
-                      <div class="productcard__rating">
-                        <div class="cardrating">
-                          <div class="cardrating__item">
-                            <div class="cardrating__form">
-                              <div class="cardrating__value">
-                                <span>3.5</span>
-                              </div>
-                              <span class="score">
-                                <div class="score-wrap">
-                                  <span class="rat-stars-active stars-active">
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  </span>
-                                  <span class="stars-inactive">
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  </span>
-                                </div>
-                              </span>
-                            </div>
-                            <div class="productcard__count">453</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="productcard__title">
-                        <a href="">Шейка копчено-вареная Московская</a>
-                      </div>
-                      <div class="productcard__buy">
-                        <div class="productcard__prices">
-                        
-                          <div class="productcard__mainprice">
-                            <div class="productcard__price">
-                              <div class="productcard__pricevalue">674.94</div>
-                              <div class="productcard__priceunit">₽/кг</div>
-                            </div>
-                            <!-- /.productcard__price -->
-                          </div>
-                          <!-- /.productcard__mainprice -->
-                        </div>
-                        <!-- /.productcard__prices -->
-                        <div class="productcard__button">
-                          <button class="productcard__addtocart btn btn_main" disabled>
-                          <img src="img/ShoppingCart_off.svg" alt="">
-                          </button>
-                        </div>
-                      </div>
-                      <!-- /.productcard__buy -->
-                      <div class="productcard__info">
-                        <div class="productcard__infoicon">
-                          <img src="img/outofstock.svg" alt="">
-                        </div>
-                        <div class="productcard__infotext">Нет в наличии</div>
-                      </div>
-                      <!-- /.productcard__info -->
-                    </div>
-                    <!-- /.productcard__wrapper -->
-                  </div>
-                </div>
-                <!-- /.cataloglist__item -->
-                <div class="cataloglist__item">
-                  <div class="productcard">
-                    <div class="productcard__wrapper">
-                      <div class="productcard__images onlyDesktop">
-                        <div class="productcard__img">
-                          <img src="img/product.jpg" data-hover-slides="img/indexcat-2.png, img/indexcat-3.png, img/indexcat-4.png" alt="">
-                        </div>
-                      </div>
-                      <a href="#" class="productcard__images productcard__images_mobile onlyMobile">
-                        <div class="productcard__img">
-                          <div class="productcard_mslideimg"><img src="img/product.jpg"></div>
-                          <div class="productcard_mslideimg"><img src="img/indexcat-2.png"></div>
-                          <div class="productcard_mslideimg"><img src="img/indexcat-3.png"></div>
-                          <div class="productcard_mslideimg"><img src="img/indexcat-4.png"></div>
-                        </div>
-                      </a>
-                      <!-- /.productcard__images -->
-                      <div class="productcard__rating">
-                        <div class="cardrating">
-                          <div class="cardrating__item">
-                            <div class="cardrating__form">
-                              <div class="cardrating__value">
-                                <span>3.5</span>
-                              </div>
-                              <span class="score">
-                                <div class="score-wrap">
-                                  <span class="rat-stars-active stars-active">
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  </span>
-                                  <span class="stars-inactive">
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  </span>
-                                </div>
-                              </span>
-                            </div>
-                            <div class="productcard__count">453</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="productcard__title">
-                        <a href="">Шейка копчено-вареная Московская</a>
-                      </div>
-                      <div class="productcard__buy">
-                        <div class="productcard__prices">
-                          <div class="productcard__topprice">
-                            <div class="productcard__oldprice">762.92</div>
-                            <div class="productcard__badge">12%</div>
-                          </div>
-                          <!-- /.productcard__oldprice -->
-                          <div class="productcard__mainprice">
-                            <div class="productcard__price">
-                              <div class="productcard__pricevalue">674.94</div>
-                              <div class="productcard__priceunit">₽/кг</div>
-                            </div>
-                            <!-- /.productcard__price -->
-                          </div>
-                          <!-- /.productcard__mainprice -->
-                        </div>
-                        <!-- /.productcard__prices -->
-                        <div class="productcard__button">
-                          <button class="productcard__addtocart btn "></button>
-                        </div>
-                      </div>
-                      <!-- /.productcard__buy -->
-                      <div class="productcard__info">
-                        <div class="productcard__infoicon">
-                          <img src="img/productcard__info.svg" alt="">
-                        </div>
-                        <div class="productcard__infotext">Доставим сегодня</div>
-                      </div>
-                      <!-- /.productcard__info -->
-                    </div>
-                    <!-- /.productcard__wrapper -->
-                  </div>
-                </div>
-                <!-- /.cataloglist__item -->
-                <div class="cataloglist__item">
-                  <div class="productcard">
-                    <div class="productcard__wrapper">
-                      <div class="productcard__images onlyDesktop">
-                        <div class="productcard__img">
-                          <img src="img/product.jpg" data-hover-slides="img/indexcat-2.png, img/indexcat-3.png, img/indexcat-4.png" alt="">
-                        </div>
-                      </div>
-                      <a href="#" class="productcard__images productcard__images_mobile onlyMobile">
-                        <div class="productcard__img">
-                          <div class="productcard_mslideimg"><img src="img/product.jpg"></div>
-                          <div class="productcard_mslideimg"><img src="img/indexcat-2.png"></div>
-                          <div class="productcard_mslideimg"><img src="img/indexcat-3.png"></div>
-                          <div class="productcard_mslideimg"><img src="img/indexcat-4.png"></div>
-                        </div>
-                      </a>
-                      <!-- /.productcard__images -->
-                      <div class="productcard__rating">
-                        <div class="cardrating">
-                          <div class="cardrating__item">
-                            <div class="cardrating__form">
-                              <div class="cardrating__value">
-                                <span>3.5</span>
-                              </div>
-                              <span class="score">
-                                <div class="score-wrap">
-                                  <span class="rat-stars-active stars-active">
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  </span>
-                                  <span class="stars-inactive">
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  </span>
-                                </div>
-                              </span>
-                            </div>
-                            <div class="productcard__count">453</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="productcard__title">
-                        <a href="">Шейка копчено-вареная Московская</a>
-                      </div>
-                      <div class="productcard__buy">
-                        <div class="productcard__prices">
-                          <div class="productcard__topprice">
-                            <div class="productcard__oldprice">762.92</div>
-                            <div class="productcard__badge">12%</div>
-                          </div>
-                          <!-- /.productcard__oldprice -->
-                          <div class="productcard__mainprice">
-                            <div class="productcard__price">
-                              <div class="productcard__pricevalue">674.94</div>
-                              <div class="productcard__priceunit">₽/кг</div>
-                            </div>
-                            <!-- /.productcard__price -->
-                          </div>
-                          <!-- /.productcard__mainprice -->
-                        </div>
-                        <!-- /.productcard__prices -->
-                        <div class="productcard__button">
-                          <button class="productcard__addtocart btn "></button>
-                        </div>
-                      </div>
-                      <!-- /.productcard__buy -->
-                      <div class="productcard__info">
-                        <div class="productcard__infoicon">
-                          <img src="img/productcard__info.svg" alt="">
-                        </div>
-                        <div class="productcard__infotext">Доставим сегодня</div>
-                      </div>
-                      <!-- /.productcard__info -->
-                    </div>
-                    <!-- /.productcard__wrapper -->
-                  </div>
-                </div>
-                <!-- /.cataloglist__item -->
-                <div class="cataloglist__item">
-                  <div class="productcard">
-                    <div class="productcard__wrapper">
-                      <div class="productcard__images onlyDesktop">
-                        <div class="productcard__img">
-                          <img src="img/product.jpg" data-hover-slides="img/indexcat-2.png, img/indexcat-3.png, img/indexcat-4.png" alt="">
-                        </div>
-                      </div>
-                      <a href="#" class="productcard__images productcard__images_mobile onlyMobile">
-                        <div class="productcard__img">
-                          <div class="productcard_mslideimg"><img src="img/product.jpg"></div>
-                          <div class="productcard_mslideimg"><img src="img/indexcat-2.png"></div>
-                          <div class="productcard_mslideimg"><img src="img/indexcat-3.png"></div>
-                          <div class="productcard_mslideimg"><img src="img/indexcat-4.png"></div>
-                        </div>
-                      </a>
-                      <!-- /.productcard__images -->
-                      <div class="productcard__rating">
-                        <div class="cardrating">
-                          <div class="cardrating__item">
-                            <div class="cardrating__form">
-                              <div class="cardrating__value">
-                                <span>3.5</span>
-                              </div>
-                              <span class="score">
-                                <div class="score-wrap">
-                                  <span class="rat-stars-active stars-active">
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  </span>
-                                  <span class="stars-inactive">
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  </span>
-                                </div>
-                              </span>
-                            </div>
-                            <div class="productcard__count">453</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="productcard__title">
-                        <a href="">Шейка копчено-вареная Московская</a>
-                      </div>
-                      <div class="productcard__buy">
-                        <div class="productcard__prices">
-                          <div class="productcard__topprice">
-                            <div class="productcard__oldprice">762.92</div>
-                            <div class="productcard__badge">12%</div>
-                          </div>
-                          <!-- /.productcard__oldprice -->
-                          <div class="productcard__mainprice">
-                            <div class="productcard__price">
-                              <div class="productcard__pricevalue">674.94</div>
-                              <div class="productcard__priceunit">₽/кг</div>
-                            </div>
-                            <!-- /.productcard__price -->
-                          </div>
-                          <!-- /.productcard__mainprice -->
-                        </div>
-                        <!-- /.productcard__prices -->
-                        <div class="productcard__button">
-                          <button class="productcard__addtocart btn "></button>
-                        </div>
-                      </div>
-                      <!-- /.productcard__buy -->
-                      <div class="productcard__info">
-                        <div class="productcard__infoicon">
-                          <img src="img/productcard__info.svg" alt="">
-                        </div>
-                        <div class="productcard__infotext">Доставим сегодня</div>
-                      </div>
-                      <!-- /.productcard__info -->
-                    </div>
-                    <!-- /.productcard__wrapper -->
-                  </div>
-                </div>
-                <!-- /.cataloglist__item -->
-                <div class="cataloglist__item">
-                  <div class="productcard">
-                    <div class="productcard__wrapper">
-                      <div class="productcard__images onlyDesktop">
-                        <div class="productcard__img">
-                          <img src="img/product.jpg" data-hover-slides="img/indexcat-2.png, img/indexcat-3.png, img/indexcat-4.png" alt="">
-                        </div>
-                      </div>
-                      <a href="#" class="productcard__images productcard__images_mobile onlyMobile">
-                        <div class="productcard__img">
-                          <div class="productcard_mslideimg"><img src="img/product.jpg"></div>
-                          <div class="productcard_mslideimg"><img src="img/indexcat-2.png"></div>
-                          <div class="productcard_mslideimg"><img src="img/indexcat-3.png"></div>
-                          <div class="productcard_mslideimg"><img src="img/indexcat-4.png"></div>
-                        </div>
-                      </a>
-                      <!-- /.productcard__images -->
-                      <div class="productcard__rating">
-                        <div class="cardrating">
-                          <div class="cardrating__item">
-                            <div class="cardrating__form">
-                              <div class="cardrating__value">
-                                <span>3.5</span>
-                              </div>
-                              <span class="score">
-                                <div class="score-wrap">
-                                  <span class="rat-stars-active stars-active">
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  </span>
-                                  <span class="stars-inactive">
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  </span>
-                                </div>
-                              </span>
-                            </div>
-                            <div class="productcard__count">453</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="productcard__title">
-                        <a href="">Шейка копчено-вареная Московская</a>
-                      </div>
-                      <div class="productcard__buy">
-                        <div class="productcard__prices">
-                          <div class="productcard__topprice">
-                            <div class="productcard__oldprice">762.92</div>
-                            <div class="productcard__badge">12%</div>
-                          </div>
-                          <!-- /.productcard__oldprice -->
-                          <div class="productcard__mainprice">
-                            <div class="productcard__price">
-                              <div class="productcard__pricevalue">674.94</div>
-                              <div class="productcard__priceunit">₽/кг</div>
-                            </div>
-                            <!-- /.productcard__price -->
-                          </div>
-                          <!-- /.productcard__mainprice -->
-                        </div>
-                        <!-- /.productcard__prices -->
-                        <div class="productcard__button">
-                          <button class="productcard__addtocart btn "></button>
-                        </div>
-                      </div>
-                      <!-- /.productcard__buy -->
-                      <div class="productcard__info">
-                        <div class="productcard__infoicon">
-                          <img src="img/productcard__info.svg" alt="">
-                        </div>
-                        <div class="productcard__infotext">Доставим сегодня</div>
-                      </div>
-                      <!-- /.productcard__info -->
-                    </div>
-                    <!-- /.productcard__wrapper -->
-                  </div>
-                </div>
-                <!-- /.cataloglist__item -->
-                <div class="cataloglist__item">
-                  <div class="productcard">
-                    <div class="productcard__wrapper">
-                      <div class="productcard__images onlyDesktop">
-                        <div class="productcard__img">
-                          <img src="img/product.jpg" data-hover-slides="img/indexcat-2.png, img/indexcat-3.png, img/indexcat-4.png" alt="">
-                        </div>
-                      </div>
-                      <a href="#" class="productcard__images productcard__images_mobile onlyMobile">
-                        <div class="productcard__img">
-                          <div class="productcard_mslideimg"><img src="img/product.jpg"></div>
-                          <div class="productcard_mslideimg"><img src="img/indexcat-2.png"></div>
-                          <div class="productcard_mslideimg"><img src="img/indexcat-3.png"></div>
-                          <div class="productcard_mslideimg"><img src="img/indexcat-4.png"></div>
-                        </div>
-                      </a>
-                      <!-- /.productcard__images -->
-                      <div class="productcard__rating">
-                        <div class="cardrating">
-                          <div class="cardrating__item">
-                            <div class="cardrating__form">
-                              <div class="cardrating__value">
-                                <span>3.5</span>
-                              </div>
-                              <span class="score">
-                                <div class="score-wrap">
-                                  <span class="rat-stars-active stars-active">
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  </span>
-                                  <span class="stars-inactive">
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  </span>
-                                </div>
-                              </span>
-                            </div>
-                            <div class="productcard__count">453</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="productcard__title">
-                        <a href="">Шейка копчено-вареная Московская</a>
-                      </div>
-                      <div class="productcard__buy">
-                        <div class="productcard__prices">
-                          <div class="productcard__topprice">
-                            <div class="productcard__oldprice">762.92</div>
-                            <div class="productcard__badge">12%</div>
-                          </div>
-                          <!-- /.productcard__oldprice -->
-                          <div class="productcard__mainprice">
-                            <div class="productcard__price">
-                              <div class="productcard__pricevalue">674.94</div>
-                              <div class="productcard__priceunit">₽/кг</div>
-                            </div>
-                            <!-- /.productcard__price -->
-                          </div>
-                          <!-- /.productcard__mainprice -->
-                        </div>
-                        <!-- /.productcard__prices -->
-                        <div class="productcard__button">
-                          <button class="productcard__addtocart btn "></button>
-                        </div>
-                      </div>
-                      <!-- /.productcard__buy -->
-                      <div class="productcard__info">
-                        <div class="productcard__infoicon">
-                          <img src="img/productcard__info.svg" alt="">
-                        </div>
-                        <div class="productcard__infotext">Доставим сегодня</div>
-                      </div>
-                      <!-- /.productcard__info -->
-                    </div>
-                    <!-- /.productcard__wrapper -->
-                  </div>
-                </div>
-                <!-- /.cataloglist__item -->
-                <div class="cataloglist__item">
-                  <div class="productcard">
-                    <div class="productcard__wrapper">
-                      <div class="productcard__images onlyDesktop">
-                        <div class="productcard__img">
-                          <img src="img/product.jpg" data-hover-slides="img/indexcat-2.png, img/indexcat-3.png, img/indexcat-4.png" alt="">
-                        </div>
-                      </div>
-                      <a href="#" class="productcard__images productcard__images_mobile onlyMobile">
-                        <div class="productcard__img">
-                          <div class="productcard_mslideimg"><img src="img/product.jpg"></div>
-                          <div class="productcard_mslideimg"><img src="img/indexcat-2.png"></div>
-                          <div class="productcard_mslideimg"><img src="img/indexcat-3.png"></div>
-                          <div class="productcard_mslideimg"><img src="img/indexcat-4.png"></div>
-                        </div>
-                      </a>
-                      <!-- /.productcard__images -->
-                      <div class="productcard__rating">
-                        <div class="cardrating">
-                          <div class="cardrating__item">
-                            <div class="cardrating__form">
-                              <div class="cardrating__value">
-                                <span>3.5</span>
-                              </div>
-                              <span class="score">
-                                <div class="score-wrap">
-                                  <span class="rat-stars-active stars-active">
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  </span>
-                                  <span class="stars-inactive">
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  </span>
-                                </div>
-                              </span>
-                            </div>
-                            <div class="productcard__count">453</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="productcard__title">
-                        <a href="">Шейка копчено-вареная Московская</a>
-                      </div>
-                      <div class="productcard__buy">
-                        <div class="productcard__prices">
-                          <div class="productcard__topprice">
-                            <div class="productcard__oldprice">762.92</div>
-                            <div class="productcard__badge">12%</div>
-                          </div>
-                          <!-- /.productcard__oldprice -->
-                          <div class="productcard__mainprice">
-                            <div class="productcard__price">
-                              <div class="productcard__pricevalue">674.94</div>
-                              <div class="productcard__priceunit">₽/кг</div>
-                            </div>
-                            <!-- /.productcard__price -->
-                          </div>
-                          <!-- /.productcard__mainprice -->
-                        </div>
-                        <!-- /.productcard__prices -->
-                        <div class="productcard__button">
-                          <button class="productcard__addtocart btn "></button>
-                        </div>
-                      </div>
-                      <!-- /.productcard__buy -->
-                      <div class="productcard__info">
-                        <div class="productcard__infoicon">
-                          <img src="img/productcard__info.svg" alt="">
-                        </div>
-                        <div class="productcard__infotext">Доставим сегодня</div>
-                      </div>
-                      <!-- /.productcard__info -->
-                    </div>
-                    <!-- /.productcard__wrapper -->
-                  </div>
-                </div>
-                <!-- /.cataloglist__item -->
-                <div class="cataloglist__item">
-                  <div class="productcard">
-                    <div class="productcard__wrapper">
-                      <div class="productcard__images onlyDesktop">
-                        <div class="productcard__img">
-                          <img src="img/product.jpg" data-hover-slides="img/indexcat-2.png, img/indexcat-3.png, img/indexcat-4.png" alt="">
-                        </div>
-                      </div>
-                      <a href="#" class="productcard__images productcard__images_mobile onlyMobile">
-                        <div class="productcard__img">
-                          <div class="productcard_mslideimg"><img src="img/product.jpg"></div>
-                          <div class="productcard_mslideimg"><img src="img/indexcat-2.png"></div>
-                          <div class="productcard_mslideimg"><img src="img/indexcat-3.png"></div>
-                          <div class="productcard_mslideimg"><img src="img/indexcat-4.png"></div>
-                        </div>
-                      </a>
-                      <!-- /.productcard__images -->
-                      <div class="productcard__rating">
-                        <div class="cardrating">
-                          <div class="cardrating__item">
-                            <div class="cardrating__form">
-                              <div class="cardrating__value">
-                                <span>3.5</span>
-                              </div>
-                              <span class="score">
-                                <div class="score-wrap">
-                                  <span class="rat-stars-active stars-active">
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  </span>
-                                  <span class="stars-inactive">
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  </span>
-                                </div>
-                              </span>
-                            </div>
-                            <div class="productcard__count">453</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="productcard__title">
-                        <a href="">Шейка копчено-вареная Московская</a>
-                      </div>
-                      <div class="productcard__buy">
-                        <div class="productcard__prices">
-                          <div class="productcard__topprice">
-                            <div class="productcard__oldprice">762.92</div>
-                            <div class="productcard__badge">12%</div>
-                          </div>
-                          <!-- /.productcard__oldprice -->
-                          <div class="productcard__mainprice">
-                            <div class="productcard__price">
-                              <div class="productcard__pricevalue">674.94</div>
-                              <div class="productcard__priceunit">₽/кг</div>
-                            </div>
-                            <!-- /.productcard__price -->
-                          </div>
-                          <!-- /.productcard__mainprice -->
-                        </div>
-                        <!-- /.productcard__prices -->
-                        <div class="productcard__button">
-                          <button class="productcard__addtocart btn "></button>
-                        </div>
-                      </div>
-                      <!-- /.productcard__buy -->
-                      <div class="productcard__info">
-                        <div class="productcard__infoicon">
-                          <img src="img/productcard__info.svg" alt="">
-                        </div>
-                        <div class="productcard__infotext">Доставим сегодня</div>
-                      </div>
-                      <!-- /.productcard__info -->
-                    </div>
-                    <!-- /.productcard__wrapper -->
-                  </div>
-                </div>
-                <!-- /.cataloglist__item -->
-                <div class="cataloglist__item">
-                  <div class="productcard">
-                    <div class="productcard__wrapper">
-                      <div class="productcard__images onlyDesktop">
-                        <div class="productcard__img">
-                          <img src="img/product.jpg" data-hover-slides="img/indexcat-2.png, img/indexcat-3.png, img/indexcat-4.png" alt="">
-                        </div>
-                      </div>
-                      <a href="#" class="productcard__images productcard__images_mobile onlyMobile">
-                        <div class="productcard__img">
-                          <div class="productcard_mslideimg"><img src="img/product.jpg"></div>
-                          <div class="productcard_mslideimg"><img src="img/indexcat-2.png"></div>
-                          <div class="productcard_mslideimg"><img src="img/indexcat-3.png"></div>
-                          <div class="productcard_mslideimg"><img src="img/indexcat-4.png"></div>
-                        </div>
-                      </a>
-                      <!-- /.productcard__images -->
-                      <div class="productcard__rating">
-                        <div class="cardrating">
-                          <div class="cardrating__item">
-                            <div class="cardrating__form">
-                              <div class="cardrating__value">
-                                <span>3.5</span>
-                              </div>
-                              <span class="score">
-                                <div class="score-wrap">
-                                  <span class="rat-stars-active stars-active">
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  </span>
-                                  <span class="stars-inactive">
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  </span>
-                                </div>
-                              </span>
-                            </div>
-                            <div class="productcard__count">453</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="productcard__title">
-                        <a href="">Шейка копчено-вареная Московская</a>
-                      </div>
-                      <div class="productcard__buy">
-                        <div class="productcard__prices">
-                          <div class="productcard__topprice">
-                            <div class="productcard__oldprice">762.92</div>
-                            <div class="productcard__badge">12%</div>
-                          </div>
-                          <!-- /.productcard__oldprice -->
-                          <div class="productcard__mainprice">
-                            <div class="productcard__price">
-                              <div class="productcard__pricevalue">674.94</div>
-                              <div class="productcard__priceunit">₽/кг</div>
-                            </div>
-                            <!-- /.productcard__price -->
-                          </div>
-                          <!-- /.productcard__mainprice -->
-                        </div>
-                        <!-- /.productcard__prices -->
-                        <div class="productcard__button">
-                          <button class="productcard__addtocart btn "></button>
-                        </div>
-                      </div>
-                      <!-- /.productcard__buy -->
-                      <div class="productcard__info">
-                        <div class="productcard__infoicon">
-                          <img src="img/productcard__info.svg" alt="">
-                        </div>
-                        <div class="productcard__infotext">Доставим сегодня</div>
-                      </div>
-                      <!-- /.productcard__info -->
-                    </div>
-                    <!-- /.productcard__wrapper -->
-                  </div>
-                </div>
-                <!-- /.cataloglist__item -->
-              </div>
-              <!-- /.cataloglist__items -->
-              <div class="catalognav">
-                <div class="catalognav__showmore">
-                  <a href="#" class='showmorelink'>
-                  <img src="img/Synchronize.svg" alt="">
-                  <span>Показать еще 24 товаров</span>
-                  </a>
-                </div>
-                <div class="catalognav__pagination">
-                  <div class="paginationblock">
-                    <div class="pagination">
-                      <a href="#"  class='pagination__arrLeft disabled'>
-                      <img src="img/pagiRight.svg" alt="">
-                      </a>
-                      <ul>
-                        <li class="active"><a href="">1</a></li>
-                        <li><a href="">2</a></li>
-                        <li><a href="">3</a></li>
-                        <li><span>...</span></li>
-                        <li><a href="">112</a></li>
-                      </ul>
-                      <a href="#" class='pagination__arrRight'>
-                      <img src="img/pagiRight.svg" alt="">
-                      </a>
-                    </div>
-                  </div>
-                  <div class="showcountblock">
-                    <div class="dropdownselect">
-                      <div class="dropdown-select dropdown-select--border">
-                        <div class="dropdown-select__title">
-                          <span class='dropdown-caption'>
-                          Показывать по:
-                          </span>
-                          <span class='dropdown-value'>
-                          40
-                          </span>
-                        </div>
-                        <div class="dropdown-select__list dropdown-menu-wrapper" role="menu">
-                          <div class="dropdown-menu-inner rounded3">
-                            <div class="dropdown-select__list-item">
-                              <a href="#" class="dropdown-select__list-link current" rel="nofollow">
-                              <span>40</span>
-                              </a>
-                            </div>
-                            <div class="dropdown-select__list-item">
-                              <a href="#" class="dropdown-select__list-link" rel="nofollow">
-                              <span>60</span>
-                              </a>
-                            </div>
-                            <div class="dropdown-select__list-item">
-                              <a href="#" class="dropdown-select__list-link" rel="nofollow">
-                              <span>90</span>
-                              </a>
-                            </div>
-                            <div class="dropdown-select__list-item">
-                              <a href="#" class="dropdown-select__list-link" rel="nofollow">
-                              <span>150</span>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- /.dropdownselect -->
-                  </div>
-                  <!-- /.showcountblock -->
-                </div>
-              </div>
-              <!-- /.catalognav -->
-            </div>
-            <!-- /.cataloglist -->
+            <!-- /.catalogpage__wrapper -->
           </div>
-          <!-- /.catalogpage__main -->
+          <!-- /.container -->
+
         </div>
-        <!-- /.catalogpage__wrapper -->
-      </div>
-      <!-- /.container -->
-    
-    </div>
-    <!-- /.catalogpage -->
-  </div>
-  <!-- /.page -->  
-  <div class="seoblock">
-    <div class="container">
-      <div class="seoblock__wrapper">
-        <div class="seoblock__title">
-          <h2>Высокотехнологичное предприятие, оснащенное современным оборудованием от ведущих мировых производителей</h2>
+        <!-- /.catalogpage -->
+
+
+        <div class="pageblocksl ">
+          <div class="container">
+            <div class="seoblock">
+              <div class="seoblock__wrapper">
+                <div class="seoblock__items">
+                  <div class="sseoblock__item seoblock__left">
+                    <div class="seoblock__content">
+                      <div class="seoblock__title">
+
+                      </div><!-- /.seoblock__title -->
+                      <div class="seoblock__text">
+                        <p>Компания «Maridel» представляет обширный ассортимент рыбы на сайте в розницу/оптом на
+                          выгодных условиях.</p>
+                        <ul>
+                          <li>отказались от сотрудничества с посредниками, поэтому продаем без наценки</li>
+                          <li>выловленную рыбу сразу обрабатываем с помощью шоковой заморозки, сохраняя вкус и пользу
+                          </li>
+                          <li>гарантируем достойное качество, сохранение превосходного вкуса и всех ценных свойств.</li>
+                        </ul>
+                        <p>В Москве вы можете купить у нас замороженную рыбу в ассортименте, предлагаем различные сорта:
+                          камбалу, горбушу, сельдь, скумбрию, терпуга, нерку и прочие разновидности.</p>
+                      </div><!-- /.seoblock__text -->
+                    </div><!-- /.seoblock__content -->
+                  </div><!-- /.seoblock__left -->
+                  <div class="seoblock__item seoblock__right">
+                    <div class="seoblock__image">
+                      <div class="seoblock__img"
+                        style='background-image: url(img/ba0cb67dd84e106abf4076bc403905fd.png);'></div>
+                      <!-- /.seoblock__img -->
+                    </div><!-- /.seoblock__image -->
+                  </div><!-- /.seoblock__right -->
+                </div><!-- /.seoblock__items -->
+              </div><!-- /.seoblock__wrapper -->
+            </div><!-- /.seoblock -->
+          </div>
         </div>
-        <div class="seoblock__text">
-          <p>Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности позволяет оценить значение форм развития. Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что сложившаяся структура организации способствует подготовки и реализации систем массового участия. Задача организации, в особенности же консультация с широким активом влечет за собой процесс внедрения и модернизации систем массового участия. Не следует, однако забывать, что сложившаяся структура организации позволяет выполнять важные задания по разработке систем массового участия.</p>
-          <p> С другой стороны консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Товарищи! новая модель организационной деятельности требуют от нас анализа соответствующий условий активизации. Задача организации, в особенности же новая модель организационной деятельности требуют определения и уточнения направлений прогрессивного развития. Не следует, однако забывать, что сложившаяся структура организации в значительной степени обуславливает создание новых предложений.</p>
+        <div class="pageblocksl ">
+          <div class="container">
+            <div class="blockheader">
+              <div class="blockheader__left">
+                <h2>Рыба от «Маридель» - это</h2>
+              </div>
+            </div>
+            <div class="fitchesblock fitchesblock_type2 fitchesblock_col3 fitchesblock_notext">
+              <div class="fitchesblock__items">
+                <div class="fitchesblock__item">
+                  <div class="fitchesblock__wrapper">
+                    <div class="fitchesblock__header">
+                      <div class="fitchesblock__icon">
+                        <div class="fitchesblock__img">
+                          <div class="fitchesblock__number">01</div>
+                        </div>
+                        <!-- /.fitchesblock__img -->
+                      </div><!-- /.fitchesblock__icon -->
+                      <div class="fitchesblock__title">Доступные цены <br> на любые сорта</div>
+                      <!-- /.fitchesblock__title -->
+                    </div><!-- /.fitchesblock__header -->
+
+                  </div><!-- /.fitchesblock__wrapper -->
+                </div><!-- /.fitchesblock__item -->
+                <div class="fitchesblock__item">
+                  <div class="fitchesblock__wrapper">
+                    <div class="fitchesblock__header">
+                      <div class="fitchesblock__icon">
+                        <div class="fitchesblock__img">
+                          <div class="fitchesblock__number">02</div>
+                        </div>
+                        <!-- /.fitchesblock__img -->
+                      </div><!-- /.fitchesblock__icon -->
+                      <div class="fitchesblock__title">Отсутствие консервантов, красителей и лишней химии</div>
+                      <!-- /.fitchesblock__title -->
+                    </div><!-- /.fitchesblock__header -->
+
+                  </div><!-- /.fitchesblock__wrapper -->
+                </div><!-- /.fitchesblock__item -->
+                <div class="fitchesblock__item">
+                  <div class="fitchesblock__wrapper">
+                    <div class="fitchesblock__header">
+                      <div class="fitchesblock__icon">
+                        <div class="fitchesblock__img">
+                          <div class="fitchesblock__number">03</div>
+                        </div>
+                        <!-- /.fitchesblock__img -->
+                      </div><!-- /.fitchesblock__icon -->
+                      <div class="fitchesblock__title">Безопасность <br> и польза для здоровья</div>
+                      <!-- /.fitchesblock__title -->
+                    </div><!-- /.fitchesblock__header -->
+
+                  </div><!-- /.fitchesblock__wrapper -->
+                </div><!-- /.fitchesblock__item -->
+                <div class="fitchesblock__item">
+                  <div class="fitchesblock__wrapper">
+                    <div class="fitchesblock__header">
+                      <div class="fitchesblock__icon">
+                        <div class="fitchesblock__img">
+                          <div class="fitchesblock__number">04</div>
+                        </div>
+                        <!-- /.fitchesblock__img -->
+                      </div><!-- /.fitchesblock__icon -->
+                      <div class="fitchesblock__title">Огромный выбор <br> на любой вкус</div>
+                      <!-- /.fitchesblock__title -->
+                    </div><!-- /.fitchesblock__header -->
+
+                  </div><!-- /.fitchesblock__wrapper -->
+                </div><!-- /.fitchesblock__item -->
+                <div class="fitchesblock__item">
+                  <div class="fitchesblock__wrapper">
+                    <div class="fitchesblock__header">
+                      <div class="fitchesblock__icon">
+                        <div class="fitchesblock__img">
+                          <div class="fitchesblock__number">05</div>
+                        </div>
+                        <!-- /.fitchesblock__img -->
+                      </div><!-- /.fitchesblock__icon -->
+                      <div class="fitchesblock__title">Великолепное <br> качество продуктов</div>
+                      <!-- /.fitchesblock__title -->
+                    </div><!-- /.fitchesblock__header -->
+
+                  </div><!-- /.fitchesblock__wrapper -->
+                </div><!-- /.fitchesblock__item -->
+                <div class="fitchesblock__item">
+                  <div class="fitchesblock__wrapper">
+                    <div class="fitchesblock__header">
+                      <div class="fitchesblock__icon">
+                        <div class="fitchesblock__img">
+                          <div class="fitchesblock__number">06</div>
+                        </div>
+                        <!-- /.fitchesblock__img -->
+                      </div><!-- /.fitchesblock__icon -->
+                      <div class="fitchesblock__title">Отличный вкус и <br> привлекательный <br> внешний вид</div>
+                      <!-- /.fitchesblock__title -->
+                    </div><!-- /.fitchesblock__header -->
+
+                  </div><!-- /.fitchesblock__wrapper -->
+                </div><!-- /.fitchesblock__item -->
+              </div>
+            </div>
+            <div class="textcontainer">
+              <div class="text">
+                <p>Уже на протяжении 8 лет наша работа - продажа свежемороженой рыбы. За все это время мы удерживаем
+                  лидерские позиции. На сегодняшний день фирма считается одной из влиятельных дистрибьюторов.</p>
+              </div><!-- /.text -->
+            </div><!-- /.textcontainer -->
+
+          </div>
         </div>
-        <!-- /.seoblock__text -->
-      </div>
-      <!-- /.seoblock__wrapper -->
-    </div>
-    <!-- /.container -->
-  </div>
-  <!-- /.seoblock -->
-</main>
-<footer id="footer" class="footer">
+        <div class="pageblocksl ">
+          <div class="container">
+
+            <div class="text">
+              <h2>Здесь вы можете заказать рыбу с доставкой</h2>
+              <p>Оформите заказ в 2 клика, чтобы подать на стол восхитительные блюда из рыбы или морепродуктов. В нашем
+                магазине всегда актуальные выгодные цены. Доставим продукты в день заказа в специальных холодильниках. И
+                главное — мы следим, чтобы на продуктах была минимальная толщина ледовой глазури (не более 5% от общего
+                веса). Поэтому вы платите за вкусную рыбу, а не за лед.Занимаясь выбором рыбы в интернет-магазине,
+                можете быть уверены в том, что вам не придется платить деньги за лед.</p>
+            </div><!-- /.text -->
+          </div>
+        </div>
+
+        <div class="pageblocksl subscribeblock">
+          <div class="container">
+            <div class="subscribeblock__wrapper">
+              <div class="subscribeblock__container">
+                <div class="subscribeblock__items">
+                  <div class="subscribeblock__content">
+                    <div class="subscribeblock__title">
+                      <span class="mark">Подпишитесь</span> на нашу рассылку <br> и узнавайте о новинках, акциях <br> и
+                      скидках
+                      первыми
+                    </div><!-- /.subscribeblock__title -->
+                    <div class="subscribeblock__form">
+                      <form action="">
+                        <div class="subscribeblock__row">
+                          <div class="subscribeblock__input">
+                            <input type="email" placeholder="Ваш e-mail">
+                          </div><!-- /.subscribeblock__input -->
+                          <div class="subscribeblock__button">
+                            <button type="submit" class="btn_main">Подписаться</button>
+                          </div><!-- /.subscribeblock__button -->
+                        </div><!-- /.subscribeblock__row -->
+                        <div class="subscribeblock__confirm">
+                          Нажимая на кнопку, вы соглашаетесь с условиями <a href="#">Политики конфиденциальности</a>
+                        </div><!-- /.subscribeblock__confirm -->
+                      </form>
+                    </div><!-- /.subscribeblock__form -->
+                  </div><!-- /.subscribe__content -->
+                  <div class="subscribeblock__image">
+                    <div class="subscribeblock__img">
+                      <img src="img/telefon.png" alt="">
+                    </div><!-- /.subscribeblock__img -->
+                  </div><!-- /.subscribe__image -->
+                </div><!-- /.subscribe__items -->
+              </div><!-- /.subscribe__container -->
+            </div><!-- /.subscribe__wrapper -->
+          </div>
+        </div>
+      </main>
+      <footer id="footer" class="footer">
   <div class="footer__main">
     <div class="container">
       <div class="footer__items">

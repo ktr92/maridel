@@ -1,0 +1,373 @@
+<% var data={ title: "MAIN" , author: "" }; %>
+  <%= _.template(require('../includes/head.html').default)(data) %>
+    <%= _.template(require('../includes/header.html').default)(data) %>
+      <main>
+
+        <div class="breadcrumbs">
+          <div class="container">
+            <div class="breadcrumbs__items">
+              <ul>
+                <li><a href="/"><span>Главная страница</span></a></li>
+                <li><span>Блог</span></li>
+              </ul>
+            </div>
+            <!-- /.breadcrumbs__items -->
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /.breadcrumbs -->
+        <div class="pagecontainer">
+          <div class="container">
+            <div class="pageheader flex items-center content-between">
+              <div class="pageheader__left">
+                <h1>Блог</h1>
+              </div>
+              <div class="pageheader__right">
+                <div class="cataloglinks">
+                  <div class="cataloglinks__menu">
+                    <ul>
+                      <li><a href="">Все</a></li>
+                      <li><a href="">Рецепты</a></li>
+                      <li><a href="">Новости</a></li>
+                    </ul>
+                  </div><!-- /.cataloglinks__items -->
+                </div><!-- /.cataloglinks -->
+              </div><!-- /.pageheader__tight -->
+            </div>
+
+          </div>
+        </div><!-- /.catalogheader -->
+
+
+
+        <div class="pagelinktab">
+          <div class="container">
+            <ul>
+              <li><a href="" class='active'>Горячие закуски</a></li>
+              <li><a href="">Основные блюда</a></li>
+              <li><a href="">Салаты</a></li>
+              <li><a href="">Супы</a></li>
+              <li><a href="">Холодные закуски</a></li>
+            </ul>
+          </div><!-- /.container -->
+
+        </div><!-- /.pagelinktab -->
+
+        <div class="blogpage">
+          <div class="container">
+            <div id="video-popup">
+              <span id="video-close">&times;</span>
+              <div id="video-view"></div>
+            </div><!-- /#video-popup -->
+            <div class="blogpage__container">
+              <div class="blogpage__items">
+                <div class="blogpage__item">
+                  <div class="videoslider__cols">
+                    <div class="videoslider__col_main">
+                      <div class="videoslider__video">
+                        <div class="blogcard">
+                          <div class="blogcard__item">
+                            <div class="blogcard__mask">
+                            </div>
+                            <div class="blogcard__content">
+                              <a class="youtubepopup" href="#!"
+                                data-link="//www.youtube.com/embed/2SredNaIqn4?enablejsapi=1" tabindex="0">
+                                <div class="blogcard__image">
+                                  <div class="blogcard__img" style='background-image: url(img/video1.jpg);'>
+                                  </div>
+                                </div>
+                                <div class="blogcard__info flex items-center">
+                                  <div class="blogcard__icon"><img src="img/playvideo.svg" alt=""></div>
+                                  <div class="blogcard__title">
+                                    <div class="blogcard__name">
+                                      Осьминоги с запеченной свеклой и томатами черри
+                                    </div>
+                                    <div class="blogcard__duration">4:04</div>
+                                  </div><!-- /.blogcard__title -->
+                                </div><!-- /.blogcard__info -->
+
+                              </a><!-- /.blogcard -->
+                            </div><!-- /.blogs__content -->
+                          </div>
+                        </div><!-- /.blogs -->
+                      </div><!-- /.videoslider__video -->
+                    </div><!-- /.videoslider__col_main -->
+                    <div class="videoslider_col_aside">
+                      <div class="videoslider__video">
+                        <div class="blogcard">
+                          <div class="blogcard__item">
+                            <div class="blogcard__mask">
+                            </div>
+                            <div class="blogcard__content">
+                              <a class="youtubepopup" href="#!"
+                                data-link="//www.youtube.com/embed/2SredNaIqn4?enablejsapi=1" tabindex="0">
+                                <div class="blogcard__image">
+                                  <div class="blogcard__img" style='background-image: url(img/video2.jpg);'>
+                                  </div>
+                                </div>
+                                <div class="blogcard__info flex items-center">
+                                  <div class="blogcard__icon"><img src="img/playvideo.svg" alt=""></div>
+                                  <div class="blogcard__title">
+                                    <div class="blogcard__name">
+                                      Осьминоги с запеченной свеклой и томатами черри
+                                    </div>
+                                    <div class="blogcard__duration">4:04</div>
+                                  </div><!-- /.blogcard__title -->
+                                </div><!-- /.blogcard__info -->
+
+                              </a><!-- /.blogcard -->
+                            </div><!-- /.blogs__content -->
+                          </div>
+                        </div><!-- /.blogs -->
+                      </div><!-- /.videoslider__video -->
+                      <div class="videoslider__video">
+                        <div class="blogcard">
+                          <div class="blogcard__item">
+                            <div class="blogcard__mask">
+                            </div>
+                            <div class="blogcard__content">
+                              <a class="youtubepopup" href="#!"
+                                data-link="//www.youtube.com/embed/2SredNaIqn4?enablejsapi=1" tabindex="0">
+                                <div class="blogcard__image">
+                                  <div class="blogcard__img" style='background-image: url(img/video3.jpg);'>
+                                  </div>
+                                </div>
+                                <div class="blogcard__info flex items-center">
+                                  <div class="blogcard__icon"><img src="img/playvideo.svg" alt=""></div>
+                                  <div class="blogcard__title">
+                                    <div class="blogcard__name">
+                                      Осьминоги с запеченной свеклой и томатами черри
+                                    </div>
+                                    <div class="blogcard__duration">4:04</div>
+                                  </div><!-- /.blogcard__title -->
+                                </div><!-- /.blogcard__info -->
+
+                              </a><!-- /.blogcard -->
+                            </div><!-- /.blogs__content -->
+                          </div>
+                        </div><!-- /.blogs -->
+                      </div><!-- /.videoslider__video -->
+                    </div><!-- /.videoslider_col_aside -->
+                  </div><!-- /.videoslider__cols -->
+                </div><!-- /.videoslider__slide -->
+                <div class="blogpage__item">
+                  <div class="blogslider__items">
+                    <div class="blogslider__item">
+                      <div class="blogcard blogcard_type2">
+                        <div class="blogcard__item">
+                          <div class="blogcard__mask">
+                          </div>
+                          <div class="blogcard__content">
+                            <a class="" href="#">
+                              <div class="blogcard__image">
+                                <div class="blogcard__img"><img src="img/blog1.png" alt="">
+                                </div>
+                              </div>
+                              <div class="blogcard__info flex items-center">
+                                <div class="blogcard__title">
+                                  <div class="blogcard__name">
+                                    Чек-лист по покупке замороженной рыбы
+                                  </div>
+                                </div><!-- /.blogcard__title -->
+                              </div><!-- /.blogcard__info -->
+
+                            </a><!-- /.blogcard -->
+                          </div><!-- /.blogs__content -->
+                        </div>
+                      </div><!-- /.blogcard blogcard_type2 -->
+                    </div><!-- /.blogslider__slide -->
+                    <div class="blogslider__item">
+                      <div class="blogcard blogcard_type2">
+                        <div class="blogcard__item">
+                          <div class="blogcard__mask">
+                          </div>
+                          <div class="blogcard__content">
+                            <a class="" href="#">
+                              <div class="blogcard__image">
+                                <div class="blogcard__img"><img src="img/blog2.png" alt="">
+                                </div>
+                              </div>
+                              <div class="blogcard__info flex items-center">
+                                <div class="blogcard__title">
+                                  <div class="blogcard__name">
+                                    Польза морской рыбы
+                                  </div>
+                                </div><!-- /.blogcard__title -->
+                              </div><!-- /.blogcard__info -->
+
+                            </a><!-- /.blogcard -->
+                          </div><!-- /.blogs__content -->
+                        </div>
+                      </div><!-- /.blogcard blogcard_type2 -->
+                    </div><!-- /.blogslider__slide -->
+                    <div class="blogslider__item">
+                      <div class="blogcard blogcard_type2">
+                        <div class="blogcard__item">
+                          <div class="blogcard__mask">
+                          </div>
+                          <div class="blogcard__content">
+                            <a class="" href="#">
+                              <div class="blogcard__image">
+                                <div class="blogcard__img"><img src="img/blog3.png" alt="">
+                                </div>
+                              </div>
+                              <div class="blogcard__info flex items-center">
+                                <div class="blogcard__title">
+                                  <div class="blogcard__name">
+                                    Новинка: кальмар консервированный
+                                  </div>
+                                </div><!-- /.blogcard__title -->
+                              </div><!-- /.blogcard__info -->
+
+                            </a><!-- /.blogcard -->
+                          </div><!-- /.blogs__content -->
+                        </div>
+                      </div><!-- /.blogcard blogcard_type2 -->
+                    </div><!-- /.blogslider__slide -->
+
+                  </div>
+                </div>
+                <div class="blogpage__item">
+                  <div class="videoslider__cols">
+
+                    <div class="videoslider_col_aside">
+                      <div class="videoslider__video">
+                        <div class="blogcard">
+                          <div class="blogcard__item">
+                            <div class="blogcard__mask">
+                            </div>
+                            <div class="blogcard__content">
+                              <a class="youtubepopup" href="#!"
+                                data-link="//www.youtube.com/embed/2SredNaIqn4?enablejsapi=1" tabindex="0">
+                                <div class="blogcard__image">
+                                  <div class="blogcard__img" style='background-image: url(img/video2.jpg);'>
+                                  </div>
+                                </div>
+                                <div class="blogcard__info flex items-center">
+                                  <div class="blogcard__icon"><img src="img/playvideo.svg" alt=""></div>
+                                  <div class="blogcard__title">
+                                    <div class="blogcard__name">
+                                      Осьминоги с запеченной свеклой и томатами черри
+                                    </div>
+                                    <div class="blogcard__duration">4:04</div>
+                                  </div><!-- /.blogcard__title -->
+                                </div><!-- /.blogcard__info -->
+
+                              </a><!-- /.blogcard -->
+                            </div><!-- /.blogs__content -->
+                          </div>
+                        </div><!-- /.blogs -->
+                      </div><!-- /.videoslider__video -->
+                      <div class="videoslider__video">
+                        <div class="blogcard">
+                          <div class="blogcard__item">
+                            <div class="blogcard__mask">
+                            </div>
+                            <div class="blogcard__content">
+                              <a class="youtubepopup" href="#!"
+                                data-link="//www.youtube.com/embed/2SredNaIqn4?enablejsapi=1" tabindex="0">
+                                <div class="blogcard__image">
+                                  <div class="blogcard__img" style='background-image: url(img/video3.jpg);'>
+                                  </div>
+                                </div>
+                                <div class="blogcard__info flex items-center">
+                                  <div class="blogcard__icon"><img src="img/playvideo.svg" alt=""></div>
+                                  <div class="blogcard__title">
+                                    <div class="blogcard__name">
+                                      Осьминоги с запеченной свеклой и томатами черри
+                                    </div>
+                                    <div class="blogcard__duration">4:04</div>
+                                  </div><!-- /.blogcard__title -->
+                                </div><!-- /.blogcard__info -->
+
+                              </a><!-- /.blogcard -->
+                            </div><!-- /.blogs__content -->
+                          </div>
+                        </div><!-- /.blogs -->
+                      </div><!-- /.videoslider__video -->
+                    </div><!-- /.videoslider_col_aside -->
+                    <div class="videoslider__col_main">
+                      <div class="videoslider__video">
+                        <div class="blogcard">
+                          <div class="blogcard__item">
+                            <div class="blogcard__mask">
+                            </div>
+                            <div class="blogcard__content">
+                              <a class="youtubepopup" href="#!"
+                                data-link="//www.youtube.com/embed/2SredNaIqn4?enablejsapi=1" tabindex="0">
+                                <div class="blogcard__image">
+                                  <div class="blogcard__img" style='background-image: url(img/video1.jpg);'>
+                                  </div>
+                                </div>
+                                <div class="blogcard__info flex items-center">
+                                  <div class="blogcard__icon"><img src="img/playvideo.svg" alt=""></div>
+                                  <div class="blogcard__title">
+                                    <div class="blogcard__name">
+                                      Осьминоги с запеченной свеклой и томатами черри
+                                    </div>
+                                    <div class="blogcard__duration">4:04</div>
+                                  </div><!-- /.blogcard__title -->
+                                </div><!-- /.blogcard__info -->
+
+                              </a><!-- /.blogcard -->
+                            </div><!-- /.blogs__content -->
+                          </div>
+                        </div><!-- /.blogs -->
+                      </div><!-- /.videoslider__video -->
+                    </div><!-- /.videoslider__col_main -->
+                  </div><!-- /.videoslider__cols -->
+                </div>
+              </div>
+              <div class="catalognav blognav">
+                <div class="catalognav__showmore">
+                  <a href="#" class='showmorelink btn_border'>
+                    <span>Показать еще</span>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div><!-- /.container -->
+        </div><!-- /.blogpage -->
+
+
+        <div class="pageblocksl subscribeblock">
+          <div class="container">
+            <div class="subscribeblock__wrapper">
+              <div class="subscribeblock__container">
+                <div class="subscribeblock__items">
+                  <div class="subscribeblock__content">
+                    <div class="subscribeblock__title">
+                      <span class="mark">Подпишитесь</span> на нашу рассылку <br> и узнавайте о новинках, акциях <br>
+                      и
+                      скидках
+                      первыми
+                    </div><!-- /.subscribeblock__title -->
+                    <div class="subscribeblock__form">
+                      <form action="">
+                        <div class="subscribeblock__row">
+                          <div class="subscribeblock__input">
+                            <input type="email" placeholder="Ваш e-mail">
+                          </div><!-- /.subscribeblock__input -->
+                          <div class="subscribeblock__button">
+                            <button type="submit" class="btn_main">Подписаться</button>
+                          </div><!-- /.subscribeblock__button -->
+                        </div><!-- /.subscribeblock__row -->
+                        <div class="subscribeblock__confirm">
+                          Нажимая на кнопку, вы соглашаетесь с условиями <a href="#">Политики конфиденциальности</a>
+                        </div><!-- /.subscribeblock__confirm -->
+                      </form>
+                    </div><!-- /.subscribeblock__form -->
+                  </div><!-- /.subscribe__content -->
+                  <div class="subscribeblock__image">
+                    <div class="subscribeblock__img">
+                      <img src="img/telefon.png" alt="">
+                    </div><!-- /.subscribeblock__img -->
+                  </div><!-- /.subscribe__image -->
+                </div><!-- /.subscribe__items -->
+              </div><!-- /.subscribe__container -->
+            </div><!-- /.subscribe__wrapper -->
+          </div>
+        </div>
+      </main>
+      <%= _.template(require('../includes/footer.html').default)(data) %>

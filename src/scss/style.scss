@@ -3507,18 +3507,18 @@ a.dropdownpanel__link {
 }
 .blockheader {
   position: relative;
+  .sliderarrows {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .sliderarrow {
+    position: initial;
+    transform: none;
+
+    margin-left: 10px;
+  }
 }
 
-.sliderarrows {
-  display: flex;
-  flex-wrap: nowrap;
-}
-.sliderarrow {
-  position: initial;
-  transform: none;
-
-  margin-left: 10px;
-}
 .catalogrelated {
   .sliderarrows {
     display: none;
@@ -3783,9 +3783,6 @@ a.dropdownpanel__link {
   }
   .pagination ul li a {
     min-width: 50px;
-  }
-  .cataloglist__item .productcard {
-    min-width: unset;
   }
 }
 
@@ -4797,5 +4794,98 @@ a.dropdownpanel__link {
   }
   .reviewsblock__items .reviewsblock__item:first-child .reviewsblock__answer {
     background-position: bottom right;
+  }
+  .cataloglist__items {
+    justify-content: flex-start;
+  }
+  .cataloglist__item {
+    max-width: 162px;
+  }
+  .cataloglist__item .productcard {
+    min-width: unset;
+    max-width: 162px;
+  }
+  .catalogpage__main {
+    width: 100%;
+  }
+  .catalogpage__aside.catalogaside {
+    display: none;
+  }
+  .catalogpanel {
+    margin-bottom: 20px;
+  }
+  .dropdownpanel {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    padding-bottom: 250px;
+    margin-bottom: -250px;
+
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .catalognav {
+    flex-wrap: wrap;
+  }
+  .pagination ul li {
+    margin: 0 2px;
+  }
+  .catalognav__showmore {
+    width: 100%;
+  }
+  .container {
+    max-width: 800px;
+  }
+  .cataloglinks__menu.dm-menu_item-subindicator ul li {
+    margin-right: 13px;
+  }
+  .catalognav__pagination {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .productcard {
+    max-width: 162px;
+    min-width: 162px;
+  }
+  .seoblock__text ul li {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+  }
+  .dm-item_submenu-overflow ul li a {
+    padding: 10px !important;
+    height: initial !important;
+  }
+  .fitchesblock__title {
+    width: 100%;
+  }
+  .fitchesblock__item {
+    width: 100%;
+    flex: unset;
+  }
+  .formblock__container,
+  .subscribeblock__container {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mainslide__content {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mainslide__wrapperMobile {
+    width: 100%;
+    background-size: cover;
+  }
+}
+
+@include small-screen {
+  .mainslide__wrapperMobile {
+    background-size: contain;
   }
 }

@@ -1,3 +1,4 @@
+
 function initFE() {
   /*   cardImagesSlider() */
   /*   menuInit() */
@@ -8,6 +9,7 @@ function initFE() {
   videoPopup()
   dropdownInit()
   menuInit()
+  quantityForm()
   /*   detailsliderInit()
   imgSliderInit()
   recipeSliderInit() */
@@ -795,6 +797,64 @@ function productListImgLisder() {
       })
     })
   }
+}
+
+function quantityForm() {
+  MathUtils = {
+    roundToPrecision: function (subject, precision) {
+      return +(+subject).toFixed(precision)
+    },
+  }
+
+  function incrementValue(e, step) {
+    var fieldName = e.data("field")
+    var parent = e.closest("[data-quantity]")
+    var currentVal = +parseFloat(
+      parent.find("input[name=" + fieldName + "]").val()
+    ).toFixed(1)
+    console.log(currentVal)
+    if (!isNaN(currentVal)) {
+      parent
+        .find("input[name=" + fieldName + "]")
+        .val(MathUtils.roundToPrecision(currentVal + step, 1))
+    } else {
+      parent.find("input[name=" + fieldName + "]").val(step)
+    }
+    parent.find("input[name=" + fieldName + "]").trigger("change")
+  }
+
+  function decrementValue(e, step) {
+    var fieldName = e.data("field")
+    var parent = e.closest("[data-quantity]")
+    var currentVal = +parseFloat(
+      parent.find("input[name=" + fieldName + "]").val()
+    ).toFixed(1)
+    console.log(currentVal)
+    if (!isNaN(currentVal) && currentVal > step) {
+      parent
+        .find("input[name=" + fieldName + "]")
+        .val(MathUtils.roundToPrecision(currentVal - step, 1))
+    } else {
+      parent.find("input[name=" + fieldName + "]").val(step)
+    }
+    parent.find("input[name=" + fieldName + "]").trigger("change")
+  }
+
+  $(document).on("click", "[data-quantitybtn='plus']", function (e) {
+    let step = +parseFloat(
+      $(this).closest("[data-quantity]").find('[type="number"]').attr("step")
+      ).toFixed(1)
+    let btn = $(this).closest("[data-quantity]").find('[data-quantitybtn="plus"]')
+    incrementValue(btn, step)
+  })
+
+  $(document).on("click", "[data-quantitybtn='minus']", function (e) {
+    let step = +parseFloat(
+    $(this).closest("[data-quantity]").find('[type="number"]').attr("step")
+    ).toFixed(1)
+    let btn = $(this).closest("[data-quantity]").find('[data-quantitybtn="minus"]')
+    decrementValue(btn, step)
+  })
 }
 
 window.addEventListener("load", function () {

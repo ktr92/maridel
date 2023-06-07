@@ -5,7 +5,7 @@
 $(document).ready(function() {
     if ($(document).width() > 1023) {
       if (document.querySelector('.cartblock__aside aside')) {
-          var a = document.querySelector('.cartblock__aside aside'), b = null, P = 107;  
+          var a = document.querySelector('.cartblock__aside aside'), b = null, P = 55;  
           window.addEventListener('scroll', Ascroll, false);
           document.body.addEventListener('scroll', Ascroll, false);
           function Ascroll() {
@@ -28,7 +28,7 @@ $(document).ready(function() {
                   a.style.border = '0';
               }
               var Ra = a.getBoundingClientRect(),
-                      R = Math.round(Ra.top + b.getBoundingClientRect().height - document.querySelector('.subscribeblock').getBoundingClientRect().top + 0);  
+                      R = Math.round(Ra.top + b.getBoundingClientRect().height - document.querySelector('.stopblock').getBoundingClientRect().top + 0);  
               if ((Ra.top - P) <= 0) {
                   if ((Ra.top - P) <= R) {
                       b.className = 'stop';

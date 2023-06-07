@@ -54,6 +54,9 @@ a {
 .mb-100 {
 margin-bottom: 100px;
 }
+.nowrap {
+  white-space: nowrap;
+}
 
 @media (max-width: 1023px) {
   .mobile-full {

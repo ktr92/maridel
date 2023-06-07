@@ -799,6 +799,8 @@ function productListImgLisder() {
   }
 }
 
+
+
 function quantityForm() {
   MathUtils = {
     roundToPrecision: function (subject, precision) {
@@ -855,6 +857,8 @@ function quantityForm() {
     let btn = $(this).closest("[data-quantity]").find('[data-quantitybtn="minus"]')
     decrementValue(btn, step)
   })
+
+
 }
 
 window.addEventListener("load", function () {

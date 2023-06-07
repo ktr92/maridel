@@ -5039,7 +5039,15 @@ margin-bottom: 31px;
 .formblock__submit{
   margin-top: 20px;
 }
+.personalcontent__text {
+  font-style: normal;
+font-weight: 400;
+font-size: 26px;
+line-height: 31px;
 
+color: #3A3A3A;
+margin-bottom: 34px;
+}
 @include large-screen {
 
   
@@ -6638,6 +6646,10 @@ margin-bottom: 31px;
 }
 .personalpage__aside.asidewrapper__aside {
   width: 100%;
+}
+.personalcontent__text {
+  font-size: 20px;
+  line-height: 1.2;
 }
 }
 

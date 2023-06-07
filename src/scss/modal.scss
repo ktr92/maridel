@@ -189,7 +189,7 @@ input[type="password"] {
   color: #3b435a;
 
   &.input-error {
-    border: 2px solid #ff585f;
+    border-color: #ff585f;
   }
 }
 
@@ -220,16 +220,6 @@ textarea {
   &:focus {
     border: 2px solid #04a3e9;
   }
-}
-
-.input-errortext {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 100%;
-  /* or 12px */
-
-  color: #ff585f;
 }
 
 .modal-title {

@@ -1,0 +1,137 @@
+<% var data={ title: "MAIN" , author: "" }; %>
+  <%= _.template(require('../includes/head.html').default)(data) %>
+    <%= _.template(require('../includes/header.html').default)(data) %>
+      <main>
+
+        <div class="breadcrumbs">
+          <div class="container">
+            <div class="breadcrumbs__items">
+              <ul>
+                <li><a href="/"><span>Главная страница</span></a></li>
+                <li><span>Персональный раздел</span></li>
+              </ul>
+            </div>
+            <!-- /.breadcrumbs__items -->
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /.breadcrumbs -->
+        
+
+        <div class="personalpage">
+          <div class="container">
+            <div class="personalpage__wrapper flex asidewrapper">
+              <div class="personalpage__aside  asidewrapper__aside">
+                <aside>
+                  <div class="asidewrapper_asideblock">
+                    <div class="asideblock personalblock">
+                      <div class="grayblock">
+                        <div class="grayblock__title personalblock__title">Добро пожаловать
+                          Сергей!</div>
+                        <div class="grayblock__text personalblock__text1">Уровень: карта 3%</div>
+                        <div class="grayblock__text personalblock__text2">На балансе вашей карты:</div>
+                        <div class="grablock__bigtext personalblock__price">500 ₽</div><!-- /.grablock__bigtext -->
+                      </div><!-- /.grayblock -->
+                    </div><!-- /.asideblock -->
+                    <div class="asidemenu asidewrapper__menu">
+                      <div class="asidemenu__wrapper">
+                        <div class="asidemenu__items">
+                          <div class="asidemenu__level_1">
+                            <ul class="asidemenuLevelOne">
+                              <li class='asidemenuLevelOne__item active'>
+                                <a href="" class='asidemenuLevelOne__link'>
+                                  <span class='asidemenu__name'>Профиль</span>
+                                </a>
+
+                              </li>
+                              <li class='asidemenuLevelOne__item '>
+                                <a href="" class='asidemenuLevelOne__link'>
+                                  <span class='asidemenu__name'>Заказы</span>
+                                </a>
+
+                              </li>
+                              <li class='asidemenuLevelOne__item '>
+                                <a href="" class='asidemenuLevelOne__link'>
+                                  <span class='asidemenu__name'>Подписка</span>
+                                </a>
+
+                              </li>
+                              <li class='asidemenuLevelOne__item '>
+                                <a href="" class='asidemenuLevelOne__link'>
+                                  <span class='asidemenu__name'>Корзина</span>
+                                </a>
+
+                              </li>
+                              <li class='asidemenuLevelOne__item '>
+                                <a href="" class='asidemenuLevelOne__link'>
+                                  <span class='asidemenu__name'>Выход</span>
+                                </a>
+
+                              </li>
+                             
+                            </ul>
+                          </div>
+                          <!-- /.asidemenu__level_1 -->
+                        </div>
+                        <!-- /.asidemenu__items -->
+                      </div>
+                      <!-- /.asidemenu__wrapper -->
+                    </div>
+                    <!-- /.asidemenu -->
+                  </div><!-- /.cols_asideblock -->
+                </aside>
+              </div>
+              <!-- /.catalogpage__aside -->
+              <div class=" asidewrapper__main">
+                <div class="personalcontent">
+                  <div class="personalcontent__title">Ваш профиль</div><!-- /.personalcontent__title -->
+                  <div class="personalcontent__form">
+                    <form action="">
+                      <div class="formblock">
+                        <div class="formblock__row">
+                          <div class="formblock__input formblock__input_col3">
+                            <input type="text" placeholder='Имя' value='Иван'>
+                          </div><!-- /.formblock__input formblock__input_col3 -->
+                          <div class="formblock__input formblock__input_col3">
+                            <input type="text" placeholder='Фамилия' value='Иванов'>
+                          </div><!-- /.formblock__input formblock__input_col3 -->
+                          <div class="formblock__input formblock__input_col3">
+                            <input type="text" placeholder='123' class='input-error'>
+                            <span class="input-errortext">Отчество не может содержать символы: 123</span>
+                          </div><!-- /.formblock__input formblock__input_col3 -->
+                          <div class="formblock__input formblock__input_col2">
+                            <input type="email" placeholder='E-mail' value='ivanov.ivan@yandex.ru'>
+                          </div><!-- /.formblock__input formblock__input_col2 -->
+                          <div class="formblock__input formblock__input_col2">
+                            <input type="tel" placeholder='+7 (999)-999-99-99'  value='+7 (953)-435-88-97'>
+                          </div><!-- /.formblock__input formblock__input_col2 -->
+                          <div class="formblock__input formblock__input_col2">
+                            <input type="password" placeholder='Новый пароль'  >
+                          </div><!-- /.formblock__input formblock__input_col2 -->
+                          <div class="formblock__input formblock__input_col2">
+                            <input type="password" placeholder='Подтверждение нового пароля' '>
+                            <span class="input-errortext input-inform">Пароль должен быть не менее 6 символов</span>
+                          </div><!-- /.formblock__input formblock__input_col2 -->
+                        </div><!-- /.formblock__row -->
+                        <div class="formblock__submit">
+                          <button type='submit' class='btn_main btn_main_type2'>Сохранить</button>
+                        </div><!-- /.formblock__submit -->
+                      </div><!-- /.formblock -->
+                    </form>
+                  </div><!-- /.personalcontent__form -->
+                </div><!-- /.personalcontent -->
+              </div>
+              <!-- /.catalogpage__main -->
+            </div>
+            <!-- /.catalogpage__wrapper -->
+          </div>
+          <!-- /.container -->
+
+        </div>
+        <!-- /.catalogpage -->
+
+
+     
+
+      </main>
+      <%= _.template(require('../includes/footer.html').default)(data) %>

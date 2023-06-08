@@ -36,7 +36,18 @@
                     <div class="swiper-slide">
                       <div class="zoom-box"><img src="img/bd8b8d6669b7b1308b939a32f2af4f27.png" /></div>
                     </div>
-                   
+                    <div class="swiper-slide">
+                      <div class="zoom-box"><img src="img/product2.jpg" /></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="zoom-box"><img src="img/product3.jpg" /></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="zoom-box"><img src="img/bd8b8d6669b7b1308b939a32f2af4f27.png" /></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="zoom-box"><img src="img/bd8b8d6669b7b1308b939a32f2af4f27.png" /></div>
+                    </div>
                     <div class="swiper-slide">
                       <div class="zoom-box"><img src="img/bd8b8d6669b7b1308b939a32f2af4f27.png" /></div>
                     </div>
@@ -51,14 +62,24 @@
                     <div class="swiper-slide">
                       <img src="img/bd8b8d6669b7b1308b939a32f2af4f27.png" />
                     </div>
-                   
+                    <div class="swiper-slide">
+                      <img src="img/product2.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/product3.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/bd8b8d6669b7b1308b939a32f2af4f27.png" />
+                    </div>
                     <div class="swiper-slide">
                       <img src="img/bd8b8d6669b7b1308b939a32f2af4f27.png" />
                     </div>
                     <div class="swiper-slide">
                       <img src="img/bd8b8d6669b7b1308b939a32f2af4f27.png" />
                     </div>
-                   
+                    <div class="swiper-slide">
+                      <img src="img/bd8b8d6669b7b1308b939a32f2af4f27.png" />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -155,7 +176,8 @@
                   <!-- /.detailtable -->
 
                   <div class="detailinfo__buyblock">
-                    <div class="detailbuy">
+                    <!-- когда нет в наличии, здесь доп класс  detailbuy_out -->
+                    <div class="detailbuy detailbuy_out">
                       <form action="#">
                        
                         <div class="detailbuy__buyblock">
@@ -163,32 +185,12 @@
                             <div class="productcard__buy">
                               
                               <div class="buyblock__buttons flex items-center">
-                                <div class="buyblock__quantity">
-                                  <div class="quantity">
-                                    <div class="quantity__blocks" data-quantity='quantity'>
-                                      <div class="quantity__block">
-                                        <div class="quantity__title">Кол-во</div>
-                                        <div class="quantity__input">
-                                          <input type="number" readonly="" data-entity="basket-item-quantity" data-base="1"
-                                            step="1"  value="1" name="QUANTITY_690" class="quantity-field">
-                                        </div><!-- /.quantity__input -->
-                                      </div><!-- /.quantity__block -->
-                                      <div class="quantity__block">
-                                        <button  class="quantity-plus quantity__button" data-field="QUANTITY_690" data-quantitybtn='plus'>
-                                          <img src="img/quantity-plus.svg" alt="" >
-                                        </button>
-                                        <button class="quantity-minus quantity__button" data-field="QUANTITY_690" data-quantitybtn='minus'>
-                                          <img src="img/quantity-minus.svg" alt="">
-                                        </button>
-                                      </div><!-- /.quantity__block -->
-                                    </div><!-- /.quantity__blocks -->
-          
-                                  </div>
-                                </div>
+                               <div class="detailbuy__text">
+                                Сейчас товара нет в наличии
+                               </div><!-- /.detailbuy__text -->
                                 <div class="productcard__addtocart">
                                  
-                                  <button class="btn_main btn_main_type2 js-addmodal">
-                                      <span>Добавить в корзину</span>
+                                  <a href='#' class="btn_border">Уведомить о поступлении</a>
                                     </div>
                                    
                                   </button>
@@ -213,9 +215,7 @@
                               
                               </div>
                               <!-- /.buyblock__buttons -->
-                              <div class="detailbuy__click">
-                                <a href="#" class='btn_border'>Купить в 1 клик</a>
-                              </div><!-- /.detailbuy__click -->
+                             
                             </div>
                           </div>
                           <!-- /.buyblock -->

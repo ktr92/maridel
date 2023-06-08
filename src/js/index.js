@@ -11,6 +11,7 @@ function initFE() {
   menuInit()
   quantityForm()
    detailsliderInit()
+   hideText()
   /*  imgSliderInit()
   recipeSliderInit() */
   /*  mobileAccordeon() */
@@ -116,6 +117,7 @@ $(document).ready(function () {
       $(this).toggleClass('active')
       $('.contacts__dropdown').slideToggle()
   }) */
+
 
   $("[data-toggleclick='mainmenu']").on("click", function (e) {
     e.preventDefault()
@@ -278,6 +280,20 @@ $(document).ready(function () {
   menuInit()
   $(window).resize()
 })
+
+function hideText() {
+  $('.detailparam__text').each(function() {
+    if ($(this) && $(this).height() > 20) {
+      $(this).addClass('detailparam__text_large')
+      $(this).on("click", function (e) {
+        e.preventDefault()
+        $(this).toggleClass("active")
+      })
+    }
+  })
+  
+  
+}
 
 function mainSliderInit() {
   $(".mainslider__slider").slick({

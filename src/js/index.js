@@ -10,8 +10,8 @@ function initFE() {
   dropdownInit()
   menuInit()
   quantityForm()
-  /*   detailsliderInit()
-  imgSliderInit()
+   detailsliderInit()
+  /*  imgSliderInit()
   recipeSliderInit() */
   /*  mobileAccordeon() */
   closeByOutsideSelect()
@@ -374,14 +374,13 @@ function videoPopup() {
 
 function detailsliderInit() {
   const swiper = new Swiper(".detailswiperpreview", {
-    spaceBetween: 9,
+    spaceBetween: 20,
     scrollbar: {
       el: ".swiper-scrollbar",
       draggable: true,
     },
     slidesPerView: "auto",
     mousewheel: true,
-    direction: "vertical",
     freeMode: true,
     watchSlidesProgress: true,
   })
@@ -397,6 +396,9 @@ function detailsliderInit() {
       el: ".detailslider-pagination",
       clickable: true,
     },
+    slidesPerView: 1,
+
+    effect: "fade"
   })
 
   $(function () {

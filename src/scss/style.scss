@@ -3715,7 +3715,7 @@ a.dropdownpanel__link {
     width: 100%;
     li {
       flex: 1;
-      a {
+      a,span  {
         display: block;
         padding: 25px 32px;
         border-bottom: 3px solid #e1e1e1;
@@ -3726,7 +3726,7 @@ a.dropdownpanel__link {
         text-align: center;
         color: rgba(83, 90, 103, 0.4);
         height: 100%;
-
+        cursor: pointer;
         &.active,
         &:hover {
           color: #08105b;

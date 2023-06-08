@@ -234,15 +234,13 @@ $(document).ready(function () {
   })
   ;(function ($) {
     $(function () {
-      $(".js-tabsheader").on("click", "li:not(.active)", function () {
+      $("[data-tabsbutton]").on("click", "li span:not(.active) ", function (e) {
+        e.preventDefault()
         $(this)
           .addClass("active")
-          .siblings()
-          .removeClass("active")
-          .closest("div.js-tabs")
-          .find("div.js-tabscontent")
-          .removeClass("active")
-          .eq($(this).index())
+          .parent().siblings().find('span').removeClass("active")
+        $(this).closest("[data-tabs]").find("[data-tabscontent]").removeClass("active")
+          .eq($(this).parent().index())
           .addClass("active")
       })
     })

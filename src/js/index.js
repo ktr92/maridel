@@ -118,6 +118,7 @@ $(document).ready(function () {
       $('.contacts__dropdown').slideToggle()
   }) */
 
+  new WOW().init();
 
   $("[data-toggleclick='mainmenu']").on("click", function (e) {
     e.preventDefault()
@@ -189,8 +190,8 @@ $(document).ready(function () {
       .css("width", $(this).find(".cardrating__value").text() * 18)
   }) */
 
-  /*   $("input[type=tel]").mask("7 (999) 999-99-99")
-   */
+    $("input[type=tel]").mask("7 (999) 999-99-99")
+  
   /*   lightbox.option({
     resizeDuration: 0,
   }) */
@@ -302,8 +303,8 @@ function mainSliderInit() {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    /*  autoplay: true,
-    autoplaySpeed: 3000, */
+     autoplay: true,
+    autoplaySpeed: 3000,
   })
 }
 function videoSliderInit() {
@@ -369,12 +370,12 @@ function blogSliderInit() {
 }
 
 function videoPopup() {
-  $(".youtubepopup").click(function () {
+  $("[data-ytlink]").click(function () {
     var $this = $(this)
     var $iframe = $(
       '<iframe frameborder="0" allow="autoplay; encrypted-media" class="iframe" id="Overlayvideo" allowfullscreen="true">'
     )
-      .attr("src", $this.data("link"))
+      .attr("src", $this.data("ytlink"))
       .css({ width: 400, height: 300 })
     var $title = ""
     $("#video-view").html($title).append($iframe)

@@ -25,9 +25,12 @@
 }
 
 .modal-dialog {
-  width: 662px;
+  width: 500px;
   max-width: 100%;
-  min-height: 762px;
+}
+.modal_type2 .modal-dialog {
+  width: 620px;
+  max-width: 100%;
 }
 
 .modal-body {
@@ -56,25 +59,43 @@
 button.close {
   top: 15px;
   right: 15px;
-  opacity: 1 !important;
+
   z-index: 999;
   position: absolute;
   font-size: 35px;
 }
 
 .modal-title {
-  font-size: 24px;
-  text-transform: none;
-  font-weight: bold;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  margin-top: 15px;
   text-align: center;
+  color: #3A3A3A;
+  margin-bottom: 24px;
+  
 }
+.modal_type2 {
+  .modal-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    text-align: left;
+    color: #3A3A3A;
+  }
 
+
+
+  
+}
 .modal-content {
   border: none;
   box-shadow: none;
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 39px 62px 30px 62px;
+  background: #FFFFFF;
+  border-radius: 15px;
+  padding: 24px 30px;
 }
 
 .modal-body {
@@ -222,16 +243,6 @@ textarea {
   }
 }
 
-.modal-title {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 100%;
-  /* identical to box height, or 22px */
-
-  margin-bottom: 24px;
-  color: #25344f;
-}
 
 .modal-body {
   padding: 0;
@@ -252,15 +263,51 @@ button.close {
   font-size: 10px;
   top: 21px;
   right: 21px;
+  opacity: 0.4;
 }
 
-.map-delivery {
-  height: 252px;
-  width: 100%;
+button.close:hover {
+  opacity: 1;
 }
+
 
 .modal-dialog_product {
   width: 1174px;
+}
+
+.modal {
+  .cartproduct {
+    margin-bottom: 30px;
+
+  }
+  .cartproduct__image {
+    height: 100px;
+    max-width: 100px;
+    min-width: 100px;
+  }
+}
+.cartproduct__img {
+ img {
+  border-radius: 10px;
+  overflow: hidden;
+ }
+}
+.modal__buttons {
+  .cartproduct__img {
+    height: 100%;
+  }
+  .btn_main, .btn_border {
+    height: 55px;
+    line-height: 55px;
+    padding: 0 15px;
+    text-align: center;
+    width: 100%;
+    min-width: unset;
+    max-width: 100%;
+  }
+  .btn_border {
+    line-height: 51px;
+  }
 }
 
 @include medium-screen {
@@ -331,22 +378,23 @@ button.close {
 
   .modal-dialog {
     margin: 18px auto;
-    width: calc(100% - 36px);
+    width: calc(100% - 36px) !important;
   }
 
   button.close {
-    width: 7px;
-    height: 7px;
+    width: 15px;
+    height: 15px;
     opacity: 0.7 !important;
     right: 17px;
     top: 17px;
   }
 
-  .modal-title {
+  .modal-title, .modal_type2 .modal-title {
     margin-bottom: 13px;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 100%;
   }
+  
 
   .deliverytabs__header li {
     height: 32px;

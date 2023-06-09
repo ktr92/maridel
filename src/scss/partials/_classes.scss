@@ -57,7 +57,17 @@ margin-bottom: 100px;
 .nowrap {
   white-space: nowrap;
 }
+.text-left {
+  text-align: left !important;
+}
 
+.text-center {
+  text-align: center !important;
+}
+.w-full {
+  width: 100%;
+  max-width: 100%;
+}
 @media (max-width: 1023px) {
   .mobile-full {
     width: 100% !important;

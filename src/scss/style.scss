@@ -3014,7 +3014,7 @@ button {
   background-color: #f9f9f9;
   border-radius: 15px;
   position: relative;
-  height: 450px;
+  min-height: 450px;
 }
 .formblock__container {
   padding: 60px;
@@ -3054,11 +3054,17 @@ button {
   position: relative;
 }
 .formblock__button {
+  padding: 0 10px 0 10px;
   a,
   button,
   input {
     width: 100%;
   }
+}
+.pageblocksl .formblock__confirm {
+  max-width: 399px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .btn_main {
 }
@@ -3897,7 +3903,7 @@ a.dropdownpanel__link {
   color: rgba(83, 90, 103, 0.4);
 }
 
-.blogmain__content {
+.blogmain__content, .textinfo  {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -3936,7 +3942,12 @@ a.dropdownpanel__link {
     padding-left: 59px;
     min-height: 40px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
   ol li::before {
     content: counter(my-awesome-counter);
@@ -5288,6 +5299,244 @@ a:hover {
   }
 }
 
+a, button {
+  transition: all 0.3s ease;
+}
+
+
+
+.formrating {
+  display: flex;
+  align-items: center; }
+  .formrating .fa-star {
+    font-size: 23px;
+    cursor: pointer;
+    margin-right: 5px; }
+  .formrating .score-wrap {
+    width: 148px; }
+
+
+.formrating__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  
+  color: #3A3A3A;
+  
+  white-space: nowrap;
+  margin-right: 24px;
+ }
+
+.formrating__value {
+display: none;}
+
+
+.reviewspage {
+  .reviewsblock__items {
+    flex-wrap: wrap;
+  }
+  .reviewsblock__item {
+    width: 100%;
+    flex: unset;
+    margin-bottom: 20px;
+
+    &:nth-child(3n - 2) {
+      .reviewsblock__answer {
+        background-image: url(../img/reviewsblock__answer1.svg) !important;
+        background-position: right bottom !important;
+      }
+    }
+    &:nth-child(3n - 1) {
+      .reviewsblock__answer {
+        background-image: url(../img/reviewsblock__answer2.svg) !important;
+        background-position: right top !important;
+      }
+    }
+    &:nth-child(3n) {
+      .reviewsblock__answer {
+        background-image: url(../img/reviewsblock__answer3.svg) !important;
+        background-position: right bottom !important;
+      }
+    }
+    /* &:nth-child(4) {
+      .reviewsblock__answer {
+        background-image: url(../img/reviewsblock__answer4.svg) !important;
+        background-position: right bottom !important;
+      }
+    }
+    &:nth-child(5) {
+      .reviewsblock__answer {
+        background-image: url(../img/reviewsblock__answer5.svg) !important;
+        background-position: right top !important;
+      }
+    }
+    &:nth-child(6) {
+      .reviewsblock__answer {
+        background-image: url(../img/reviewsblock__answer6.svg) !important;
+        background-position: right bottom !important;
+      }
+    } */
+    .reviewsblock__answer {
+      height: initial;
+    }
+    .reviewsblock__review {
+      height: initial;
+    }
+    .reviewsblock__text {
+      p:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .reviewsblock__info {
+    display: flex;
+    align-items: center;
+    margin-right: 26px;
+  }
+  .reviewsblock__name {
+    margin-right: 8px;
+    margin-bottom: 0;
+  }
+  .reviewsblock__header {
+    justify-content: flex-start;
+  }
+ 
+}
+
+.reviewspage {
+  h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+
+.pagebanner {
+  margin: 30px 0 100px 0;
+}
+.pagebanner__wrapper {
+  background-size: cover;
+
+  background-color: #F9F9F9;
+border-radius: 15px;
+overflow: hidden;
+}
+.pagebanner__content {
+  display: flex;
+  min-height: 420px;
+  padding: 0 60px;
+}
+.pagebanner__left {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  padding-right: 49px;
+}
+.pagebanner__main {
+  max-width: 490px;
+}
+.pagebanner__title {
+  font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 56px;
+/* identical to box height */
+
+
+color: #3A3A3A;
+}
+.pagebanner__right {
+  min-height: 100%;
+}
+.pagebanner__image {
+  min-height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.pagebanner__img {
+  img {
+    display: flex;
+  }
+}
+
+.blocklist {
+}
+.blocklist__item {
+  margin-bottom: 20px;
+}
+.blocklist__wrapper {
+  padding: 24px 29px;
+  
+background: #F9F9F9;
+border-radius: 15px;
+position: relative;
+
+&:before {
+  content: url(../img/blocklist.svg);
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  z-index: 3;
+}
+}
+.blocklist__title {
+  font-style: normal;
+font-weight: 400;
+font-size: 26px;
+line-height: 31px;
+
+color: #3A3A3A;
+margin-bottom: 13px;
+}
+.blocklist__text {
+  font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+color: #535A67;
+}
+
+.blockheader  {
+  h2 {
+    margin-bottom: 0;
+  }
+}
+
+.blocklist__item {
+  b {
+    white-space: nowrap;
+    font-weight: 600;
+  }
+}
+
+.deliveryblock {
+  .blocklist {
+    min-width: 500px;
+    max-width: 500px;
+    width: 100%;
+  }
+}
+.cols__col {
+  flex: 1;
+
+  &:first-child {
+    padding-right: 69px;
+  }
+}
+
+.textinfo {
+  h2 {
+    margin-top: 0;
+  }
+}
+
+.colsblock {
+  margin: 60px 0;
+}
+
+
 @include large-screen {
   .asidewrapper_asideblock {
     width: 240px;
@@ -5531,7 +5780,7 @@ a:hover {
     width: 100%;
   }
   .formblock__wrapper {
-    height: initial;
+    min-height: initial;
   }
   .mainslide__wrapper {
     height: initial;
@@ -7071,9 +7320,53 @@ line-height: 1.2;
   padding-left: 7px;
   padding-right: 7px;
 }
+.deliveryblock .blocklist {
+  min-width: 400px;
+}
+.blogmain__content h3, .textinfo h3 {
+  font-size: 20px;
+  line-height: 1.2;
+}
 }
 
 @include small-screen {
+  .flex.deliveryblock.items-end {
+    flex-wrap: wrap;
+  }
+  .pagebanner__wrapper {
+    background-image: none !important;
+  }
+  .deliveryblock .blocklist {
+    min-width: 100%;
+  }
+  .blocklist__title {
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 5px;
+  }
+  .cols__col:first-child {
+    padding-right: 0;
+  }
+  .flex.cols {
+    flex-wrap: wrap;
+    > * {
+      flex: unset
+    }
+  }
+  .blocklist__wrapper {
+    padding: 32px 15px;
+  }
+  .pagebanner__content {
+    flex-wrap: wrap;
+    padding: 30px 20px 0 20px;
+    min-height: 300px;
+  }
+  .pagebanner__title {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 31px;
+  }
+
   .detailbuy__text {
     max-width: 100%;
     width: 100%;

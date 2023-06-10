@@ -615,194 +615,466 @@
         </div>
         <!-- /.breadcrumbs -->
         
-       <div class="pagebanner">
-        <div class="container">
-          <div class="pagebanner__wrapper" style='background-image: url(img/pagebannerbg.png);'>
-            <div class="pagebanner__content">
-              <div class="pagebanner__left">
-                <div class="pagebanner__main">
-                  <div class="pagebanner__title">
-                    Закажите <br> <span class="mark">на сумму от 2000 ₽</span> <br> и не платите за доставку!*
-                
-                  </div><!-- /.pagebanner__title -->
-                </div><!-- /.pagebanner__main -->
-              </div><!-- /.pagebanner__left -->
-              <div class="pagebanner__right">
-                <div class="pagebanner__image">
-                  <div class="pagebanner__img">
-                    <img src="img/pagebanner1.png" alt="">
-                  </div><!-- /.pagebanner__img -->
-                </div><!-- /.pagebanner__image -->
-              </div><!-- /.pagebanner__righ -->
-            </div><!-- /.pagebanner__content -->
-          </div><!-- /.pagebanner__wrapper -->
-        </div><!-- /.container -->
-       </div><!-- /.pagebanner -->
 
+        <div class="pageblocksl formblock">
+          <div class="container">
+            <div class="formblock__wrapper">
+              <div class="formblock__container">
+                <div class="formblock__items items-center">
+                  <div class="formblock__content">
+                    <div class="formblock__title">
+                      Оставьте <span class="mark">ваш отзыв</span> о&nbsp;нашем магазине:
+                    </div>
+                    <div class="formblock__text">
+                      Обратная связь помогает нам  улучшать сервис и развиваться
+                    </div><!-- /.formblock__text -->
 
-      
-       <div class="pageblocksl">
-        <div class="container">
+                  </div>
+                  <div class="formblock__form">
+                    <form action="">
+                      <div class="formblock__row">
+                        <div class="formblock__input formblock__input_col2">
+                          <input type="text" placeholder="Имя">
+                        </div>
+                        <div class="formblock__input formblock__input_col2">
+                          <input type="tel" placeholder="Номер телефона">
+
+                        </div>
+                        <div class="formblock__input w-full">
+                          <textarea name="" rows="5" placeholder='Текст вашего отзыва'></textarea>
+
+                        </div>
+                        <div class="formblock__input">
+                          <div class="formrating">
+                            <div class="formrating__text">Ваша оценка:</div>
+                            <span class="score">
+                              <div class="score-wrap">
+                                <span class="stars-active" style="width: 0;">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </span>
+                                <span class="stars-inactive">
+                                    <i class="fa fa-star" aria-hidden="true" style="color: #AEB5D1"></i>
+                                    <i class="fa fa-star" aria-hidden="true" style="color: #AEB5D1"></i>
+                                    <i class="fa fa-star" aria-hidden="true" style="color: #AEB5D1"></i>
+                                    <i class="fa fa-star" aria-hidden="true" style="color: #AEB5D1"></i>
+                                    <i class="fa fa-star" aria-hidden="true" style="color: #AEB5D1"></i>
+                                </span>
+                              </div>
+                            </span>
+                            <span class="formrating__value">0</span>
+                            <input type="hidden" name="formrating" value="0">
+        
+                          </div>
+                          <script>
+                              $('.formrating .score-wrap').mousemove(function (e) {
+                                    if ($('.formrating input[name="formrating"]').val() === '0') {
+                                        var stars = parseInt((e.pageX - $(this).offset().left) / 28) * 28 + 28 + 1.5;
+                                        $(this).find('span.stars-active').css('width', stars);
+                                    }
+        
+                                });
+        
+                                $('.formrating .score-wrap').click(function (e) {
+                                    var stars = parseInt((e.pageX - $(this).offset().left) / 28) + 1;
+                                    var $inp = $('.formrating input[name="formrating"]');
+                                    $inp.val(stars);
+                                    $('.formrating span.stars-active').css('width', stars  * 28 + 1);
+                                    $('.formrating__value').html(stars);
+                                    // при нажатии на рейтинг 
+                                });
+                          </script>
+                        </div>
+                        <div class="formblock__button w-full">
+                          <button type="submit" class="btn_main w-full">Отправить</button>
+                        </div>
+                        <div class="formblock__confirm">
+                          Нажимая на кнопку, вы соглашаетесь с условиями <a href="#">Политики конфиденциальности</a>
+                        </div>
+                      </div><!-- /.formblock__row -->
+                    </form>
+                  </div>
+                </div><!-- /. -->
+              </div><!-- /. -->
+            </div><!-- /. -->
+
+          </div>
+        </div>
+
+        <div class="reviewspage">
+          <div class="container">
+        <div class="pageblocksl">
           <div class="blockheader flex items-center content-between">
             <div class="blockheader__left">
-              <h2>Условия платной доставки:</h2>
+              <h2>Отзывы других покупателей:</h2>
             </div>
-          </div>
-          <div class="flex deliveryblock items-end">
-            <div class="blocklist">
-              <div class="blocklist__item">
-                <div class="blocklist__wrapper">
-                  <div class="blocklist__title">В пределах МКАД: <b>350 ₽</b> </div><!-- /.blocklist__title -->
-                  <div class="blocklist__text">минимальная сумма заказа <b>450 ₽</b>  <br>
-                    при заказе от <b>3 000 ₽ - бесплатно</b> </div><!-- /.blocklist__text -->
-                </div><!-- /.blocklist__wrapper -->
-              </div><!-- /.blocklist__item -->
-              <div class="blocklist__item">
-                <div class="blocklist__wrapper">
-                  <div class="blocklist__title">За МКАД от 5 до 20 км: <b>50 ₽/км </b> </div><!-- /.blocklist__title -->
-                  <div class="blocklist__text">минимальная сумма заказа  <b>3 000 ₽</b></div><!-- /.blocklist__text -->
-                </div><!-- /.blocklist__wrapper -->
-              </div><!-- /.blocklist__item -->
-              <div class="blocklist__item">
-                <div class="blocklist__wrapper">
-                  <div class="blocklist__title">За МКАД от 20 до 50 км: <b>50 ₽/км</b>  </div><!-- /.blocklist__title -->
-                  <div class="blocklist__text">минимальная сумма заказа <b>6 000 ₽</b> </div><!-- /.blocklist__text -->
-                </div><!-- /.blocklist__wrapper -->
-              </div><!-- /.blocklist__item -->
-            </div><!-- /.blocklist -->
-            <div class="image">
-              <img src="img/15-Vehicle-Mockup.png" alt="">
-            </div><!-- /.image -->
-          </div><!-- /.flex -->
-        </div>
-      </div>
 
-      <div class="pageblocksl ">
-        <div class="container">
-          <div class="blockheader">
-            <div class="blockheader__left">
-              <h2>Варианты оплаты заказа:</h2>
-            </div>
-           
           </div>
+          <div class="reviewsblock">
+            <div class="reviewsblock__items">
+              <div class="reviewsblock__item">
+                <div class="reviewsblock__review">
+                  <div class="reviewsblock__header">
+                    <div class="reviewsblock__info">
+                      <div class="reviewsblock__name">Анна</div>
+                      <div class="reviewsblock__date">17 декабря 2022</div>
+                    </div><!-- /.reviewsblock__info -->
 
-          <div class="fitchesblock">
-            <div class="fitchesblock__items">
-              <div class="fitchesblock__item slide-in-bottom wow" data-wow-delay="0.1s" data-wow-offset="0" data-wow-duration="1.5s" >
-                <div class="fitchesblock__wrapper">
-                  <div class="fitchesblock__header">
-                    <div class="fitchesblock__icon">
-                      <div class="fitchesblock__img"><img src="img/fitches_del_1.svg" alt=""></div>
-                      <!-- /.fitchesblock__img -->
-                    </div><!-- /.fitchesblock__icon -->
-                    <div class="fitchesblock__title">Картой или <br> наличными курьеру</div><!-- /.fitchesblock__title -->
-                  </div><!-- /.fitchesblock__header -->
-                  <div class="fitchesblock__main">
-                    <div class="fitchesblock__content">У наших курьеров есть терминалы оплаты и сдача</div><!-- /.fitchesblock__content -->
-                  </div><!-- /.fitchesblock__main -->
-                </div><!-- /.fitchesblock__wrapper -->
-              </div><!-- /.fitchesblock__item -->
-              <div class="fitchesblock__item slide-in-bottom wow" data-wow-delay="0.4s" data-wow-offset="0" data-wow-duration="1.5s">
-                <div class="fitchesblock__wrapper">
-                  <div class="fitchesblock__header">
-                    <div class="fitchesblock__icon">
-                      <div class="fitchesblock__img"><img src="img/fitches_del_2.svg" alt=""></div>
-                      <!-- /.fitchesblock__img -->
-                    </div><!-- /.fitchesblock__icon -->
-                    <div class="fitchesblock__title">По QR-коду через приложение банка</div><!-- /.fitchesblock__title -->
-                  </div><!-- /.fitchesblock__header -->
-                  <div class="fitchesblock__main">
-                    <div class="fitchesblock__content">Мгновенная оплата в приложении вашего банка в момент получения заказа от курьера</div><!-- /.fitchesblock__content -->
-                  </div><!-- /.fitchesblock__main -->
-                </div><!-- /.fitchesblock__wrapper -->
-              </div><!-- /.fitchesblock__item -->
-              <div class="fitchesblock__item slide-in-bottom wow" data-wow-delay="0.7s" data-wow-offset="0" data-wow-duration="1.5s" >
-                <div class="fitchesblock__wrapper">
-                  <div class="fitchesblock__header">
-                    <div class="fitchesblock__icon">
-                      <div class="fitchesblock__img"><img src="img/fitches_del_3.svg" alt=""></div>
-                      <!-- /.fitchesblock__img -->
-                    </div><!-- /.fitchesblock__icon -->
-                    <div class="fitchesblock__title">Картой при покупке онлайн на сайте</div><!-- /.fitchesblock__title -->
-                  </div><!-- /.fitchesblock__header -->
-                  <div class="fitchesblock__main">
-                    <div class="fitchesblock__content">Заморозим 1 рубль на карте,
-                      а итоговую сумму заказа спишем после завершения сборки</div><!-- /.fitchesblock__content -->
-                  </div><!-- /.fitchesblock__main -->
-                </div><!-- /.fitchesblock__wrapper -->
-              </div><!-- /.fitchesblock__item -->
-            </div><!-- /.fitchesblock__items -->
-          </div><!-- /.fitchesblock -->
-        </div>
-      </div>
-    
-     
-      <div class="pageblocksl">
-        <div class="container">
-          <div class="colsblock">
-          <div class="flex cols">
-            <div class="cols__col">
-              <div class="textinfo">
-                <h2>Условия возврата <br> денежных средств:</h2>
-                <p>Для возврата денег позвоните нам по телефону <a href="tel:+7 495 445 25 55">+7 495 445 25 55</a></p>
-                <p>Срок рассмотрения заявки на возврат денежных средств — 10 дней (срок устанавливается магазином). Деньги вернутся в течение 5-30 дней на ту карту, с которой была оплачена покупка. Точный срок зависит от банка, который обслуживает карту.</p>
+                    <div class="reviewsblock__rating">
+                      <div class="reviewsblock__value">5</div>
+                      <span class="score">
+                        <div class="score-wrap">
+                          <span class="rat-stars-active stars-active">
+                            <img src="img/activestar.svg" alt="">
+                            <img src="img/activestar.svg" alt="">
+                            <img src="img/activestar.svg" alt="">
+                            <img src="img/activestar.svg" alt="">
+                            <img src="img/activestar.svg" alt="">
+                          </span>
+                          <span class="stars-inactive">
+                            <img src="img/nostar.svg" alt="">
+                            <img src="img/nostar.svg" alt="">
+                            <img src="img/nostar.svg" alt="">
+                            <img src="img/nostar.svg" alt="">
+                            <img src="img/nostar.svg" alt="">
+                          </span>
+                        </div>
+                      </span>
+
+                    </div><!-- /.reviewsblock__rating -->
+                  </div><!-- /.reviewsblock__header -->
+                  <div class="reviewsblock__content">
+                    <div class="reviewsblock__text">
+                      <p>Покупаю у вас продукцию не первый год. Магазин возле метро Красногвардейская. Продавцы
+                        очень внимательные и информативные. Продукция очень качественная. Икра - икринка к икринке,
+                        вкусная. Рыба неперемороженая. Спасибо Вам большое!! Жду, когда вы сможете продавать
+                        «ледяную рыбу» (в моем детстве 80х годах она и навага лежали в магазинах «Океан» в Москве
+                        и ее никто не покупал).</p>
+                    </div><!-- /.reviewsblock__text -->
+                  </div><!-- /.reviewsblock__content -->
+                </div><!-- /.reviewsblock__review -->
+                <div class="reviewsblock__answer">
+                  <div class="reviewsblock__header">
+                    <div class="reviewsblock__info">
+                      <div class="reviewsblock__name">Администрация магазина:</div>
+                    </div><!-- /.reviewsblock__info -->
+
+                  </div>
+                  <div class="reviewsblock__content">
+                    <div class="reviewsblock__text">
+                      <p>Добрый день,Анна. 
+                        Спасибо за обратную связь.</p>
+                    </div><!-- /.reviewsblock__text -->
+                  </div><!-- /.reviewsblock__content -->
+                </div><!-- /.reviewsblock__answer -->
+              </div><!-- /.reviewsblock__item -->
+              <div class="reviewsblock__item ">
+                <div class="reviewsblock__review">
+                  <div class="reviewsblock__header">
+                    <div class="reviewsblock__info">
+                      <div class="reviewsblock__name">Виктория</div>
+                      <div class="reviewsblock__date">17 декабря 2022</div>
+                    </div><!-- /.reviewsblock__info -->
+
+                    <div class="reviewsblock__rating">
+                      <div class="reviewsblock__value">4</div>
+                      <span class="score">
+                        <div class="score-wrap">
+                          <span class="rat-stars-active stars-active">
+                            <img src="img/activestar.svg" alt="">
+                            <img src="img/activestar.svg" alt="">
+                            <img src="img/activestar.svg" alt="">
+                            <img src="img/activestar.svg" alt="">
+                            <img src="img/activestar.svg" alt="">
+                          </span>
+                          <span class="stars-inactive">
+                            <img src="img/nostar.svg" alt="">
+                            <img src="img/nostar.svg" alt="">
+                            <img src="img/nostar.svg" alt="">
+                            <img src="img/nostar.svg" alt="">
+                            <img src="img/nostar.svg" alt="">
+                          </span>
+                        </div>
+                      </span>
+
+                    </div><!-- /.reviewsblock__rating -->
+                  </div><!-- /.reviewsblock__header -->
+                  <div class="reviewsblock__content">
+                    <div class="reviewsblock__text">
+                      <p>Увидела рекламу сайта на автомобиле и, наверное, в первый раз в жизни решила зайти на сайт и
+                        заказать, и не прогадала. Удобный сайт, хорошие цены, хорошая служба поддержки клиента,
+                        удобная оплата, если нет терминала, можно оплатить по qr-коду. Заказала 4 позиции - тушка
+                        кижуча, икра кеты, икра горбуши и ломтики с/соленой нерки. Икра кеты вкусная, крупная. Еще уху
+                        сварили из кижуча - тоже хорошая тушка и бульон наваристый. Еще и кэшбек с первой покупки 30%
+                        - буду брать еще!</p>
+                    </div><!-- /.reviewsblock__text -->
+                  </div><!-- /.reviewsblock__content -->
+                </div><!-- /.reviewsblock__review -->
+                <div class="reviewsblock__answer">
+                  <div class="reviewsblock__header">
+                    <div class="reviewsblock__info">
+                      <div class="reviewsblock__name">Администрация магазина:</div>
+                    </div><!-- /.reviewsblock__info -->
+
+                  </div>
+                  <div class="reviewsblock__content">
+                    <div class="reviewsblock__text">
+                      <p>Виктория,добрый день! 
+                        Благодарим Вас за обратную связь. Качественная продукция и хорошее обслуживание являются
+                        приоритетами нашей работы, чтобы покупатели всегда получали приятные впечатления и
+                        гастрономические удовольствия от сотрудничества с нами. Приятных покупок!</p>
+                    </div><!-- /.reviewsblock__text -->
+                  </div><!-- /.reviewsblock__content -->
+                </div><!-- /.reviewsblock__answer -->
+              </div><!-- /.reviewsblock__item -->
+              <div class="reviewsblock__item ">
+                <div class="reviewsblock__review">
+                  <div class="reviewsblock__header">
+                    <div class="reviewsblock__info">
+                      <div class="reviewsblock__name">Виктория</div>
+                      <div class="reviewsblock__date">17 декабря 2022</div>
+                    </div><!-- /.reviewsblock__info -->
+
+                    <div class="reviewsblock__rating">
+                      <div class="reviewsblock__value">3</div>
+                      <span class="score">
+                        <div class="score-wrap">
+                          <span class="rat-stars-active stars-active">
+                            <img src="img/activestar.svg" alt="">
+                            <img src="img/activestar.svg" alt="">
+                            <img src="img/activestar.svg" alt="">
+                            <img src="img/activestar.svg" alt="">
+                            <img src="img/activestar.svg" alt="">
+                          </span>
+                          <span class="stars-inactive">
+                            <img src="img/nostar.svg" alt="">
+                            <img src="img/nostar.svg" alt="">
+                            <img src="img/nostar.svg" alt="">
+                            <img src="img/nostar.svg" alt="">
+                            <img src="img/nostar.svg" alt="">
+                          </span>
+                        </div>
+                      </span>
+
+                    </div><!-- /.reviewsblock__rating -->
+                  </div><!-- /.reviewsblock__header -->
+                  <div class="reviewsblock__content">
+                    <div class="reviewsblock__text">
+                      <p>Всегда берем наборы для ухи из нерки. Берем много. Размораживаем, сортируем по размеру
+                        нарезки, потом снова замораживаем и используем при необходимости. Получается недорого и
+                        вкусно. Нерка - это уникальная рыба, абы чем не питается, не жирная, полезна для печени.</p>
+                    </div><!-- /.reviewsblock__text -->
+                  </div><!-- /.reviewsblock__content -->
+                </div><!-- /.reviewsblock__review -->
+                <div class="reviewsblock__answer">
+                  <div class="reviewsblock__header">
+                    <div class="reviewsblock__info">
+                      <div class="reviewsblock__name">Администрация магазина:</div>
+                    </div><!-- /.reviewsblock__info -->
+
+                  </div>
+                  <div class="reviewsblock__content">
+                    <div class="reviewsblock__text">
+                      <p>Лидия,добрый день! 
+                        Спасибо большое за такой приятный отзыв.</p>
+                    </div><!-- /.reviewsblock__text -->
+                  </div><!-- /.reviewsblock__content -->
+                </div><!-- /.reviewsblock__answer -->
+              </div><!-- /.reviewsblock__item -->
+              <div class="reviewsblock__item">
+                <div class="reviewsblock__review">
+                  <div class="reviewsblock__header">
+                    <div class="reviewsblock__info">
+                      <div class="reviewsblock__name">Анна</div>
+                      <div class="reviewsblock__date">17 декабря 2022</div>
+                    </div><!-- /.reviewsblock__info -->
+
+                    <div class="reviewsblock__rating">
+                      <div class="reviewsblock__value">5</div>
+                      <span class="score">
+                        <div class="score-wrap">
+                          <span class="rat-stars-active stars-active">
+                            <img src="img/activestar.svg" alt="">
+                            <img src="img/activestar.svg" alt="">
+                            <img src="img/activestar.svg" alt="">
+                            <img src="img/activestar.svg" alt="">
+                            <img src="img/activestar.svg" alt="">
+                          </span>
+                          <span class="stars-inactive">
+                            <img src="img/nostar.svg" alt="">
+                            <img src="img/nostar.svg" alt="">
+                            <img src="img/nostar.svg" alt="">
+                            <img src="img/nostar.svg" alt="">
+                            <img src="img/nostar.svg" alt="">
+                          </span>
+                        </div>
+                      </span>
+
+                    </div><!-- /.reviewsblock__rating -->
+                  </div><!-- /.reviewsblock__header -->
+                  <div class="reviewsblock__content">
+                    <div class="reviewsblock__text">
+                      <p>Покупаю у вас продукцию не первый год. Магазин возле метро Красногвардейская. Продавцы
+                        очень внимательные и информативные. Продукция очень качественная. Икра - икринка к икринке,
+                        вкусная. Рыба неперемороженая. Спасибо Вам большое!! Жду, когда вы сможете продавать
+                        «ледяную рыбу» (в моем детстве 80х годах она и навага лежали в магазинах «Океан» в Москве
+                        и ее никто не покупал).</p>
+                    </div><!-- /.reviewsblock__text -->
+                  </div><!-- /.reviewsblock__content -->
+                </div><!-- /.reviewsblock__review -->
+                <div class="reviewsblock__answer">
+                  <div class="reviewsblock__header">
+                    <div class="reviewsblock__info">
+                      <div class="reviewsblock__name">Администрация магазина:</div>
+                    </div><!-- /.reviewsblock__info -->
+
+                  </div>
+                  <div class="reviewsblock__content">
+                    <div class="reviewsblock__text">
+                      <p>Добрый день,Анна. 
+                        Спасибо за обратную связь.</p>
+                    </div><!-- /.reviewsblock__text -->
+                  </div><!-- /.reviewsblock__content -->
+                </div><!-- /.reviewsblock__answer -->
+              </div><!-- /.reviewsblock__item -->
+              <div class="reviewsblock__item ">
+                <div class="reviewsblock__review">
+                  <div class="reviewsblock__header">
+                    <div class="reviewsblock__info">
+                      <div class="reviewsblock__name">Виктория</div>
+                      <div class="reviewsblock__date">17 декабря 2022</div>
+                    </div><!-- /.reviewsblock__info -->
+
+                    <div class="reviewsblock__rating">
+                      <div class="reviewsblock__value">4</div>
+                      <span class="score">
+                        <div class="score-wrap">
+                          <span class="rat-stars-active stars-active">
+                            <img src="img/activestar.svg" alt="">
+                            <img src="img/activestar.svg" alt="">
+                            <img src="img/activestar.svg" alt="">
+                            <img src="img/activestar.svg" alt="">
+                            <img src="img/activestar.svg" alt="">
+                          </span>
+                          <span class="stars-inactive">
+                            <img src="img/nostar.svg" alt="">
+                            <img src="img/nostar.svg" alt="">
+                            <img src="img/nostar.svg" alt="">
+                            <img src="img/nostar.svg" alt="">
+                            <img src="img/nostar.svg" alt="">
+                          </span>
+                        </div>
+                      </span>
+
+                    </div><!-- /.reviewsblock__rating -->
+                  </div><!-- /.reviewsblock__header -->
+                  <div class="reviewsblock__content">
+                    <div class="reviewsblock__text">
+                      <p>Увидела рекламу сайта на автомобиле и, наверное, в первый раз в жизни решила зайти на сайт и
+                        заказать, и не прогадала. Удобный сайт, хорошие цены, хорошая служба поддержки клиента,
+                        удобная оплата, если нет терминала, можно оплатить по qr-коду. Заказала 4 позиции - тушка
+                        кижуча, икра кеты, икра горбуши и ломтики с/соленой нерки. Икра кеты вкусная, крупная. Еще уху
+                        сварили из кижуча - тоже хорошая тушка и бульон наваристый. Еще и кэшбек с первой покупки 30%
+                        - буду брать еще!</p>
+                    </div><!-- /.reviewsblock__text -->
+                  </div><!-- /.reviewsblock__content -->
+                </div><!-- /.reviewsblock__review -->
+                <div class="reviewsblock__answer">
+                  <div class="reviewsblock__header">
+                    <div class="reviewsblock__info">
+                      <div class="reviewsblock__name">Администрация магазина:</div>
+                    </div><!-- /.reviewsblock__info -->
+
+                  </div>
+                  <div class="reviewsblock__content">
+                    <div class="reviewsblock__text">
+                      <p>Виктория,добрый день! 
+                        Благодарим Вас за обратную связь. Качественная продукция и хорошее обслуживание являются
+                        приоритетами нашей работы, чтобы покупатели всегда получали приятные впечатления и
+                        гастрономические удовольствия от сотрудничества с нами. Приятных покупок!</p>
+                    </div><!-- /.reviewsblock__text -->
+                  </div><!-- /.reviewsblock__content -->
+                </div><!-- /.reviewsblock__answer -->
+              </div><!-- /.reviewsblock__item -->
+              <div class="reviewsblock__item ">
+                <div class="reviewsblock__review">
+                  <div class="reviewsblock__header">
+                    <div class="reviewsblock__info">
+                      <div class="reviewsblock__name">Виктория</div>
+                      <div class="reviewsblock__date">17 декабря 2022</div>
+                    </div><!-- /.reviewsblock__info -->
+
+                    <div class="reviewsblock__rating">
+                      <div class="reviewsblock__value">3</div>
+                      <span class="score">
+                        <div class="score-wrap">
+                          <span class="rat-stars-active stars-active">
+                            <img src="img/activestar.svg" alt="">
+                            <img src="img/activestar.svg" alt="">
+                            <img src="img/activestar.svg" alt="">
+                            <img src="img/activestar.svg" alt="">
+                            <img src="img/activestar.svg" alt="">
+                          </span>
+                          <span class="stars-inactive">
+                            <img src="img/nostar.svg" alt="">
+                            <img src="img/nostar.svg" alt="">
+                            <img src="img/nostar.svg" alt="">
+                            <img src="img/nostar.svg" alt="">
+                            <img src="img/nostar.svg" alt="">
+                          </span>
+                        </div>
+                      </span>
+
+                    </div><!-- /.reviewsblock__rating -->
+                  </div><!-- /.reviewsblock__header -->
+                  <div class="reviewsblock__content">
+                    <div class="reviewsblock__text">
+                      <p>Всегда берем наборы для ухи из нерки. Берем много. Размораживаем, сортируем по размеру
+                        нарезки, потом снова замораживаем и используем при необходимости. Получается недорого и
+                        вкусно. Нерка - это уникальная рыба, абы чем не питается, не жирная, полезна для печени.</p>
+                    </div><!-- /.reviewsblock__text -->
+                  </div><!-- /.reviewsblock__content -->
+                </div><!-- /.reviewsblock__review -->
+                <div class="reviewsblock__answer">
+                  <div class="reviewsblock__header">
+                    <div class="reviewsblock__info">
+                      <div class="reviewsblock__name">Администрация магазина:</div>
+                    </div><!-- /.reviewsblock__info -->
+
+                  </div>
+                  <div class="reviewsblock__content">
+                    <div class="reviewsblock__text">
+                      <p>Лидия,добрый день! 
+                        Спасибо большое за такой приятный отзыв.</p>
+                    </div><!-- /.reviewsblock__text -->
+                  </div><!-- /.reviewsblock__content -->
+                </div><!-- /.reviewsblock__answer -->
+              </div><!-- /.reviewsblock__item -->
+            </div><!-- /.reviewsblock__items -->
+            <div class="paginationblock">
+              <div class="pagination">
+                <a href="#" class="pagination__arrLeft disabled">
+                  <img src="img/pagiRight.svg" alt="">
+                </a>
+                <ul>
+                  <li class="active"><a href="">1</a></li>
+                  <li><a href="">2</a></li>
+                  <li><a href="">3</a></li>
+                  <li><span>...</span></li>
+                  <li><a href="">22</a></li>
+                </ul>
+                <a href="#" class="pagination__arrRight">
+                  <img src="img/pagiRight.svg" alt="">
+                </a>
               </div>
-          
-            </div><!-- /.cols_col -->
-            <div class="cols__col">
-              <div class="grayblock textinfo">
-                <h3>Если вы обнаружили признаки некачественной продукции:</h3>
-                <ol class='listnumber'>
-                  <li>Сообщите нам об этом по номеру телефона: <a href="tel:+7 495 445 25 55">+7 495 445 25 55</a> </li>
-                  <li>Мы отправим к вам курьера для обмена продукции или возврата средств.</li>
-                
-                </ol>
-              </div><!-- /.grayblock -->
-            </div><!-- /.cols__col -->
-          </div><!-- /.flex cols -->
-        </div><!-- /.colsblock -->
-        </div><!-- /.container -->
-      </div><!-- /.pageblocksl -->
-
-
-      <div class="pageblocksl subscribeblock">
-        <div class="container">
-          <div class="subscribeblock__wrapper">
-            <div class="subscribeblock__container">
-              <div class="subscribeblock__items">
-                <div class="subscribeblock__content">
-                  <div class="subscribeblock__title">
-                    <span class="mark">Подпишитесь</span> на нашу рассылку <br> и узнавайте о новинках, акциях <br> и
-                    скидках
-                    первыми
-                  </div><!-- /.subscribeblock__title -->
-                  <div class="subscribeblock__form">
-                    <form action="">
-                      <div class="subscribeblock__row">
-                        <div class="subscribeblock__input">
-                          <input type="email" placeholder="Ваш e-mail">
-                        </div><!-- /.subscribeblock__input -->
-                        <div class="subscribeblock__button">
-                          <button type="submit" class="btn_main">Подписаться</button>
-                        </div><!-- /.subscribeblock__button -->
-                      </div><!-- /.subscribeblock__row -->
-                      <div class="subscribeblock__confirm">
-                        Нажимая на кнопку, вы соглашаетесь с условиями <a href="#">Политики конфиденциальности</a>
-                      </div><!-- /.subscribeblock__confirm -->
-                    </form>
-                  </div><!-- /.subscribeblock__form -->
-                </div><!-- /.subscribe__content -->
-                <div class="subscribeblock__image">
-                  <div class="subscribeblock__img">
-                    <img src="img/telefon.png" alt="">
-                  </div><!-- /.subscribeblock__img -->
-                </div><!-- /.subscribe__image -->
-              </div><!-- /.subscribe__items -->
-            </div><!-- /.subscribe__container -->
-          </div><!-- /.subscribe__wrapper -->
-        </div>
-      </div>
-    
+            </div>
+          </div>
+        </div><!-- /.pageblocksl -->
+      </div><!-- /.conainer -->
+      </div><!-- /.reviewspage -->
       </main>
       <footer id="footer" class="footer">
   <div class="footer__main">

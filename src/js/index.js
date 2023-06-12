@@ -120,6 +120,11 @@ $(document).ready(function () {
 
   new WOW().init();
 
+  $(".limitheight__button").on("click", function (e) {
+    e.preventDefault()
+    $(this).hide()
+    $(this).closest('.limitheight').toggleClass("active")
+  })
   $("[data-toggleclick='mainmenu']").on("click", function (e) {
     e.preventDefault()
     $("[data-toggle='mainmenu']").toggleClass("active")

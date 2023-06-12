@@ -7916,9 +7916,55 @@ line-height: 1.2;
     padding-left: 0;
   }
 }
+
+}
+.limitheight__button {
+  display: none;
+}
+.personalpage .asidewrapper__main {
+width: 100%;
 }
 
 @include small-screen {
+  .limitheight {
+    position: relative;
+    max-height: 484px;
+    overflow: hidden;
+  }
+  .limitheight.active {
+    max-height: unset;
+    .fitchesblock__item {
+      animation: none;
+    }
+  }
+  .limitheight__button {
+    display: block;
+    height: 225px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.11) 21.12%, rgba(255, 255, 255, 0.24) 33.91%, rgba(255, 255, 255, 0.47) 52.13%, #FFFFFF 75.11%);
+opacity: 0.85;
+border-radius: 0px 0px 15px 15px;
+z-index: 9;
+position: absolute;
+bottom: 0;
+width: 100%;
+display: flex;
+align-items: flex-end;
+justify-content: center;
+    span {
+      display: block; 
+      padding-right: 15px;
+      background-image: url(../img/limitheight.svg);
+      background-position: right center;
+      background-repeat: no-repeat;
+      font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+
+color: #08105B;
+    }
+   
+  }
   .bonusblock__small {
     margin-left: 0;
     padding-left: 0;

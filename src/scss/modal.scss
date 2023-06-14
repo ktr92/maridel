@@ -310,6 +310,24 @@ button.close:hover {
   }
 }
 
+#modal_video {
+  .modal-content {
+    border-radius: 0;
+  }
+  .modal-dialog {
+    width: 768px;
+  }
+  div#video-view iframe {
+    height: initial !important;
+    min-height: 480px;
+  }
+  button.close {
+    top: 10px;
+    right: 10px;
+  }
+
+}
+
 @include medium-screen {
   .pickuplist__addr {
     display: flex;
@@ -433,4 +451,23 @@ button.close:hover {
   .deliverytabs__map {
     margin-bottom: 19px;
   }
+  
+#modal_video {
+  .modal-content {
+    border-radius: 0;
+    padding: 30px 0;
+  }
+  .modal-dialog {
+    width: 768px;
+  }
+  div#video-view iframe {
+    height: initial !important;
+    min-height: 480px;
+  }
+  button.close {
+    top: 10px;
+    right: 10px;
+  }
+
+}
 }

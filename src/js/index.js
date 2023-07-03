@@ -10,6 +10,7 @@ function initFE() {
 /*   menuInit() */
   quantityForm()
    detailsliderInit()
+   gallerySliderInit()
    hideText()
   /*  imgSliderInit()
   recipeSliderInit() */
@@ -197,9 +198,9 @@ $(document).ready(function () {
 
     $("input[type=tel]").mask("7 (999) 999-99-99")
   
-  /*   lightbox.option({
+    lightbox.option({
     resizeDuration: 0,
-  }) */
+  })
 
   function incrementValue(e) {
     e.preventDefault()
@@ -312,6 +313,25 @@ function mainSliderInit() {
     autoplaySpeed: 3000,
   })
 }
+function gallerySliderInit() {
+  $("[data-slider='fullgallery']").slick({
+    dots: false,
+    arrows: false,
+    infinite: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1, dots: true,
+        }
+ 
+      },
+    ],
+  })
+}
 function videoSliderInit() {
   $("[data-slider='videoslider']").each(function () {
     $(this).slick({
@@ -372,7 +392,7 @@ function blogSliderInit() {
     autoplaySpeed: 3000, */
     })
   })
-}
+} 
 
 function videoPopup() {
   $("[data-ytlink]").click(function () {

@@ -8280,6 +8280,10 @@ line-height: normal;
   
 }
 @include small-screen {
+  .cashback__wrapper {
+    background-size: contain;
+  }
+
   .fullgallery {
     .slick-dots li button {
       height: 5px;
@@ -8628,5 +8632,13 @@ color: #08105B;
    padding: 5px;
    min-width: 175px;
    max-width: 175px;
+  }
+
+  .pageblocksl_small {
+    margin-bottom: 25px;
+    margin-top: 37px;
+  }
+  .fullgallery {
+    margin: 25px 0 80px 0;
   }
 }
